@@ -18,14 +18,14 @@ layout: default
 
   {% include header.html %}
 
-  <section class="title w-90 center mw9 pt3 pb4 pt5-m pb5-m pt5-l pb5-l">
+  <section class="title w-90 center mw9 pt5 pb4 pt5-m pb5-m pt5-l pb5-l">
     <h1 class="mv0 ph2-l fw5 f3 f2-m f1-l normal tc lh-copy lh-title-ns measure-narrow center black-80">{{ page.title }}</h1>
   </section>
 
   {% if page.feature-image != nil %}
 
   <section class="feat mw8 center">
-    <div class="post-img aspect-ratio--16x9 bg-center cover" style="background-image: url('{{ page.feature-image }}');"></div>
+    <div class="post-img aspect-ratio--16x9 bg-center cover mv4" style="background-image: url('{{ page.feature-image }}');"></div>
   </section>
 
 	{% endif %}

@@ -574,7 +574,7 @@ body {
 
 .post p a,
 a.highlighter {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.8);
   transition: color 0.15s ease-in;
   text-decoration: none;
   position: relative; }
@@ -639,3 +639,12 @@ twitterwidget {
 .headroom--unpinned {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%); }
+
+iframe {
+  width: 100%;
+  margin: 1rem 0 1.25rem; }
+
+@media screen and (min-width: 60em) {
+  iframe {
+    width: calc(100% + 4rem);
+    margin: 1.5rem -2rem 1.75em; } }
