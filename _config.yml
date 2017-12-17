@@ -30,7 +30,7 @@ dribbble_username:  brodymaclean
 
 # Build settings
 markdown: kramdown
-permalink: /:categories/:title/
+permalink: /:title/
 plugins:
   - jekyll-feed
 

@@ -2,8 +2,8 @@
 layout: post
 title: "Fazendo um formulário de Contato no Jekyll com Vue.js"
 date: 2016-08-07 23:04:08
-thumbnail: https://placeimg.com/740/380
-image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_760/v1502208952/contact-post_gnaojy.png'
+thumbnail: https://picsum.photos/700/500
+feature-image: https://picsum.photos/1000/500
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 category: 'project'
 tags:
@@ -14,7 +14,7 @@ twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem <a class="hitest" href="#">lacinia quam venenatis</a> vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
 > Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
@@ -82,9 +82,9 @@ Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo r
 
 Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
+![placeholder](https://picsum.photos/800/400 "Large example image")
+![placeholder](https://picsum.photos/400/200 "Medium example image")
+![placeholder](https://picsum.photos/200/200 "Small example image")
 
 ## Tables
 

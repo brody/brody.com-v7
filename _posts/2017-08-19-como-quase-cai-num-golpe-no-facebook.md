@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Como quase cai num golpe no Facebook"
+title: Simple embedding for Unsplash photos
 date: 2016-08-19 12:26:40
-thumbnail: https://placeimg.com/840/580
-image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/c_fill,h_399,w_760/v1503153729/golpe_ghb84o.jpg'
+thumbnail: https://source.unsplash.com/random/610x400
+feature-image: https://source.unsplash.com/random/1100x700
+
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 category: 'project'
 tags:
@@ -81,9 +82,9 @@ Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo r
 
 Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
+![placeholder](https://source.unsplash.com/random/800x400 "Large example image")
+![placeholder](https://source.unsplash.com/random/400x200 "Medium example image")
+![placeholder](https://source.unsplash.com/random/200x200 "Small example image")
 
 ## Tables
 
@@ -92,7 +93,7 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Aoth</th>
       <th>Upvotes</th>
       <th>Downvotes</th>
     </tr>

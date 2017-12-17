@@ -570,34 +570,43 @@ body {
 .post h5,
 .post h6 {
   font-weight: 500;
+  line-height: 1.3;
   color: rgba(0, 0, 0, 0.8); }
+
+strong {
+  font-weight: 600; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 32px 0; }
+
+blockquote {
+  margin: 1.5em 0;
+  padding: 0 1.5em;
+  border-left: 1px solid #ccc;
+  opacity: 0.75; }
+
+table th, table td {
+  padding: .1em 1em .1em 0;
+  text-align: left; }
+
+table th {
+  font-weight: 600; }
 
 .post p a,
 a.highlighter {
   color: rgba(0, 0, 0, 0.8);
-  transition: color 0.15s ease-in;
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #FFFFFF 60%, #F8EC54 60%, #F8EC54 100%);
   text-decoration: none;
-  position: relative; }
-  .post p a::before,
-  a.highlighter::before {
-    position: absolute;
-    top: 56%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: 0 -.1em;
-    padding: 0 0.1em;
-    background: #F8EC54;
-    transition: all 0.2s ease-in-out;
-    content: "";
-    z-index: -1; }
+  margin: -.3em -.1em 0 -.1em;
+  padding: .3em .1em .1em;
+  transition: all 0.15s ease-in;
+  background-position: 0 50%;
+  background-size: auto 200%; }
   .post p a:hover,
   a.highlighter:hover {
-    color: black; }
-    .post p a:hover::before,
-    a.highlighter:hover::before {
-      top: 0;
-      opacity: 0.9; }
+    background-position: 0 100%; }
 
 .cont {
   /* iOS 11 */

@@ -1,0 +1,43 @@
+---
+layout: default
+title: Journal
+---
+
+  <section class="intro cont w-90 center mw9 pt5 pb4 pt5-m pb5-m pt5-l pb5-l">
+    <h1 class="mv0 ph2-l fw5 f3 f2-m f1-l tc normal lh-copy lh-title-ns black-80">Journal</h1>
+  </section>
+
+  <section class="journal mw9 w-90 center pt5 pb1" id="journal">
+    <!-- <h2 class="w-90 cont w-100-l mv0 center fw4 f5 f4-m f4-l"><a href="#" class="ph2-l link dim dib color-inherit pv4 pv4-l">Journal →</a></h2> -->
+    <div class="flex flex-wrap cont nested-list-reset">
+      <!-- <div class="clearfix w-100 right mb3 mw9 center"> -->
+
+        {% for post in site.categories.journal %}
+
+        <a href="{{ post.url }}" class="dib mb5 ph2 fl w-100 w-50-ns w-33-l link dim ws-normal v-top">
+          <div class="bg-near-white h-50 aspect-ratio--16x9 bg-center cover br1" style="background-image: url({{ post.thumbnail }});}"></div>
+          <div class="info">
+            <div class="date black-40 f7 mt3">{{ post.date | date_to_long_string}}</div>
+            <h3 class="fw4 black-90 f4 mv2">{{ post.title }}</h3>
+            <ul class="categories list black-60 f6 mv1">
+              {% for tag in post.tags %}
+              <li class="dib">{{ tag }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </a>
+
+        {% endfor %}
+
+        <!-- <a href="#" class="dib mr3 ph2-l w-30 w-20-ns dn-l link dim ws-normal v-top more">
+          <div class="bg-near-white b--black-025 ba h-50 bg-center cover br1 more-cont" style="background-image: url(/assets/images/more.svg);}"></div>
+          <div class="info">
+            <div class="date black-10 f7 mt3">–</div>
+            <h3 class="fw4 black-90 f4 mv2">More →</h3>
+          </div>
+        </a> -->
+
+      <!-- </div> -->
+    </div>
+
+  </section>
