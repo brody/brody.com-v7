@@ -50,7 +50,15 @@ title: Brody Maclean
 
         {% for post in site.categories.project limit:3 %}
 
-        <a href="{{ post.url }}" class="dib mr3 mr0-l ph2-l fl-l w-90 w-60-ns w-33-l link dim ws-normal v-top">
+        <a href="
+
+        {% if post.alturl != nil %}
+           {{ post.alturl }}
+        {% else %}
+           {{ post.url }}
+        {% endif %}
+        
+        " class="dib mr3 mr0-l ph2-l fl-l w-90 w-60-ns w-33-l link dim ws-normal v-top">
           <div class="bg-lightest-blue h-50 aspect-ratio--16x9 bg-center cover br1" style="background-image: url({{ post.thumbnail }});}"></div>
           <div class="info">
             <div class="date black-40 f7 mt3">{{ post.date | date_to_long_string}}</div>
