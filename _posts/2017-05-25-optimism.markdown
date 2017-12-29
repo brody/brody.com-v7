@@ -3,7 +3,7 @@ layout: post
 title:  How 72andSunny practices optimism
 tags: culture
 date:   2017-05-25 19:21:03
-thumbnail: /images/170525/glasshalffull-thumbnail.gif
+thumbnail: /images/170525/glasshalffull.gif
 feature-image: /images/170525/glasshalffull.gif
 category: journal
 ---

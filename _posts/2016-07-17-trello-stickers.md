@@ -4,7 +4,7 @@ title:  Trello Stickers Sets
 tags:
 - side project
 date:   2016-07-17 19:21:03
-thumbnail: /images/160717/trello-stickers.png
+thumbnail: /images/160717/trello-stickers.gif
 category: project
 description: Jazz up your Trello board with these Sticker Sets
 ---
