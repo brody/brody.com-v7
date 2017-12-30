@@ -39,5 +39,11 @@ Also useful are any talks given by the author as it gives you an even deeper und
 
 **Further reading**
 
-*   [Extended overview](http://www.reinventingorganizations.com/uploads/2/1/9/8/21988088/140305_laloux_reinventing_organizations.pdf) from the Reinventing Organizations website.
-*   Buffer’s Kevan Lee has written [extensive notes & excerpts](http://www.kevanlee.com/reinventing-organizations/) from the book.
+* [Extended overview](http://www.reinventingorganizations.com/uploads/2/1/9/8/21988088/140305_laloux_reinventing_organizations.pdf) from the Reinventing Organizations website.
+* Buffer’s Kevan Lee has written [extensive notes & excerpts](http://www.kevanlee.com/reinventing-organizations/) from the book.
+
+---
+
+### Talk and Q&A by Frédéric Laloux
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gcS04BI2sbk?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>

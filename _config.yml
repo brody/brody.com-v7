@@ -23,7 +23,7 @@ email: hello@brody.com
 description: >- # this means to ignore newlines until "baseurl:"
   Brody MacLean is a Product Designer based in Sydney, Australia.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://brody.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: brodymaclean
 github_username:  brody
 dribbble_username:  brodymaclean

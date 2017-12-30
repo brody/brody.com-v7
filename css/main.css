@@ -555,8 +555,8 @@ html .gist .gist-file .gist-meta a[href*=raw]:hover {
  * Copyright (c) 2017 Daniel Eden
  */
 .animated {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1.25s;
+          animation-duration: 1.25s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
@@ -695,7 +695,7 @@ table th, table td {
 table th {
   font-weight: 600; }
 
-.post p a, .post ul a, .post ol a,
+.body a,
 a.highlighter {
   color: rgba(0, 0, 0, 0.8);
   background-image: linear-gradient(-180deg, #FFFFFF 0%, #FFFFFF 60%, #F8EC54 60%, #F8EC54 100%);
@@ -705,7 +705,7 @@ a.highlighter {
   transition: all 0.15s ease-in;
   background-position: 0 50%;
   background-size: auto 200%; }
-  .post p a:hover, .post ul a:hover, .post ol a:hover,
+  .body a:hover,
   a.highlighter:hover {
     background-position: 0 100%; }
 
