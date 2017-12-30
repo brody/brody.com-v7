@@ -121,7 +121,7 @@ table {
   }
 }
 
-.post p a, .post ul a, .post ol a,
+.body a,
 a.highlighter  {
   color: rgba(0,0,0,.8); //.black-90
   background-image: linear-gradient(-180deg, #FFFFFF 0%, #FFFFFF 60%, $highlighter 60%, $highlighter 100%);
@@ -135,11 +135,12 @@ a.highlighter  {
   background-size: auto 200%;
 
   &:hover {
-    // background-image: linear-gradient(-180deg, #FFFFFF 0%, #FFFFFF 0%, $highlighter 0%, $highlighter 100%);
     background-position: 0 100%;
 
   }
 }
+
+
 
 .midsize-image {
     max-width: 1200px;
