@@ -139,6 +139,17 @@ a.highlighter  {
   }
 }
 
+.midsize-image {
+    max-width: 1200px;
+    background: inherit;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.full-bleed-image img {
+    width: 100%;
+}
+
 // .post p a,
 // a.highlighter {
 //   color: rgba(0,0,0,.8); //.black-90
