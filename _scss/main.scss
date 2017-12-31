@@ -280,7 +280,7 @@ iframe.yt {
 
 // wow flash fix
 .wow {
-  visibility: hidden;
+  // visibility: hidden;
 }
 
 
@@ -308,12 +308,7 @@ body.night {
    }
 
    &.post {
-     h1,
-     h2,
-     h3,
-     h4,
-     h5,
-     h6 {
+     h1, h2, h3, h4, h5, h6 {
        color: rgba(255,255,255,.8); //.black-80
      }
    }
