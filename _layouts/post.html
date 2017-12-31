@@ -1,20 +1,9 @@
-<!-- ---
-layout: default
----
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div> -->
-
-
 <!DOCTYPE html>
 <html>
 
 {% include head.html %}
 
-<body class="sans-serif black-50 mt5 mt6-l post wow fadeIn" data-wow-delay="0.33s">
+<body class="sans-serif black-50 mt5 mt6-l post wow fadeIn" onload="nightmode()" data-wow-delay="0.33s">
 
   {% include header.html %}
 
@@ -31,16 +20,17 @@ layout: default
 	{% endif %}
 
 
-
   <section class="body f5 f4-ns lh-copy measure w-90-l w-90 center pt3 pb1 black-70" id="journal">
-
 
     {{ content }}
 
   </section>
 
+  {% include footer.html %}
 
-  {% include footer.html %} {% include script.html %} {% include ga.html %}
+  {% include script.html %}
+
+  {% include ga.html %}
 
 </body>
 

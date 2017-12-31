@@ -1,23 +1,10 @@
-$('#nav-button').click(function() {
-  $('#overlay').addClass('overlay-open');
-});
-$('#close-button').click(function() {
-  $('#overlay').removeClass('overlay-open');
-});
+document.onreadystatechange=function(){
 
-$(function() {
-    // get hour of time
-    var hour = new Date().getHours();
+  var date = new Date();
+  var hour = date.getHours();
 
-    // change to night mode between 6pm & 8am
-    if (hour > 17 || hour < 8) {
-        $('body').addClass('night');
+  if (hour > 17 || hour < 8) {
+      document.body.className += ' ' + 'night';
+  }
+
 }
-});
-
-// $(function() {
-//
-// var from = document.referrer;
-// window.alert(from);
-//
-// });
