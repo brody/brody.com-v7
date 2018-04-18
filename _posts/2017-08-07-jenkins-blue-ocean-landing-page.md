@@ -7,9 +7,7 @@ tags:
 - CSS
 - JS
 date:   2017-04-06 19:21:03
-thumbnail: /images/170406/blue-ocean.gif
+thumbnail: /images/170406/blue-ocean.svg
 category: project
 alturl: https://jenkins.io/projects/blueocean/
 ---
-
-Test

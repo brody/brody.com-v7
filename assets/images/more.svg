@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="150px" height="250px" viewBox="0 0 150 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>more</title>
-    <defs></defs>
-        <g id="more" fill="#999999">
-            <!-- <rect id="bounding" fill-opacity="0" x="0" y="0" width="150" height="250"></rect> -->
-            <polygon id="Shape" fill-opacity="0.9" fill-rule="nonzero" points="88 125.914062 75.8125 125.914062 75.8125 138 74.0859375 138 74.0859375 125.914062 62 125.914062 62 124.1875 74.0859375 124.1875 74.0859375 112 75.8125 112 75.8125 124.1875 88 124.1875"></polygon>
-        </g>
-</svg>
+<svg height="250" viewBox="0 0 150 250" width="150" xmlns="http://www.w3.org/2000/svg"><path d="m88 125.914062h-12.1875v12.085938h-1.7265625v-12.085938h-12.0859375v-1.726562h12.0859375v-12.1875h1.7265625v12.1875h12.1875z" fill="#999" fill-opacity=".9"/></svg>

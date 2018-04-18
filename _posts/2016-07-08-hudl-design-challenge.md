@@ -8,9 +8,7 @@ tags:
 - CSS
 - JS
 date:   2016-07-08 19:21:03
-thumbnail: /images/160708/hudl.png
+thumbnail: /images/160708/hudl.svg
 category: project
 alturl: /hudl
 ---
-
-T
