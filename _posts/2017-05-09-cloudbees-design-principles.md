@@ -3,7 +3,8 @@ layout: post
 title:  Cloudbees Design Principles
 tags: design
 date:   2017-05-09 10:21:03
-thumbnail: /images/170509/principles.gif
+<!-- thumbnail: /images/170509/principles.gif -->
+thumbnail: /images/thumb_principles.jpg
 category: journal
 description: Our design principles define the design direction going forward and helps convey our core beliefs to stakeholders.
 ---

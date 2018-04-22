@@ -3,8 +3,8 @@ layout: post
 title:  How 72andSunny practices optimism
 tags: culture
 date:   2017-05-25 19:21:03
-thumbnail: /images/170525/glasshalffull.gif
-feature-image: /images/170525/glasshalffull.gif
+thumbnail: /images/thumb_optimism.jpg
+feature-image: /images/thumb_optimism.jpg
 category: journal
 ---
 
@@ -52,7 +52,8 @@ Just simply give it a go. Plain and simple. What’s stopping you?
 
 What do you do if someone just isn’t feeling it? When the intensity or pressure to produce makes optimism feel impossible? Go ahead & ask for it. “I’m asking you to be more optimistic about this. Can you?” They might not at first. But talk it out and keep re-visiting the same question. They’ll eventually come around.
 
-<iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/2-p_C_T_Mgo?rel=0" frameborder="0" allowfullscreen=""></iframe>
+<br>
+![Glass Half Full](/images/170525/glasshalffull.gif)
 
 * * *
 
