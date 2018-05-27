@@ -770,9 +770,11 @@ a.highlighter {
 .projects .categories li:last-child::after {
   content: ""; }
 
-.journal .more .more-cont,
-.projects .more .more-cont {
+.journal .more .more-cont {
   padding-bottom: 168%; }
+
+.projects .more .more-cont {
+  padding-bottom: 299%; }
 
 a .hoverzoom {
   background-size: 100% !important;

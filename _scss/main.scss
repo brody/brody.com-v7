@@ -226,19 +226,30 @@ a.highlighter {
     }
   }
 
-  .more {
-    .more-cont {
-      padding-bottom: 168%;
-      // @media screen and (min-width: 30em)
-      // {
-      //   padding-bottom: 169%;
-      // }
-    }
-  }
+
 
   // a:hover .cover {
   //   background-size: 105%!important;
   // }
+}
+
+.journal {
+  .more {
+    .more-cont {
+      padding-bottom: 168%;
+    }
+  }
+
+}
+
+.projects {
+  .more {
+    .more-cont {
+      padding-bottom: 299%;
+
+    }
+  }
+
 }
 
 a {
