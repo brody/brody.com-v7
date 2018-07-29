@@ -28,7 +28,7 @@ $(function() {
     if (hour > 17) {  // 0:00 to 6:59
         $('html').addClass('night');
     } else if (hour < 8) {  // 7:00 to 10:59
-        $('body').addClass('night');
+        $('html').addClass('night');
     }
     // else if (hour < 23) {  // 11:00 to 15:59
     //     $('#intro').addClass('select');
