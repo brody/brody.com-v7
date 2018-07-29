@@ -1,0 +1,298 @@
+* {
+  &::selection {
+    background: $primary-pale;
+  }
+
+  &::-moz-selection {
+    background: $primary-pale;
+  }
+}
+
+html {
+  background-color: $grey-lightest;
+  color: $grey-darker;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $grey-darkest;
+
+  a {
+    color: $grey-darkest;
+    border: 0;
+
+    &:hover {
+      color: $primary;
+      border: 0;
+    }
+  }
+}
+
+p {
+  color: $grey-darker;
+}
+
+nav {
+  a#logo {
+    svg {
+      fill: $grey-darker;
+      transition: all 0.3s cubic-bezier(0.165, 0.63, 0.14, 0.82);
+    }
+
+    &:hover {
+      border: 0;
+
+      svg {
+        fill: $primary;
+      }
+    }
+  }
+
+  #btn-hamburger {
+    .hamburger-bg {
+      background-color: $grey;
+      transition: all 0.3s cubic-bezier(0.165, 0.63, 0.14, 0.82);
+
+      svg#hamburger {
+        fill: $grey-lighter;
+      }
+    }
+
+    &:active,
+    &:hover {
+      cursor: pointer;
+
+      .hamburger-bg {
+        background-color: $primary;
+      }
+    }
+  }
+  @include breakpoint($md) {}
+  @include breakpoint($lg) {
+    // background: transparent;
+  }
+}
+
+a {
+  border-bottom: 2px solid $grey-light;
+  // font-weight: 500;
+  &:hover {
+    border-bottom: 2px solid $primary;
+  }
+}
+
+h2.article_sub-title, h2.intro_sub-title {
+  color: $grey;
+}
+
+a,
+a:visited {
+  color: $grey-darkest;
+}
+
+blockquote {
+  border-left: 8px solid $primary;
+  color: $grey-dark;
+}
+
+mark {
+  background-color: $yellow-pale;
+  color: $grey-darkest;
+}
+
+time {
+  color: $grey-light;
+}
+
+#moon {
+  fill: $grey-light;
+}
+
+.book-card,
+.link-card {
+  a {
+    background-color: $white;
+    box-shadow: 0 2px 4px 0 rgba($grey,0.5);
+
+    &:hover {
+      box-shadow: 0 8px 24px 0 rgba($grey,0.5);
+    }
+  }
+
+  p {
+    color: $grey;
+  }
+
+  img {
+    border: 1px solid $grey-lighter;
+  }
+}
+
+.rating {
+  ul {
+    li {
+      .star-base {
+        fill: $grey-lighter;
+      }
+    }
+  }
+
+  &.rating--5 {
+    display: inline-block;
+
+    li:nth-child(1) path.star-half {
+      fill: $yellow;
+    }
+  }
+
+  &.rating-1 {
+    display: inline-block;
+
+    li:nth-child(1) path.star-base {
+      fill: $yellow;
+    }
+  }
+
+  &.rating-1-5 {
+    display: inline-block;
+
+    li:nth-child(1) path.star-base {
+      fill: $yellow;
+    }
+
+    li:nth-child(2) path.star-half {
+      fill: $yellow;
+    }
+  }
+
+  &.rating-2 {
+    display: inline-block;
+
+    li:nth-child(-n+2) path.star-base {
+      fill: $yellow;
+    }
+  }
+
+  &.rating-2-5 {
+    display: inline-block;
+
+    li:nth-child(-n+2) path.star-base {
+      fill: $yellow;
+    }
+
+    li:nth-child(3) path.star-half {
+      fill: $yellow;
+    }
+  }
+
+  &.rating-3 {
+    display: inline-block;
+
+    li:nth-child(-n+3) path.star-base {
+      fill: $yellow;
+    }
+  }
+
+  &.rating-3-5 {
+    display: inline-block;
+
+    li:nth-child(-n+3) path.star-base {
+      fill: $yellow;
+    }
+
+    li:nth-child(4) path.star-half {
+      fill: $yellow;
+    }
+  }
+
+  &.rating-4 {
+    display: inline-block;
+
+    li:nth-child(-n+4) path.star-base {
+      fill: $yellow;
+    }
+  }
+
+  &.rating-4-5 {
+    display: inline-block;
+
+    li:nth-child(-n+4) path.star-base {
+      fill: $yellow;
+    }
+
+    li:nth-child(5) path.star-half {
+      fill: $yellow;
+    }
+  }
+
+  &.rating-5 {
+    display: inline-block;
+
+    li:nth-child(-n+5) path.star-base {
+      fill: $yellow;
+    }
+  }
+}
+
+.next-post {
+  border-top: 1px solid $grey-lighter;
+
+  a {
+    border: 0;
+
+    h3 {
+      color: $grey-light;
+    }
+
+    h1 {
+      // color: $primary;
+    }
+
+    p {}
+
+    &:hover {
+      border: 0;
+      background-color: rgba($grey-darkest, .05);
+
+      h3 {
+        // color: $grey-light;
+      }
+
+      h1 {
+        color: $primary;
+      }
+    }
+  }
+}
+
+#menu {
+  background-color: $grey-lightest;
+  border-left: 1px solid $grey-lighter;
+  box-shadow: 0 0 24px 0 rgba($grey,0.5);
+  #site-details {
+    &:hover {
+      h1 {
+        color: $primary;
+      }
+    }
+  }
+  h2 {
+    color: $grey;
+  }
+  ul {
+    li {
+      a {
+        color: $grey-dark;
+        fill: $grey;
+        &:hover {
+          color: $primary;
+          fill: $primary;
+        }
+      }
+    }
+  }
+}

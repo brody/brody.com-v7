@@ -1,16 +1,29 @@
 ---
 layout: post
 title:  Reinventing Organizations Key Points
+sub-title: Adopt a whole different set of management principles and practices.
 tags:
 - Book Notes
 - Culture
 date:   2016-11-15 10:21:03
 thumbnail: /images/161115/reinventing-organizations.jpg
 category: journal
-alturl: https://medium.com/@brody/reinventing-organizations-key-points-7414663d6bc5
+description: The book that has inspired organizations to take a radical leap and adopt a whole different set of management principles and practices.
+
+source-title:
+source-url:
+source-url-label:
+
+book-title: Reinventing Organizations
+book-author: Frédéric Laloux
+book-url: http://www.amazon.com/gp/product/B00ICS9VI4
+book-url-label: amazon.com
+book-cover: /images/book/reinventing-organizations.jpg
+book-rating: 4-5
 ---
 
 ![](/images/161115/reinventing-organizations.jpg)
+{: .image-wrap}
 
 When watching a movie for the 2nd time, you get to enjoy the details because you already know the major plot points.
 
@@ -37,13 +50,12 @@ Also useful are any talks given by the author as it gives you an even deeper und
 15.  You can measure an organization by the number of lies you must tell to be a part of it.
 16.  The general rule seems to be that consciousness of the organization cannot exceed the level of consciousness of its leader.
 
-**Further reading**
+## Further reading
 
 * [Extended overview](http://www.reinventingorganizations.com/uploads/2/1/9/8/21988088/140305_laloux_reinventing_organizations.pdf) from the Reinventing Organizations website.
 * Buffer’s Kevan Lee has written [extensive notes & excerpts](http://www.kevanlee.com/reinventing-organizations/) from the book.
 
----
 
-### Talk and Q&A by Frédéric Laloux
+# Talk and Q&A by Frédéric Laloux
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gcS04BI2sbk?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>

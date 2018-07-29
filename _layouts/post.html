@@ -3,30 +3,96 @@
 
 {% include head.html %}
 
-<body class="sans-serif black-50 mt5 mt6-l post wow fadeIn" onload="nightmode()" data-wow-delay="0.33s">
+<!-- <body class="sans-serif black-50 mt5 mt6-l post wow fadeIn" onload="nightmode()" data-wow-delay="0.33s"> -->
+<body class="sans-serif">
+
 
   {% include header.html %}
 
-  <section class="title w-90 center mw9 pt5 pb4 pt5-m pb5-m pt5-l pb5-l">
-    <h1 class="mv0 ph2-l fw5 f3 f2-m f1-l normal tc lh-copy lh-title-ns measure-narrow center black-80">{{ page.title }}</h1>
-  </section>
+  <section class="container post lh-copy">
 
-  {% if page.feature-image != nil %}
+    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %B %Y" }}</time>
 
-  <section class="feat mw8 center">
-    <div class="post-img aspect-ratio--16x9 bg-center cover mv4" style="background-image: url('{{ page.feature-image }}');"></div>
-  </section>
+    <h1 class="article_title mv3">
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </h1>
 
-	{% endif %}
+    {% if page.sub-title != nil %}
+    <h2 class="article_sub-title mt3 mb4">{{ page.sub-title }}</h2>
+    {% endif %}
 
-
-  <section class="body f5 f4-ns lh-copy measure w-90-l w-90 center pt3 pb1 black-70" id="journal">
+    {% if page.source-url != nil %}
+    <div class="link-card">
+          <a href="{{ page.source-url }}" class="block rounded card p2 active-hover my3" target="_blank">
+            <p class=>Source:</p>
+            <h2>{{ page.source-title }}</h2>
+            <button class="ic_external">
+                <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m13.8786797 8h-6.3786797c-.82842712 0-1.5-.67157288-1.5-1.5s.67157288-1.5 1.5-1.5h10c.8284271 0 1.5.67157288 1.5 1.5v10c0 .8284271-.6715729 1.5-1.5 1.5s-1.5-.6715729-1.5-1.5v-6.3786797l-8.95020426 8.9502043c-.58578644.5857864-1.53553391.5857864-2.12132035 0-.58578643-.5857864-.58578643-1.5355339 0-2.1213203z"/></svg>
+                <span class="label">{{ page.source-url-label }}</span>
+              </button>
+          </a>
+        </div>
+    {% endif %}
 
     {{ content }}
 
-  </section>
+    {% if page.book-title != nil %}
+    <div class="book-card">
+          <a href="{{ page.book-url }}" class="block rounded card p2 active-hover my3" target="_blank">
+            <img src="{{ page.book-cover }}" alt="{{ page.book-title }}">
+            <div class="book-details">
+              <h2>{{ page.book-title }}</h2>
+              <p class=>{{ page.book-author }}</p>
+              <div class="rating rating-{{ page.book-rating }}">
+                <ul>
+                  <li>
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" transform=""><path class="star-base" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004 2.4696 5.004 5.5216.8024-3.996 3.8944.944 5.4992z"/><path class="star-half" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004z"/></g></svg>
+                  </li>
+                  <li>
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" transform=""><path class="star-base" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004 2.4696 5.004 5.5216.8024-3.996 3.8944.944 5.4992z"/><path class="star-half" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004z"/></g></svg>
+                  </li>
+                  <li>
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" transform=""><path class="star-base" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004 2.4696 5.004 5.5216.8024-3.996 3.8944.944 5.4992z"/><path class="star-half" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004z"/></g></svg>
+                  </li>
+                  <li>
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" transform=""><path class="star-base" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004 2.4696 5.004 5.5216.8024-3.996 3.8944.944 5.4992z"/><path class="star-half" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004z"/></g></svg>
+                  </li>
+                  <li>
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" transform=""><path class="star-base" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004 2.4696 5.004 5.5216.8024-3.996 3.8944.944 5.4992z"/><path class="star-half" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004z"/></g></svg>
+                  </li>
+                </ul>
+              </div>
+              <button class="ic_external">
+                <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m13.8786797 8h-6.3786797c-.82842712 0-1.5-.67157288-1.5-1.5s.67157288-1.5 1.5-1.5h10c.8284271 0 1.5.67157288 1.5 1.5v10c0 .8284271-.6715729 1.5-1.5 1.5s-1.5-.6715729-1.5-1.5v-6.3786797l-8.95020426 8.9502043c-.58578644.5857864-1.53553391.5857864-2.12132035 0-.58578643-.5857864-.58578643-1.5355339 0-2.1213203z"/></svg>
+                <span class="label">{{ page.book-url-label }}</span>
+              </button>
+              </div>
+            </a>
+        </div>
+    {% endif %}
+
+
+
+ {% if page.tags != nil %}
+
+  <div class="tags">
+
+    <ul class="list">
+      {% for tag in page.tags %}
+      <li><a href="">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+{% endif %}
+
+
+  {% include nextpost.html %}
+
 
   {% include footer.html %}
+
 
   {% include script.html %}
 

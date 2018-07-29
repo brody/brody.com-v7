@@ -31,8 +31,8 @@ dribbble_username:  brodymaclean
 # Build settings
 markdown: kramdown
 permalink: /:title/
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 
 # Sass settings
 sass:

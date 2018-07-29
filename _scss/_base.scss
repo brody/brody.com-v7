@@ -1,0 +1,12 @@
+* {
+  // transition: all 0.3s cubic-bezier(0.165, 0.63, 0.14, 0.82);
+}
+
+body {
+  padding: 80px 0 24px;
+  @include breakpoint($sm) {}
+  @include breakpoint($md) {}
+  @include breakpoint($lg) {
+    padding: 128px 0 24px;
+  }
+}

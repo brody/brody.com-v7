@@ -3,14 +3,12 @@ layout: default
 title: Journal
 ---
 
-  <section class="intro cont w-90 center mw9 pt5 pb4 pt5-m pb5-m pt5-l pb5-l wow fadeIn" data-wow-delay="0.2s">
+  <!-- <section class="intro cont w-90 center mw9 pt5 pb4 pt5-m pb5-m pt5-l pb5-l wow fadeIn" data-wow-delay="0.2s">
     <h1 class="mv0 ph2-l fw5 f3 f2-m f1-l tc normal lh-copy lh-title-ns black-80">Journal</h1>
   </section>
 
   <section class="journal mw9 w-90 center pt5 pb1 wow fadeIn" id="journal" data-wow-delay="0.4s">
-    <!-- <h2 class="w-90 cont w-100-l mv0 center fw4 f5 f4-m f4-l"><a href="#" class="ph2-l link dim dib color-inherit pv4 pv4-l">Journal →</a></h2> -->
     <div class="flex flex-wrap cont nested-list-reset">
-      <!-- <div class="clearfix w-100 right mb3 mw9 center"> -->
 
         {% for post in site.categories.journal %}
 
@@ -38,7 +36,23 @@ title: Journal
         {% endfor %}
 
 
-      <!-- </div> -->
     </div>
+
+  </section> -->
+
+
+
+  <section id="journal" class="mw600 center lh-copy mb5 mb6-ns">
+
+    <h1 class="intro_title mb4">Journal</h1>
+
+    {% for post in site.categories.journal %}
+
+    <a href="{{ post.url }}" class="pv3 db bn">
+      <h1 class="mt0 mb2">{{ post.title }}</h1>
+      <p class="mv0">{{ post.description }}</p>
+    </a>
+
+    {% endfor %}
 
   </section>

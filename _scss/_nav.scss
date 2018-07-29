@@ -1,0 +1,227 @@
+// nav {
+//   &.bg-whitish {
+//     background-color: rgba(#fff, .98);
+//   }
+//   a.navbar-brand {
+//     .brandimg {
+//       height: 24px;
+//       width: 24px;
+//       background: url("https://emojipedia-us.s3.amazonaws.com/thumbs/240/apple/114/nerd-face_1f913.png") no-repeat center center;
+//       background-size: cover;
+//     }
+//
+//     &:hover {
+//       .brandimg {
+//         background: url("https://emojipedia-us.s3.amazonaws.com/thumbs/240/apple/114/thinking-face_1f914.png") no-repeat center center;
+//         height: 24px;
+//         width: 24px;
+//         background-size: cover;
+//       }
+//     }
+//     @include breakpoint($md) {
+//       .brandimg {
+//         height: 32px;
+//         width: 32px;
+//         background: url("https://emojipedia-us.s3.amazonaws.com/thumbs/240/apple/114/nerd-face_1f913.png") no-repeat center center;
+//         background-size: cover;
+//       }
+//       &:hover {
+//         .brandimg {
+//           background: url("https://emojipedia-us.s3.amazonaws.com/thumbs/240/apple/114/thinking-face_1f914.png") no-repeat center center;
+//           height: 32px;
+//           width: 32px;
+//           background-size: cover;
+//         }
+//       }
+//     }
+//   }
+//
+//   a {
+//     color: rgba(0,0,0,.5);
+//
+//     &:hover {
+//       color: rgba(0,0,0,.3);
+//       text-decoration: none;
+//     }
+//   }
+// }
+//
+// body {
+//   margin-top: 56px;
+//   @include breakpoint($md) {
+//     margin-top: 72px;
+//   }
+// }
+
+nav {
+  // padding: 8px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  a#logo {
+    z-index: 999;
+    border: 0;
+    position: fixed;
+    padding: 16px;
+
+    svg {
+      height: 40px;
+      width: 40px;
+    }
+
+    &:hover {
+      border: 0;
+
+      svg {}
+    }
+  }
+
+  #btn-hamburger {
+    z-index: 999;
+    padding: 16px;
+
+    .hamburger-bg {
+      // background-color: $grey;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg#hamburger {
+        // fill: $grey-lighter;
+      }
+    }
+
+    &:active,
+    &:hover {
+      cursor: pointer;
+
+      .hamburger-bg {
+        // background-color: $primary;
+      }
+    }
+  }
+  @include breakpoint($md) {
+    #btn-hamburger,
+    a#logo {
+      padding: 32px 40px 8px;
+    }
+  }
+  @include breakpoint($lg) {
+    #btn-hamburger,
+    a#logo {
+      // padding: 48px 56px 8px;
+    }
+  }
+}
+
+#menu {
+  width: 265px;
+  transform: translate3d(320px, 0, 0);
+  -moz-transform: translate3d(320px, 0, 0);
+  -webkit-transform: translate3d(320px, 0, 0);
+  transition-property: all;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
+  -moz-transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
+  -o-transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
+  transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
+  padding: 80px 20px 24px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  // background-color: $grey-lightest;
+  // border-left: 1px solid $grey-lighter;
+  position: fixed;
+  z-index: 98;
+  // box-shadow: 0 0 24px 0 rgba($grey,0.5);
+
+  #site-details {
+    display: block;
+    border-width: 0;
+
+    &:hover {
+      h1 {
+        // color: $primary;
+      }
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  h2 {
+    // color: $grey;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  ul {
+    margin: 24px 0 32px;
+
+    li {
+      margin: 0;
+      padding: 0;
+
+      a {
+        svg {
+          float: left;
+          margin-right: 16px;
+        }
+        padding: 8px 0;
+        display: block;
+        border-width: 0;
+        font-size: 18px;
+        line-height: 24px;
+        // color: $grey-dark;
+        // fill: $grey;
+
+        &:hover {
+          // color: $primary;
+          // fill: $primary;
+        }
+      }
+    }
+  }
+
+  ul#site-menu a {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &.is-open {
+    transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  @include breakpoint($md) {
+    padding: 104px 32px 32px;
+    width: 300px;
+
+    #site-details,
+    #social-links {
+      display: block;
+    }
+  }
+}
+
+
+@media screen and (orientation:landscape)
+and (min-device-width: 319px)
+and (max-device-width: 480px) {
+   #menu {
+     width: 200px;
+     #site-details,
+     #social-links {
+       display: none;
+     }
+   }
+}
