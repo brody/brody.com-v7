@@ -3,10 +3,10 @@
 }
 
 body {
-  padding: 80px 0 24px;
+  padding: 80px 0 0;
   @include breakpoint($sm) {}
   @include breakpoint($md) {}
   @include breakpoint($lg) {
-    padding: 128px 0 24px;
+    padding: 128px 0 0;
   }
 }

@@ -3,42 +3,31 @@
 
 {% include head.html %}
 
-<!-- <body class="sans-serif black-50 mt5 mt6-l post wow fadeIn" onload="nightmode()" data-wow-delay="0.33s"> -->
 <body class="sans-serif">
-
 
   {% include header.html %}
 
   <section class="container post lh-copy">
 
-    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %B %Y" }}</time>
+    <time datetime="{{ page.date | date: " %Y-%m-%d " }}">{{ page.date | date: "%-d %B %Y" }}</time>
 
     <h1 class="article_title mv3">
       <a href="{{ page.url }}">{{ page.title }}</a>
-    </h1>
-
-    {% if page.sub-title != nil %}
-    <h2 class="article_sub-title mt3 mb4">{{ page.sub-title }}</h2>
-    {% endif %}
-
-    {% if page.source-url != nil %}
+    </h1> {% if page.sub-title != nil %}
+    <h2 class="article_sub-title mt3 mb4">{{ page.sub-title }}</h2> {% endif %} {% if page.source-url != nil %}
     <div class="link-card">
-          <a href="{{ page.source-url }}" class="block rounded card p2 active-hover my3" target="_blank">
-            <p class=>Source:</p>
-            <h2>{{ page.source-title }}</h2>
-            <button class="ic_external">
+      <a href="{{ page.source-url }}" class="block rounded card p2 active-hover my3" target="_blank">
+        <p class=>Source:</p>
+        <h2>{{ page.source-title }}</h2>
+        <button class="ic_external">
                 <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m13.8786797 8h-6.3786797c-.82842712 0-1.5-.67157288-1.5-1.5s.67157288-1.5 1.5-1.5h10c.8284271 0 1.5.67157288 1.5 1.5v10c0 .8284271-.6715729 1.5-1.5 1.5s-1.5-.6715729-1.5-1.5v-6.3786797l-8.95020426 8.9502043c-.58578644.5857864-1.53553391.5857864-2.12132035 0-.58578643-.5857864-.58578643-1.5355339 0-2.1213203z"/></svg>
                 <span class="label">{{ page.source-url-label }}</span>
               </button>
-          </a>
-        </div>
-    {% endif %}
-
-    {{ content }}
-
-    {% if page.book-title != nil %}
+      </a>
+    </div>
+    {% endif %} {{ content }} {% if page.book-title != nil %}
     <div class="book-card">
-          <a href="{{ page.book-url }}" class="block rounded card p2 active-hover my3" target="_blank">
+      <a href="{{ page.book-url }}" class="block rounded card p2 active-hover my3" target="_blank">
             <img src="{{ page.book-cover }}" alt="{{ page.book-title }}">
             <div class="book-details">
               <h2>{{ page.book-title }}</h2>
@@ -68,35 +57,20 @@
               </button>
               </div>
             </a>
-        </div>
-    {% endif %}
+    </div>
+    {% endif %} {% if page.tags != nil %}
 
+    <div class="tags">
 
+      <ul class="list">
+        {% for tag in page.tags %}
+        <li><a href="">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
 
- {% if page.tags != nil %}
+    </div>
 
-  <div class="tags">
-
-    <ul class="list">
-      {% for tag in page.tags %}
-      <li><a href="">{{ tag }}</a></li>
-      {% endfor %}
-    </ul>
-
-  </div>
-
-{% endif %}
-
-
-  {% include nextpost.html %}
-
-
-  {% include footer.html %}
-
-
-  {% include script.html %}
-
-  {% include ga.html %}
+    {% endif %} {% include nextpost.html %} {% include footer.html %} {% include script.html %} {% include ga.html %}
 
 </body>
 

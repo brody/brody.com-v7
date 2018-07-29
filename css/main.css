@@ -1,15 +1,12 @@
 @charset "UTF-8";
 body {
-  padding: 80px 0 24px; }
+  padding: 80px 0 0; }
   @media screen and (min-width: 60em) {
     body {
-      padding: 128px 0 24px; } }
+      padding: 128px 0 0; } }
 
 .mw600 {
   max-width: 600px; }
-
-.post {
-  padding: 0 0 40px; }
 
 blockquote,
 h1,
@@ -225,7 +222,7 @@ button {
 .next-post {
   border-top: 1px solid #EBEBFF; }
   .next-post a {
-    padding: 48px 0;
+    padding: 48px 0 64px;
     display: block;
     border: 0; }
     .next-post a h3 {
@@ -326,7 +323,8 @@ button {
   position: relative;
   height: 350px;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  cursor: not-allowed; }
   #work a:hover {
     border: none; }
     #work a:hover .work-details h1:after {

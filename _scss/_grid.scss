@@ -3,7 +3,7 @@
 }
 
 .post {
-  padding: 0 0 40px;
+  // padding: 0 0 40px;
 }
 
 blockquote,
@@ -291,7 +291,7 @@ button {
   border-top: 1px solid $grey-lighter;
 
   a {
-    padding: 48px 0;
+    padding: 48px 0 64px;
     display: block;
     border: 0;
 
@@ -439,6 +439,7 @@ button {
     position: relative;
     height: 350px;
     display: flex;
+    cursor: not-allowed; //remove once case studies added
 
     &:hover {
       border: none;
