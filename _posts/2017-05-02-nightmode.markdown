@@ -20,6 +20,6 @@ Want to check it out before 6pm? Add `class: "night"` to the body tag in the DOM
 
 ---
 
-# Update
+## <mark>Update – 27 July 2018</mark>
 
 There is now a Nightmode toggle in the right hand menu. Click on the moon icon to check it out.

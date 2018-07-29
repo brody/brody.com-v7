@@ -383,6 +383,75 @@ button {
     #work a#sweep .work-logo {
       height: 70px; }
 
+.goodreads {
+  line-height: 1.3; }
+  .goodreads img {
+    margin: 0; }
+  .goodreads a {
+    border: 0; }
+
+.gr_custom_container_1524204944 {
+  /* customize your Goodreads widget container here*/
+  border: none;
+  background-color: transparent; }
+
+.gr_custom_header_1524204944 {
+  /* customize your Goodreads header here*/
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 150%; }
+
+.gr_custom_each_container_1524204944 {
+  /* customize each individual book container here */
+  width: 100%;
+  clear: both;
+  margin-bottom: 10px;
+  overflow: auto;
+  padding-bottom: 4px; }
+
+.gr_custom_book_container_1524204944 {
+  /* customize your book covers here */
+  overflow: hidden;
+  height: 60px;
+  float: left;
+  margin-right: 4px;
+  width: 39px; }
+
+.gr_custom_author_1524204944 {
+  /* customize your author names here */
+  font-size: 10px; }
+
+.gr_custom_tags_1524204944 {
+  /* customize your tags here */
+  font-size: 10px;
+  color: gray; }
+
+.gr_custom_rating_1524204944 {
+  /* customize your rating stars here */
+  float: right; }
+
+.gr_custom_container_1524204944 a {
+  text-decoration: none;
+  color: #333; }
+
+.gr_custom_container_1524204944 center,
+.gr_custom_container_1524204944 h2 {
+  display: none; }
+
+.gr_custom_container_1524204944 .gr_custom_book_container_1524204944 {
+  width: auto;
+  height: auto;
+  margin-right: 16px; }
+
+.gr_custom_container_1524204944 .gr_custom_title_1524204944 {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 4px; }
+
+.gr_custom_container_1524204944 .gr_custom_author_1524204944 {
+  font-size: 14px; }
+
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -866,7 +935,7 @@ nav {
   .night p {
     color: #EBEBFF; }
   .night hr {
-    border-top: 1px solid #454257; }
+    border-color: #454257; }
   .night nav a#logo svg {
     fill: #EBEBFF; }
   .night nav a#logo:hover svg {
@@ -878,16 +947,18 @@ nav {
     .night nav #btn-hamburger:active .hamburger-bg, .night nav #btn-hamburger:hover .hamburger-bg {
       background-color: #9058B0; }
   .night a {
-    border-bottom: 2px solid #6A667D; }
+    border-color: #6A667D; }
     .night a:hover {
-      border-bottom: 2px solid #9058B0; }
+      border-color: #9058B0; }
   .night h2.article_sub-title {
+    color: #908CA3; }
+  .night h3.section-header {
     color: #908CA3; }
   .night a,
   .night a:visited {
     color: #F8F7FA; }
   .night blockquote {
-    border-left: 8px solid #9058B0;
+    border-color: #9058B0;
     color: #EBEBFF; }
   .night mark {
     background-color: #47463B;
@@ -909,11 +980,11 @@ nav {
     color: #908CA3; }
   .night .book-card img,
   .night .link-card img {
-    border: 1px solid #6A667D; }
+    border-color: #6A667D; }
   .night .rating ul li .star-base {
     fill: #6A667D; }
   .night .next-post {
-    border-top: 1px solid rgba(69, 66, 87, 0.25); }
+    border-color: rgba(69, 66, 87, 0.25); }
     .night .next-post a {
       border: 0; }
       .night .next-post a h3 {
@@ -925,7 +996,7 @@ nav {
           color: #9058B0; }
   .night #menu {
     background-color: #252230;
-    border-left: 1px solid #312d3f;
+    border-color: #312d3f;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.5); }
     .night #menu #site-details:hover h1 {
       color: #9058B0; }
