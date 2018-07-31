@@ -29,6 +29,7 @@ github_username:  brody
 dribbble_username:  brodymaclean
 
 # Build settings
+timezone: Australia/Sydney
 markdown: kramdown
 permalink: /:title/
 # plugins:
