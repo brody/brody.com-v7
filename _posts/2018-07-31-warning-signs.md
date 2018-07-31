@@ -10,7 +10,7 @@ thumbnail:
 category: journal
 tags: Business
 
-description:
+description: You can tell a lot about your initial experience with a company.
 
 source-title:
 source-url:
