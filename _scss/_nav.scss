@@ -88,32 +88,34 @@ nav {
       width: 18px;
       height: 2px;
       transition-timing-function: ease;
-      transition-duration: .15s;
+      transition-duration: 0.15s;
       transition-property: transform;
       border-radius: 4px;
       background-color: $white;
       content: "";
       display: block;
 
-      &:after, &:before {
+      &:after,
+      &:before {
         position: absolute;
         width: 18px;
         height: 2px;
         transition-timing-function: ease;
-        transition-duration: .15s;
+        transition-duration: 0.15s;
         transition-property: transform;
         border-radius: 4px;
         background-color: $white;
         content: "";
         display: block;
       }
+
       &:after {
         bottom: -6px;
       }
+
       &:before {
         top: -6px;
       }
-
     }
 
     .hamburger__bg {
@@ -124,58 +126,37 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
 
+      &:active,
+      &:hover {
+        cursor: pointer;
 
-
-      // svg#hamburger {
-      //   // fill: $grey-lighter;
-      //   #hamburger-1 {
-      //     transition-delay: .12s;
-      //     transition-timing-function: cubic-bezier(.215,.61,.355,1);
-      //     transform: rotate(45deg) translate(6px, -6px);
-      //   }
-      //   #hamburger-2 {
-      //     opacity: 0;
-      //  }
-      //  #hamburger-3 {
-      //    transition-delay: .12s;
-      //    transition-timing-function: cubic-bezier(.215,.61,.355,1);
-      //    transform: rotate(-45deg) translate(11px, 0px);
-      //  }
-      // }
+        .hamburger__bg {
+          background-color: $primary;
+        }
 
     }
 
-    &:active,
-    &:hover {
-      cursor: pointer;
+    &.is-open {
+      .hamburger__inner {
+        transition-delay: 0.12s;
+        transition-timing-function: cubic-bezier(.215,.61,.355,1);
+        transform: rotate(45deg);
 
-      .hamburger__bg {
-        // background-color: $primary;
+        &:after {
+          bottom: 0;
+          transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) 0.12s;
+          transform: rotate(-90deg);
+        }
+
+        &:before {
+          top: 0;
+          transition: top 75ms ease,opacity 75ms ease 0.12s;
+          opacity: 0;
+        }
       }
     }
-
-&.is-open {
-  .hamburger__inner {
-    transition-delay: .12s;
-    transition-timing-function: cubic-bezier(.215,.61,.355,1);
-    transform: rotate(45deg);
-
-    &:after {
-      bottom: 0;
-      transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
-      transform: rotate(-90deg);
-        }
-    &:before {
-      top: 0;
-    transition: top 75ms ease,opacity 75ms ease .12s;
-    opacity: 0;
-    }
-
-  }
-
-}
-
   }
   @include breakpoint($md) {
     .hamburger,
@@ -212,7 +193,6 @@ nav {
   position: fixed;
   z-index: 98;
   // box-shadow: 0 0 24px 0 rgba($grey,0.5);
-
   #site-details {
     display: block;
     border-width: 0;
@@ -253,7 +233,6 @@ nav {
         line-height: 24px;
         // color: $grey-dark;
         // fill: $grey;
-
         &:hover {
           // color: $primary;
           // fill: $primary;
@@ -272,7 +251,6 @@ nav {
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
   }
-
   @include breakpoint($md) {
     padding: 104px 32px 32px;
     width: 300px;
@@ -283,16 +261,13 @@ nav {
     }
   }
 }
+@media screen and (orientation:landscape) and (min-device-width: 319px) and (max-device-width: 480px) {
+  #menu {
+    width: 200px;
 
-
-@media screen and (orientation:landscape)
-and (min-device-width: 319px)
-and (max-device-width: 480px) {
-   #menu {
-     width: 200px;
-     #site-details,
-     #social-links {
-       display: none;
-     }
-   }
+    #site-details,
+    #social-links {
+      display: none;
+    }
+  }
 }

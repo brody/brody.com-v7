@@ -783,9 +783,9 @@ time {
         color: #9058B0; }
 
 #menu {
-  background-color: #F8F7FA;
+  background-color: white;
   border-left: 1px solid #EBEBFF;
-  box-shadow: 0 0 24px 0 rgba(144, 140, 163, 0.5); }
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12345); }
   #menu #site-details:hover h1 {
     color: #9058B0; }
   #menu h2 {
@@ -821,7 +821,7 @@ nav {
       width: 18px;
       height: 2px;
       transition-timing-function: ease;
-      transition-duration: .15s;
+      transition-duration: 0.15s;
       transition-property: -webkit-transform;
       transition-property: transform;
       border-radius: 4px;
@@ -833,7 +833,7 @@ nav {
         width: 18px;
         height: 2px;
         transition-timing-function: ease;
-        transition-duration: .15s;
+        transition-duration: 0.15s;
         transition-property: -webkit-transform;
         transition-property: transform;
         border-radius: 4px;
@@ -857,8 +857,10 @@ nav {
           align-items: center; }
     nav .hamburger:active, nav .hamburger:hover {
       cursor: pointer; }
+      nav .hamburger:active .hamburger__bg, nav .hamburger:hover .hamburger__bg {
+        background-color: #9058B0; }
     nav .hamburger.is-open .hamburger__inner {
-      transition-delay: .12s;
+      transition-delay: 0.12s;
       transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg); }
@@ -870,7 +872,7 @@ nav {
                 transform: rotate(-90deg); }
       nav .hamburger.is-open .hamburger__inner:before {
         top: 0;
-        transition: top 75ms ease,opacity 75ms ease .12s;
+        transition: top 75ms ease,opacity 75ms ease 0.12s;
         opacity: 0; }
   @media screen and (min-width: 45em) {
     nav .hamburger,
@@ -1032,9 +1034,9 @@ nav {
         .night .next-post a:hover h1 {
           color: #9058B0; }
   .night #menu {
-    background-color: #252230;
-    border-color: #312d3f;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.5); }
+    background-color: #191721;
+    border-color: #131118;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.345); }
     .night #menu #site-details:hover h1 {
       color: #9058B0; }
     .night #menu h2 {

@@ -60,4 +60,5 @@ $('nav').click(function(event) {
 
 $(document).click(function() {
   $('#menu').removeClass('is-open');
+  $('.hamburger').removeClass('is-open');
 });

@@ -270,9 +270,9 @@ time {
 }
 
 #menu {
-  background-color: $grey-lightest;
+  background-color: lighten($grey-lightest, 10%);
   border-left: 1px solid $grey-lighter;
-  box-shadow: 0 0 24px 0 rgba($grey,0.5);
+  box-shadow: 0 0 24px 0 rgba($black,0.12345);
   #site-details {
     &:hover {
       h1 {

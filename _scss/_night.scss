@@ -181,9 +181,11 @@
   }
 
   #menu {
-    background-color: $grey-darkest;
-    border-color: lighten($grey-darkest,5);
-    box-shadow: 0 0 24px 0 rgba($black,0.5);
+    background-color: darken($grey-darkest, 5%);
+
+    // background-color: $grey-darkest;
+    border-color: darken($grey-darkest, 8%);
+    box-shadow: 0 0 24px 0 rgba($black,0.345);
 
     #site-details {
       &:hover {
