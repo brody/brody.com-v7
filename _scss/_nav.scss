@@ -79,12 +79,45 @@ nav {
     }
   }
 
-  #btn-hamburger {
+  .hamburger {
     z-index: 999;
     padding: 16px;
 
-    .hamburger-bg {
-      // background-color: $grey;
+    .hamburger__inner {
+      position: absolute;
+      width: 18px;
+      height: 2px;
+      transition-timing-function: ease;
+      transition-duration: .15s;
+      transition-property: transform;
+      border-radius: 4px;
+      background-color: $white;
+      content: "";
+      display: block;
+
+      &:after, &:before {
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        transition-timing-function: ease;
+        transition-duration: .15s;
+        transition-property: transform;
+        border-radius: 4px;
+        background-color: $white;
+        content: "";
+        display: block;
+      }
+      &:after {
+        bottom: -6px;
+      }
+      &:before {
+        top: -6px;
+      }
+
+    }
+
+    .hamburger__bg {
+      background-color: $grey;
       border-radius: 50%;
       height: 40px;
       width: 40px;
@@ -92,28 +125,66 @@ nav {
       justify-content: center;
       align-items: center;
 
-      svg#hamburger {
-        // fill: $grey-lighter;
-      }
+
+
+      // svg#hamburger {
+      //   // fill: $grey-lighter;
+      //   #hamburger-1 {
+      //     transition-delay: .12s;
+      //     transition-timing-function: cubic-bezier(.215,.61,.355,1);
+      //     transform: rotate(45deg) translate(6px, -6px);
+      //   }
+      //   #hamburger-2 {
+      //     opacity: 0;
+      //  }
+      //  #hamburger-3 {
+      //    transition-delay: .12s;
+      //    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+      //    transform: rotate(-45deg) translate(11px, 0px);
+      //  }
+      // }
+
     }
 
     &:active,
     &:hover {
       cursor: pointer;
 
-      .hamburger-bg {
+      .hamburger__bg {
         // background-color: $primary;
       }
     }
+
+&.is-open {
+  .hamburger__inner {
+    transition-delay: .12s;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transform: rotate(45deg);
+
+    &:after {
+      bottom: 0;
+      transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+      transform: rotate(-90deg);
+        }
+    &:before {
+      top: 0;
+    transition: top 75ms ease,opacity 75ms ease .12s;
+    opacity: 0;
+    }
+
+  }
+
+}
+
   }
   @include breakpoint($md) {
-    #btn-hamburger,
+    .hamburger,
     a#logo {
       padding: 32px 40px 8px;
     }
   }
   @include breakpoint($lg) {
-    #btn-hamburger,
+    .hamburger,
     a#logo {
       // padding: 48px 56px 8px;
     }

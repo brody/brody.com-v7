@@ -55,19 +55,22 @@
       }
     }
 
-    #btn-hamburger {
-      .hamburger-bg {
+    .hamburger {
+      .hamburger__bg {
         // background-color: $grey;
-        svg#hamburger {
-          fill: $grey-darkest;
+        .hamburger__inner {
+          background-color: $grey-darkest;
+
+          &:after, &:before {
+            background-color: $grey-darkest;
         }
-      }
+      }}
 
       &:active,
       &:hover {
         cursor: pointer;
 
-        .hamburger-bg {
+        .hamburger__bg {
           background-color: $primary;
         }
       }

@@ -42,9 +42,11 @@ $('#moon').on('click', function() {
 });
 
 
-$('#btn-hamburger').click(function(event) {
+$('.hamburger').click(function(event) {
   event.stopPropagation();
   $('#menu').toggleClass('is-open');
+  $(this).toggleClass('is-open');
+
 });
 
 $('#menu').click(function(event) {
