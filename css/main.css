@@ -424,7 +424,10 @@ button {
   .goodreads .gr_custom_container_1524204944 center, .goodreads .gr_custom_container_1532863785 center {
     display: none; }
   .goodreads .gr_custom_container_1524204944 a, .goodreads .gr_custom_container_1532863785 a {
-    text-decoration: none; }
+    text-decoration: none;
+    border-bottom: 2px solid transparent; }
+    .goodreads .gr_custom_container_1524204944 a:hover, .goodreads .gr_custom_container_1532863785 a:hover {
+      border-bottom: 2px solid #9058B0; }
   .goodreads .gr_custom_container_1524204944 .gr_custom_book_container_1524204944,
   .goodreads .gr_custom_container_1524204944 .gr_custom_book_container_1532863785, .goodreads .gr_custom_container_1532863785 .gr_custom_book_container_1524204944,
   .goodreads .gr_custom_container_1532863785 .gr_custom_book_container_1532863785 {
@@ -442,6 +445,31 @@ button {
   .goodreads .gr_custom_container_1524204944 .gr_custom_author_1532863785, .goodreads .gr_custom_container_1532863785 .gr_custom_author_1524204944,
   .goodreads .gr_custom_container_1532863785 .gr_custom_author_1532863785 {
     font-size: 14px; }
+
+#lastFM {
+  margin-bottom: 80px; }
+  #lastFM ul li {
+    line-height: 1.3;
+    margin-bottom: 16px;
+    height: 88px; }
+    #lastFM ul li img {
+      width: 88px;
+      height: auto;
+      margin: 0 16px 0 0;
+      float: left; }
+    #lastFM ul li .track {
+      font-weight: 600;
+      font-size: 1.1em;
+      padding-top: 4px; }
+      #lastFM ul li .track a {
+        border-color: transparent; }
+        #lastFM ul li .track a:hover {
+          border-color: #9058B0; }
+    #lastFM ul li .artist {
+      font-size: 1.1em; }
+    #lastFM ul li .date {
+      font-size: .8em;
+      margin-top: 8px; }
 
 body {
   text-rendering: optimizeLegibility;
@@ -802,12 +830,14 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99; }
+  z-index: 99;
+  pointer-events: none; }
   nav a#logo {
     z-index: 999;
     border: 0;
     position: fixed;
-    padding: 16px; }
+    padding: 16px;
+    pointer-events: all; }
     nav a#logo svg {
       height: 40px;
       width: 40px; }
@@ -815,7 +845,8 @@ nav {
       border: 0; }
   nav .hamburger {
     z-index: 999;
-    padding: 16px; }
+    padding: 16px;
+    pointer-events: all; }
     nav .hamburger .hamburger__inner {
       position: absolute;
       width: 18px;

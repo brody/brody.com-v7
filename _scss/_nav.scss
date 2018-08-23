@@ -60,12 +60,14 @@ nav {
   top: 0;
   left: 0;
   z-index: 99;
+  pointer-events: none;
 
   a#logo {
     z-index: 999;
     border: 0;
     position: fixed;
     padding: 16px;
+    pointer-events: all;
 
     svg {
       height: 40px;
@@ -82,6 +84,7 @@ nav {
   .hamburger {
     z-index: 999;
     padding: 16px;
+    pointer-events: all;
 
     .hamburger__inner {
       position: absolute;
