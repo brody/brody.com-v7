@@ -155,7 +155,7 @@ $('#nowPlayingBox').nowplaying({
 			$myDiv.children('.error').remove();
 
 			//create URL
-			var url = 'http://ws.audioscrobbler.com/2.0/?callback=?',
+			var url = 'https://ws.audioscrobbler.com/2.0/?callback=?',
 				params = {
 					method:  "user.getrecenttracks",
 					format:  "json",
@@ -370,7 +370,7 @@ $('#nowPlayingBox').nowplaying({
 			$myDiv.children('.error').remove();
 
 			//create URL
-			var url = 'http://ws.audioscrobbler.com/2.0/?callback=?',
+			var url = 'https://ws.audioscrobbler.com/2.0/?callback=?',
 				params = {
 					method:  "user.getrecenttracks",
 					format:  "json",
