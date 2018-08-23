@@ -5,7 +5,7 @@ layout: post
 description: Sometimes all you need is a little text change to save your business a lot of money.
 ---
 
-Coming Soon
+Work in progress 🚧
 
 ---
 
@@ -41,6 +41,8 @@ Coming Soon
 <ul class="list pl0">
 
 </ul>
+
+<iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:brodymaclean&size=detail&theme=light&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
 
 </div>
 
