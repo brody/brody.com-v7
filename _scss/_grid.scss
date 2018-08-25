@@ -524,12 +524,8 @@ button {
     }
   }
 }
-
-
 // about ////////////////////////////////////////////
-
 //Goodreads
-
 .goodreads {
   line-height: 1.3;
 
@@ -591,14 +587,17 @@ button {
     float: right;
   }
 
-  .gr_custom_container_1524204944, .gr_custom_container_1532863785  {
+  .gr_custom_container_1524204944,
+  .gr_custom_container_1532863785 {
     center {
       display: none;
     }
+
     a {
       text-decoration: none;
       // color: #333;
       border-bottom: 2px solid transparent;
+
       &:hover {
         border-bottom: 2px solid $primary;
       }
@@ -625,50 +624,96 @@ button {
     }
   }
 }
-
-// LastFM
-
-#lastFM {
+// LastFM /////////////////////////////////////
+.lastFM {
   margin-bottom: 80px;
 
-ul {
-  li {
-    line-height: 1.3;
-    // clear: both;
-    margin-bottom: 16px;
-    // display: flex;
-    // flex-wrap: wrap;
-    height: 88px;
-    img {
-      width: 88px;
-      height: auto;
-      margin: 0 16px 0 0;
-      float: left;
-      // display: inline-block;
+    li {
+      line-height: 1.3;
+      // clear: both;
+      margin-bottom: 16px;
+      // display: flex;
+      // flex-wrap: wrap;
+      min-height: 88px;
     }
-    .track {
-      font-weight: 600;
-      font-size: 1.1em;
-      // margin-bottom: 4px;
-      padding-top: 4px;
-      // display: inline-block;
-      a {
-        border-color: transparent;
-        &:hover {
-          border-color: $primary;
+
+    #lastFM-recent-tracks, #lastFM-top-artists {
+      margin-bottom: 40px;
+    }
+
+
+      img {
+        width: 88px;
+        height: auto;
+        margin: 0 16px 0 0;
+        float: left;
+        // display: inline-block;
+      }
+
+      #lastFM-recent-tracks .track, #lastFM-top-artists .artist {
+        font-weight: 600;
+        font-size: 1.1em;
+        // margin-bottom: 4px;
+        padding-top: 6px;
+        // display: inline-block;
+        a {
+          border-color: transparent;
+
+          &:hover {
+            border-color: $primary;
+          }
         }
       }
-    }
-    .artist {
-      font-size: 1.1em;
-      // display: inline-block;
-    }
-    .date {
-      font-size: .8em;
-      margin-top: 8px;
-      // display: inline-block;
-     }
-  }
-}
+
+      .artist {
+        font-size: 1.1em;
+        // display: inline-block;
+      }
+
+      #lastFM-recent-tracks .date, #lastFM-top-artists .play-count {
+        font-size: 0.9em;
+        margin-top: 8px;
+        opacity: .9;
+        // display: inline-block;
+      }
+      .track--now-playing::after {
+        content:url('/assets/images/track-nowplaying.gif');
+        margin-left: 4px;
+      }
+
+      .button {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        border-bottom: 0;
+        // height: 32px;
+        border-radius: 100px;
+        padding: 2px 14px 2px 10px;;
+        fill: $white;
+        color: $white;
+        font-weight: 500;
+        margin-right: 12px;
+        float: left;
+        font-size: 14px;
+        &:hover {
+          opacity: .6;
+        }
+
+        svg {
+          // display: inline-block;
+          margin-right: 8px;
+        }
+        span {
+          // display: inline-block;
+        }
+      }
+      .button--spotify {
+        background-color: #2EBD59;
+      }
+      .button--soundcloud {
+        background: linear-gradient(#f70,#f30);
+      }
 
 }
+
+#lastFM-recent-tracks {}
