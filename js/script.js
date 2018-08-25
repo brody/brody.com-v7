@@ -287,7 +287,7 @@ $(document).click(function() {
 // LastFm Top Artists ////////////////////////////////////////////
 
 $(document).ready(function() {
-    $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=brodym&api_key=75176bb2349e51a475ea56ac979f7dc4&period=1month&limit=5&format=json&callback=?", function(json) {
+    $.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=brodym&api_key=75176bb2349e51a475ea56ac979f7dc4&period=1month&limit=5&format=json&callback=?", function(json) {
         var html = '';
         $.each(json.topartists.artist, function(i, item) {
             html += "<li><img src=" + item.image[2]['#text'] + " alt=" + item.name + "><div class='artist'><a href=" + item.url + " target='_blank'>" + item.name + "</a></div><div class='play-count'>" + item.playcount + " plays" + "</div></li>"

@@ -494,6 +494,7 @@ button {
     color: #FFF;
     font-weight: 500;
     margin-right: 12px;
+    margin-bottom: 8px;
     float: left;
     font-size: 14px; }
     .lastFM .button:hover {
