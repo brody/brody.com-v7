@@ -311,16 +311,11 @@ $(document).ready(function() {
             else {
               var offset = new Date().getTimezoneOffset()/60;
               var trackdateuts = new Date(item.date['#text']).toISOString().slice(0, -1);
-              var trackdate = "<div class='date timeago' title='" + trackdateuts + offset + "'></div>";
-              console.log(offset);
-              console.log(trackdateuts);
-
-              // var tzoffset = (new Date(item.date['#text'])).getTimezoneOffset() * 60000; //offset in milliseconds
-              // var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0, -1);
-              // => '2015-01-26T06:40:36.181'
-              // console.log(tzoffset);
-              // console.log(localISOTime);
-
+              var trackdate = "<div class='date timeago' title='" + trackdateuts + " " + offset + "'></div>";
+              // console.log(offset);
+              // console.log(item.date['#text']);
+              // console.log(trackdateuts);
+              // console.log(trackdate);
 
             }
 
