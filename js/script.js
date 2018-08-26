@@ -309,9 +309,19 @@ $(document).ready(function() {
               var trackdate = "<div class='date track--now-playing'> Now Playing </div>";
             }
             else {
-              var trackdateuts = new Date(item.date['#text']).toISOString();
               var offset = new Date().getTimezoneOffset()/60;
+              var trackdateuts = new Date(item.date['#text']).toISOString().slice(0, -1);
               var trackdate = "<div class='date timeago' title='" + trackdateuts + offset + "'></div>";
+              console.log(offset);
+              console.log(trackdateuts);
+
+              // var tzoffset = (new Date(item.date['#text'])).getTimezoneOffset() * 60000; //offset in milliseconds
+              // var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0, -1);
+              // => '2015-01-26T06:40:36.181'
+              // console.log(tzoffset);
+              // console.log(localISOTime);
+
+
             }
 
             if (item.image[2]['#text']) {
@@ -324,7 +334,7 @@ $(document).ready(function() {
             html += "<li>" + trackimage + "<div class='track'><a href=" + item.url + " target='_blank'>" + item.name + "</a></div><div class='artist'>" + item.artist['#text'] + "</div>" + trackdate + "</li>"
         });
         $('#lastFM-recent-tracks ul').append(html);
-        $(".timeago").timeago();
+        $(".timeago").timeago().delay(600);
 
     });
 
