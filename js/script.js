@@ -309,9 +309,9 @@ $(document).ready(function() {
               var trackdate = "<div class='date track--now-playing'> Now Playing </div>";
             }
             else {
-              var offset = new Date().getTimezoneOffset()/60;
+              var offset = new Date().getTimezoneOffset()/60*100;
               var trackdateuts = new Date(item.date['#text']).toISOString().slice(0, -1);
-              var trackdate = "<div class='date timeago' title='" + trackdateuts + " " + offset + "'></div>";
+              var trackdate = "<div class='date timeago' title='" + trackdateuts + offset + "'></div>";
               // console.log(offset);
               // console.log(item.date['#text']);
               // console.log(trackdateuts);
@@ -329,7 +329,7 @@ $(document).ready(function() {
             html += "<li>" + trackimage + "<div class='track'><a href=" + item.url + " target='_blank'>" + item.name + "</a></div><div class='artist'>" + item.artist['#text'] + "</div>" + trackdate + "</li>"
         });
         $('#lastFM-recent-tracks ul').append(html);
-        $(".timeago").timeago().delay(600);
+        $(".timeago").timeago();
 
     });
 

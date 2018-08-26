@@ -20,7 +20,7 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
     $query: append($query, "(max-width: #{map-get($map, max)})");
   }
   @media screen and #{$query} {
-     @content;
+     @content; 
   }
 }
 

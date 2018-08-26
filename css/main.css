@@ -489,14 +489,14 @@ button {
         align-items: center;
     border-bottom: 0;
     border-radius: 100px;
-    padding: 2px 14px 2px 10px;
+    padding: 6px 16px 6px 12px;
     fill: #FFF;
     color: #FFF;
     font-weight: 500;
     margin-right: 12px;
     margin-bottom: 8px;
     float: left;
-    font-size: 14px; }
+    font-size: 15px; }
     .lastFM .button:hover {
       opacity: .6; }
     .lastFM .button svg {
