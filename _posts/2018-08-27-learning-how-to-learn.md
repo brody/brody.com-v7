@@ -21,13 +21,13 @@ book-author: Barbara Oakley
 book-url: https://www.amazon.com/Mind-Numbers-Science-Flunked-Algebra-ebook/dp/B00G3L19ZU
 book-url-label: amazon.com
 book-cover: /images/book/a-mind-for-numbers.jpg
-book-rating:
+book-rating: 
 
 ---
 
 After having heard this course recommended for so long, I finally started it.
 
-Learning How to Learn provides practical advice on tackling daunting subjects and on beating procrastination, and the lessons engagingly blend neuroscience and common sense.
+"Learning How to Learn" provides practical advice on tackling daunting subjects and on beating procrastination, and the lessons engagingly blend neuroscience and common sense.
 
 The course has been taken by more than 1.8 million students from 200 countries, the most ever on Coursera.
 
