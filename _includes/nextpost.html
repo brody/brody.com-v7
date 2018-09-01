@@ -12,6 +12,7 @@
           {% assign prev_post = post.url %}
           {% assign prev_title = post.title %}
           {% assign prev_description = post.description %}
+          {% assign prev_date = post.date %}
       {% endif %}
   {% endfor %}
   {% if next_post %}
@@ -22,9 +23,10 @@
       <section class="next-post lh-copy">
 
         <a href="{{prev_post}}">
-          <h3>Next post</h3>
-          <h1>{{prev_title}}</h1>
-          <p>{{prev_description}}</p>
+          <h3 class="mt2">Next post</h3>
+          <time datetime="{{ prev_date | date: " %Y-%m-%d " }}">{{ prev_date | date: "%-d %B %Y" }}</time>
+          <h1 class="mt0 mb1">{{ prev_title }}</h1>
+          <p class="mv0">{{ prev_description }}</p>
         </a>
 
 

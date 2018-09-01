@@ -291,7 +291,7 @@ button {
   border-top: 1px solid $grey-lighter;
 
   a {
-    padding: 48px 0 64px;
+    padding: 56px 0 64px;
     display: block;
     border: 0;
 
@@ -299,13 +299,12 @@ button {
       box-sizing: border-box;
       padding-left: 16px;
       padding-right: 16px;
-      margin-top: 5px;
-      margin-bottom: 16px;
+      color: $grey;
     }
 
     h1 {
-      margin-top: 16px;
-      margin-bottom: 12px;
+      // margin-top: 16px;
+      // margin-bottom: 12px;
     }
 
     p {

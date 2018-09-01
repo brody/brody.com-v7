@@ -222,18 +222,14 @@ button {
 .next-post {
   border-top: 1px solid #EBEBFF; }
   .next-post a {
-    padding: 48px 0 64px;
+    padding: 56px 0 64px;
     display: block;
     border: 0; }
     .next-post a h3 {
       box-sizing: border-box;
       padding-left: 16px;
       padding-right: 16px;
-      margin-top: 5px;
-      margin-bottom: 16px; }
-    .next-post a h1 {
-      margin-top: 16px;
-      margin-bottom: 12px; }
+      color: #908CA3; }
     .next-post a p {
       margin: 0 auto 16px; }
 
@@ -852,7 +848,7 @@ time {
   .next-post a {
     border: 0; }
     .next-post a h3 {
-      color: #CECCD9; }
+      color: #908CA3; }
     .next-post a:hover {
       border: 0;
       background-color: rgba(37, 34, 48, 0.05); }
@@ -1107,7 +1103,7 @@ nav {
     .night .next-post a {
       border: 0; }
       .night .next-post a h3 {
-        color: #6A667D; }
+        color: #908CA3; }
       .night .next-post a:hover {
         border: 0;
         background-color: rgba(69, 66, 87, 0.15); }
