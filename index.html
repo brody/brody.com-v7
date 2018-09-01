@@ -27,7 +27,8 @@ layout: default
   {% for post in site.categories.journal limit:5 %}
 
   <a href="{{ post.url }}" class="pv3 db bn">
-    <h1 class="mt0 mb2">{{ post.title }}</h1>
+    <time class="" datetime="{{ page.date | date: " %Y-%m-%d " }}">{{ post.date | date: "%-d %B %Y" }}</time>
+    <h1 class="mt0 mb1">{{ post.title }}</h1>
     <p class="mv0">{{ post.description }}</p>
   </a>
 
