@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="bg-grey-lightest grey-darker">
 
 {% include head.html %}
 
@@ -9,12 +9,12 @@
 
   <section class="container post lh-copy">
 
-    <time datetime="{{ page.date | date: " %Y-%m-%d " }}">{{ page.date | date: "%-d %B %Y" }}</time>
+    <time class="f3 grey-light night-grey-dark db mt0 mb2 mw600 center" datetime="{{ page.date | date: " %Y-%m-%d " }}">{{ page.date | date: "%-d %B %Y" }}</time>
 
-    <h1 class="article_title mv3">
+    <h1 class="f-headline mv3">
       <a href="{{ page.url }}">{{ page.title }}</a>
     </h1> {% if page.sub-title != nil %}
-    <h2 class="article_sub-title mt3 mb4">{{ page.sub-title }}</h2> {% endif %} {% if page.source-url != nil %}
+    <h2 class="f-subheadline mt3 mb4 grey night-grey">{{ page.sub-title }}</h2> {% endif %} {% if page.source-url != nil %}
     <div class="link-card">
       <a href="{{ page.source-url }}" class="block rounded card p2 active-hover my3" target="_blank">
         <p class=>Source:</p>
@@ -60,11 +60,11 @@
     </div>
     {% endif %} {% if page.tags != nil %}
 
-    <div class="tags">
+    <div class="tags mv4">
 
-      <ul class="list">
+      <ul class="list ph3">
         {% for tag in page.tags %}
-        <li><a href="">{{ tag }}</a></li>
+        <li class="dib p0 mr3"><a href="" class="br5 bn ph3 pv2 white night-white bg-grey-light night-bg-grey-darker">{{ tag }}</a></li>
         {% endfor %}
       </ul>
 

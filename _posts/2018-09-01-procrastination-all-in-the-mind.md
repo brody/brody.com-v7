@@ -29,7 +29,7 @@ A study of 264 people's brains has identified two areas of the brain that determ
 
 It found that the amygdala, which processes our emotions and controls our motivation, was larger in procrastinators. They also had poorer connections between the amygdala and the dorsal anterior cingulate cortex (DACC). The DACC uses information from the amygdala and decides what action the body will take. It helps keep the person on track by blocking out competing emotions and distractions.
 
-> "[Research](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0064574) has already shown that mindfulness meditation is related to amygdala shrinkage, expansion of the pre-frontal cortex and a weakening of the connection between these two areas"
+> [Research](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0064574){: target="_blank"} has already shown that mindfulness meditation is related to amygdala shrinkage, expansion of the pre-frontal cortex and a weakening of the connection between these two areas
 
 # Tips for procrastinators
 

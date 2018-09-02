@@ -87,4 +87,4 @@ We believe that designing with surprise & delight in mind will foster allegiance
 We believe that great design requires iteration; that the best designs are used and honed, not created and delivered. We believe that <mark>great design requires failure</mark>, and therefore a great design process requires light-weight, living deliverables that allow for rapid and constant refinement.
 
 > There are really two things that have to occur in order for a new technology to be affordable to the mass market. One is you need economies of scale. The other is you need to iterate on the design. You need to go through a few versions
-><cite>— Elon Musk</cite>
+<cite>— Elon Musk</cite>

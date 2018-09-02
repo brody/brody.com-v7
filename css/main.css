@@ -1,9 +1,324 @@
 @charset "UTF-8";
 body {
   padding: 80px 0 0; }
+  @media screen and (min-width: 45em) {
+    body {
+      padding: 104px 0 0; } }
   @media screen and (min-width: 60em) {
     body {
       padding: 128px 0 0; } }
+
+.black {
+  color: #000; }
+
+.white {
+  color: #FFF; }
+
+.grey-lightest {
+  color: #F8F7FA; }
+
+.grey-lighter {
+  color: #EBEBFF; }
+
+.grey-light {
+  color: #CECCD9; }
+
+.grey {
+  color: #908CA3; }
+
+.grey-dark {
+  color: #6A667D; }
+
+.grey-darker {
+  color: #454257; }
+
+.grey-darkest {
+  color: #252230; }
+
+.primary {
+  color: #9058B0; }
+
+.primary-pale {
+  color: #E9DEEF; }
+
+.primary-shade {
+  color: #9884A3; }
+
+.yellow {
+  color: #F08804; }
+
+.yellow-pale {
+  color: #F2EAAE; }
+
+.yellow-shade {
+  color: #47463B; }
+
+.night .night-black {
+  color: #000; }
+
+.night .night-white {
+  color: #FFF; }
+
+.night .night-white-50 {
+  color: rgba(255, 255, 255, 0.5); }
+
+.night .night-grey-lightest {
+  color: #F8F7FA; }
+
+.night .night-grey-lighter {
+  color: #EBEBFF; }
+
+.night .night-grey-light {
+  color: #CECCD9; }
+
+.night .night-grey {
+  color: #908CA3; }
+
+.night .night-grey-dark {
+  color: #6A667D; }
+
+.night .night-grey-darker {
+  color: #454257; }
+
+.night .night-grey-darkest {
+  color: #252230; }
+
+.night .night-primary {
+  color: #9058B0; }
+
+.night .night-primary-pale {
+  color: #E9DEEF; }
+
+.night .night-primary-shade {
+  color: #9884A3; }
+
+.night .night-yellow {
+  color: #F08804; }
+
+.night .night-yellow-pale {
+  color: #F2EAAE; }
+
+.night .night-yellow-shade {
+  color: #47463B; }
+
+.bg-black {
+  background-color: #000; }
+
+.bg-white {
+  background-color: #FFF; }
+
+.bg-grey-lightest {
+  background-color: #F8F7FA; }
+
+.bg-grey-lighter {
+  background-color: #EBEBFF; }
+
+.bg-grey-light {
+  background-color: #CECCD9; }
+
+.bg-grey {
+  background-color: #908CA3; }
+
+.bg-grey-dark {
+  background-color: #6A667D; }
+
+.bg-grey-darker {
+  background-color: #454257; }
+
+.bg-grey-darkest {
+  background-color: #252230; }
+
+.bg-primary {
+  background-color: #9058B0; }
+
+.bg-primary-pale {
+  background-color: #E9DEEF; }
+
+.bg-primary-shade {
+  background-color: #9884A3; }
+
+.bg-yellow {
+  background-color: #F08804; }
+
+.bg-yellow-pale {
+  background-color: #F2EAAE; }
+
+.bg-yellow-shade {
+  background-color: #47463B; }
+
+.night .night-bg-black {
+  background-color: #000; }
+
+.night .night-bg-white {
+  background-color: #FFF; }
+
+.night .night-bg-grey-lightest {
+  background-color: #F8F7FA; }
+
+.night .night-bg-grey-lighter {
+  background-color: #EBEBFF; }
+
+.night .night-bg-grey-light {
+  background-color: #CECCD9; }
+
+.night .night-bg-grey {
+  background-color: #908CA3; }
+
+.night .night-bg-grey-dark {
+  background-color: #6A667D; }
+
+.night .night-bg-grey-darker {
+  background-color: #454257; }
+
+.night .night-bg-grey-darkest {
+  background-color: #252230; }
+
+.night .night-bg-primary {
+  background-color: #9058B0; }
+
+.night .night-bg-primary-pale {
+  background-color: #E9DEEF; }
+
+.night .night-bg-primary-shade {
+  background-color: #9884A3; }
+
+.night .night-bg-yellow {
+  background-color: #F08804; }
+
+.night .night-bg-yellow-pale {
+  background-color: #F2EAAE; }
+
+.night .night-bg-yellow-shade {
+  background-color: #47463B; }
+
+.fill-black {
+  fill: #000; }
+
+.fill-white {
+  fill: #FFF; }
+
+.fill-grey-lightest {
+  fill: #F8F7FA; }
+
+.fill-grey-lighter {
+  fill: #EBEBFF; }
+
+.fill-grey-light {
+  fill: #CECCD9; }
+
+.fill-grey {
+  fill: #908CA3; }
+
+.fill-grey-dark {
+  fill: #6A667D; }
+
+.fill-grey-darker {
+  fill: #454257; }
+
+.fill-grey-darkest {
+  fill: #252230; }
+
+.fill-primary {
+  fill: #9058B0; }
+
+.fill-primary-pale {
+  fill: #E9DEEF; }
+
+.fill-primary-shade {
+  fill: #9884A3; }
+
+.fill-yellow {
+  fill: #F08804; }
+
+.fill-yellow-pale {
+  fill: #F2EAAE; }
+
+.fill-yellow-shade {
+  fill: #47463B; }
+
+.night .night-fill-black {
+  fill: #000; }
+
+.night .night-fill-white {
+  fill: #FFF; }
+
+.night .night-fill-grey-lightest {
+  fill: #F8F7FA; }
+
+.night .night-fill-grey-lighter {
+  fill: #EBEBFF; }
+
+.night .night-fill-grey-light {
+  fill: #CECCD9; }
+
+.night .night-fill-grey {
+  fill: #908CA3; }
+
+.night .night-fill-grey-dark {
+  fill: #6A667D; }
+
+.night .night-fill-grey-darker {
+  fill: #454257; }
+
+.night .night-fill-grey-darkest {
+  fill: #252230; }
+
+.night .night-fill-primary {
+  fill: #9058B0; }
+
+.night .night-fill-primary-pale {
+  fill: #E9DEEF; }
+
+.night .night-fill-primary-shade {
+  fill: #9884A3; }
+
+.night .night-fill-yellow {
+  fill: #F08804; }
+
+.night .night-fill-yellow-pale {
+  fill: #F2EAAE; }
+
+.night .night-fill-yellow-shade {
+  fill: #47463B; }
+
+.hover-primary:hover {
+  color: #9058B0;
+  fill: #9058B0; }
+
+.f-headline {
+  font-size: 32px;
+  line-height: 36px; }
+  @media screen and (min-width: 45em) {
+    .f-headline {
+      font-size: 40px;
+      line-height: 46px; } }
+
+.f-subheadline {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px; }
+  @media screen and (min-width: 45em) {
+    .f-subheadline {
+      font-size: 28px;
+      line-height: 36px; } }
+
+.f3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700; }
+
+.pv4-5 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+
+@media screen and (min-width: 30em) {
+  .pv4-5-ns {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; } }
+
+.br5 {
+  border-radius: 50px; }
 
 .mw600 {
   max-width: 600px; }
@@ -201,23 +516,11 @@ button {
     text-overflow: ellipsis; }
 
 .tags {
-  margin: 32px 0; }
-  .tags ul {
-    margin: 24px auto;
-    padding: 0 16px; }
-    .tags ul li {
-      display: inline-block;
-      padding: 0;
-      margin-right: 12px; }
-      .tags ul li a {
-        border-radius: 50px;
-        padding: 8px 16px;
-        border: 0;
-        background-color: #CECCD9;
-        color: #FFF;
-        font-weight: 500; }
-        .tags ul li a:hover {
-          background-color: #9058B0; }
+  font-weight: 500; }
+  .tags a {
+    color: #FFF !important; }
+    .tags a:hover {
+      background-color: #9058B0; }
 
 .next-post {
   border-top: 1px solid #EBEBFF; }
@@ -234,19 +537,12 @@ button {
       margin: 0 auto 16px; }
 
 #moon {
-  position: fixed;
-  bottom: 0;
-  right: 0;
   cursor: pointer;
-  height: 56px;
-  width: 56px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  z-index: 99999; }
+  z-index: 99999;
+  font-size: 18px;
+  line-height: 24px; }
 
 @-webkit-keyframes tada {
   from {
@@ -298,11 +594,11 @@ button {
   -webkit-animation-name: tada;
   animation-name: tada; }
 
-.intro_title #wave {
+#intro h1 #wave {
   position: absolute;
   margin-left: 8px; }
 
-.intro_title:hover #wave {
+#intro h1:hover #wave {
   -webkit-animation-name: tada;
   animation-name: tada;
   -webkit-animation-duration: 1s;
@@ -316,39 +612,20 @@ button {
     color: #9058B0; }
 
 #work a {
-  position: relative;
   height: 350px;
-  display: -ms-flexbox;
-  display: flex;
   cursor: not-allowed; }
   #work a:hover {
     border: none; }
-    #work a:hover .work-details h1:after {
+    #work a:hover h1:after {
       margin-left: 16px;
       opacity: 0.5; }
     #work a:hover .work-logo {
       opacity: 0.5; }
-  #work a .work-details {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 16px 8px; }
-    @media screen and (min-width: 30em) {
-      #work a .work-details {
-        padding: 24px 16px; } }
-    #work a .work-details h1 {
-      color: #FFF; }
-      #work a .work-details h1:after {
-        content: "→";
-        margin-left: 8px;
-        opacity: 0;
-        transition: all 0.3s ease-out; }
-    #work a .work-details h3 {
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 14px;
-      line-height: 24px;
-      text-transform: uppercase;
-      font-weight: 600; }
+  #work a h1:after {
+    content: "→";
+    margin-left: 8px;
+    opacity: 0;
+    transition: all 0.3s ease-out; }
   #work a .work-logo {
     position: absolute;
     top: 50%;
@@ -448,59 +725,66 @@ button {
   .goodreads .gr_custom_container_1532863785 .gr_custom_author_1532863785 {
     font-size: 14px; }
 
-.lastFM {
-  margin-bottom: 80px; }
-  .lastFM li {
-    line-height: 1.3;
-    margin-bottom: 16px;
-    min-height: 88px; }
-  .lastFM #lastFM-recent-tracks, .lastFM #lastFM-top-artists {
-    margin-bottom: 40px; }
-  .lastFM img {
-    width: 88px;
-    height: auto;
-    margin: 0 16px 0 0;
-    float: left; }
-  .lastFM #lastFM-recent-tracks .track, .lastFM #lastFM-top-artists .artist {
-    font-weight: 600;
-    font-size: 1.1em;
-    padding-top: 6px; }
-    .lastFM #lastFM-recent-tracks .track a, .lastFM #lastFM-top-artists .artist a {
-      border-color: transparent; }
-      .lastFM #lastFM-recent-tracks .track a:hover, .lastFM #lastFM-top-artists .artist a:hover {
-        border-color: #9058B0; }
-  .lastFM .artist {
-    font-size: 1.1em; }
-  .lastFM #lastFM-recent-tracks .date, .lastFM #lastFM-top-artists .play-count {
-    font-size: 0.9em;
-    margin-top: 8px;
-    opacity: .9; }
-  .lastFM .track--now-playing::after {
-    content: url("/assets/images/track-nowplaying.gif");
-    margin-left: 4px; }
-  .lastFM .button {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    border-bottom: 0;
-    border-radius: 100px;
-    padding: 6px 16px 6px 12px;
-    fill: #FFF;
-    color: #FFF;
-    font-weight: 500;
-    margin-right: 12px;
-    margin-bottom: 8px;
-    float: left;
-    font-size: 15px; }
-    .lastFM .button:hover {
-      opacity: .6; }
-    .lastFM .button svg {
-      margin-right: 8px; }
-  .lastFM .button--spotify {
-    background-color: #2EBD59; }
-  .lastFM .button--soundcloud {
-    background: linear-gradient(#f70, #f30); }
+.lastFM li {
+  line-height: 1.3;
+  margin-bottom: 16px;
+  min-height: 88px; }
+
+.lastFM #lastFM-recent-tracks, .lastFM #lastFM-top-artists {
+  margin-bottom: 40px; }
+
+.lastFM img {
+  width: 88px;
+  height: auto;
+  margin: 0 16px 0 0;
+  float: left; }
+
+.lastFM #lastFM-recent-tracks .track, .lastFM #lastFM-top-artists .artist {
+  font-weight: 600;
+  font-size: 1.1em;
+  padding-top: 6px; }
+  .lastFM #lastFM-recent-tracks .track a, .lastFM #lastFM-top-artists .artist a {
+    border-color: transparent; }
+    .lastFM #lastFM-recent-tracks .track a:hover, .lastFM #lastFM-top-artists .artist a:hover {
+      border-color: #9058B0; }
+
+.lastFM .artist {
+  font-size: 1.1em; }
+
+.lastFM #lastFM-recent-tracks .date, .lastFM #lastFM-top-artists .play-count {
+  font-size: 0.9em;
+  margin-top: 8px;
+  opacity: .9; }
+
+.lastFM .track--now-playing::after {
+  content: url("/assets/images/track-nowplaying.gif");
+  margin-left: 4px; }
+
+.lastFM .button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 0;
+  border-radius: 100px;
+  padding: 6px 16px 6px 12px;
+  fill: #FFF;
+  color: #FFF;
+  font-weight: 500;
+  margin-right: 12px;
+  margin-bottom: 8px;
+  float: left;
+  font-size: 15px; }
+  .lastFM .button:hover {
+    opacity: .6; }
+  .lastFM .button svg {
+    margin-right: 8px; }
+
+.lastFM .button--spotify {
+  background-color: #2EBD59; }
+
+.lastFM .button--soundcloud {
+  background: linear-gradient(#f70, #f30); }
 
 body {
   text-rendering: optimizeLegibility;
@@ -585,34 +869,6 @@ ol li p, ul li p {
 ol ol {
   list-style-type: lower-alpha; }
 
-h1.article_title,
-h1.intro_title {
-  font-size: 32px;
-  line-height: 36px; }
-  @media screen and (min-width: 45em) {
-    h1.article_title,
-    h1.intro_title {
-      font-size: 40px;
-      line-height: 46px; } }
-
-h2.article_sub-title,
-h2.intro_sub-title {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 30px; }
-  @media screen and (min-width: 45em) {
-    h2.article_sub-title,
-    h2.intro_sub-title {
-      font-size: 28px;
-      line-height: 36px; } }
-
-h3.section-header {
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #908CA3;
-  line-height: 24px;
-  font-weight: 700; }
-
 a,
 a:visited {
   text-decoration: none;
@@ -633,18 +889,6 @@ blockquote {
 mark {
   margin: -.075em -.125em;
   padding: 0.075em 0.125em; }
-
-time {
-  max-width: 600px;
-  margin: 0 auto;
-  text-transform: uppercase;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-weight: 700;
-  font-size: 14px;
-  transition-property: all;
-  transition-duration: 0.5s; }
 
 .code,
 code.highlighter-rouge {
@@ -689,10 +933,6 @@ code.highlighter-rouge {
 *::-moz-selection {
   background: #E9DEEF; }
 
-html {
-  background-color: #F8F7FA;
-  color: #454257; }
-
 h1,
 h2,
 h3,
@@ -729,24 +969,10 @@ nav a#logo:hover {
   nav a#logo:hover svg {
     fill: #9058B0; }
 
-nav #btn-hamburger .hamburger-bg {
-  background-color: #908CA3;
-  transition: all 0.3s cubic-bezier(0.165, 0.63, 0.14, 0.82); }
-  nav #btn-hamburger .hamburger-bg svg#hamburger {
-    fill: #EBEBFF; }
-
-nav #btn-hamburger:active, nav #btn-hamburger:hover {
-  cursor: pointer; }
-  nav #btn-hamburger:active .hamburger-bg, nav #btn-hamburger:hover .hamburger-bg {
-    background-color: #9058B0; }
-
 a {
   border-bottom: 2px solid #CECCD9; }
   a:hover {
     border-bottom: 2px solid #9058B0; }
-
-h2.article_sub-title, h2.intro_sub-title {
-  color: #908CA3; }
 
 a,
 a:visited {
@@ -759,12 +985,6 @@ blockquote {
 mark {
   background-color: #F2EAAE;
   color: #252230; }
-
-time {
-  color: #CECCD9; }
-
-#moon {
-  fill: #CECCD9; }
 
 .book-card a,
 .link-card a {
@@ -921,16 +1141,8 @@ nav {
       nav .hamburger .hamburger__inner:before {
         top: -6px; }
     nav .hamburger .hamburger__bg {
-      background-color: #908CA3;
-      border-radius: 50%;
       height: 40px;
-      width: 40px;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center; }
+      width: 40px; }
     nav .hamburger:active, nav .hamburger:hover {
       cursor: pointer; }
       nav .hamburger:active .hamburger__bg, nav .hamburger:hover .hamburger__bg {
@@ -953,7 +1165,7 @@ nav {
   @media screen and (min-width: 45em) {
     nav .hamburger,
     nav a#logo {
-      padding: 32px 40px 8px; } }
+      padding: 32px 40px 32px; } }
 
 #menu {
   width: 265px;
@@ -964,14 +1176,7 @@ nav {
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
   padding: 80px 20px 24px;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
   z-index: 98; }
-  #menu #site-details {
-    display: block;
-    border-width: 0; }
   #menu h1 {
     margin: 0; }
   #menu h2 {
@@ -1078,10 +1283,6 @@ nav {
   .night mark {
     background-color: #47463B;
     color: #F8F7FA; }
-  .night time {
-    color: #6A667D; }
-  .night #moon {
-    fill: #6A667D; }
   .night .book-card a,
   .night .link-card a {
     background-color: #454257;
@@ -1124,18 +1325,9 @@ nav {
         color: #9058B0;
         fill: #9058B0; }
   .night .tags ul li a {
-    background-color: #454257;
     color: #FFF; }
     .night .tags ul li a:hover {
       background-color: #9058B0; }
-  .night #journal a {
-    border: none; }
-    .night #journal a:hover {
-      border: none; }
-  .night #work a {
-    border: none; }
-    .night #work a:hover {
-      border: none; }
 
 .highlight,
 pre.highlight {

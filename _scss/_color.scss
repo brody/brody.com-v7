@@ -9,8 +9,8 @@
 }
 
 html {
-  background-color: $grey-lightest;
-  color: $grey-darker;
+  // background-color: $grey-lightest;
+  // color: $grey-darker;
 }
 
 h1,
@@ -42,35 +42,33 @@ nav {
       fill: $grey-darker;
       transition: all 0.3s cubic-bezier(0.165, 0.63, 0.14, 0.82);
     }
-
     &:hover {
       border: 0;
-
       svg {
         fill: $primary;
       }
     }
   }
 
-  #btn-hamburger {
-    .hamburger-bg {
-      background-color: $grey;
-      transition: all 0.3s cubic-bezier(0.165, 0.63, 0.14, 0.82);
-
-      svg#hamburger {
-        fill: $grey-lighter;
-      }
-    }
-
-    &:active,
-    &:hover {
-      cursor: pointer;
-
-      .hamburger-bg {
-        background-color: $primary;
-      }
-    }
-  }
+  // #btn-hamburger {
+  //   .hamburger-bg {
+  //     background-color: $grey;
+  //     transition: all 0.3s cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  //
+  //     svg#hamburger {
+  //       fill: $grey-lighter;
+  //     }
+  //   }
+  //
+  //   &:active,
+  //   &:hover {
+  //     cursor: pointer;
+  //
+  //     .hamburger-bg {
+  //       background-color: $primary;
+  //     }
+  //   }
+  // }
   @include breakpoint($md) {}
   @include breakpoint($lg) {
     // background: transparent;
@@ -85,9 +83,9 @@ a {
   }
 }
 
-h2.article_sub-title, h2.intro_sub-title {
-  color: $grey;
-}
+// h2.article_sub-title, h2.intro_sub-title {
+//   color: $grey;
+// }
 
 a,
 a:visited {
@@ -104,13 +102,13 @@ mark {
   color: $grey-darkest;
 }
 
-time {
-  color: $grey-light;
-}
+// time {
+//   // color: $grey-light;
+// }
 
-#moon {
-  fill: $grey-light;
-}
+// #moon {
+//   fill: $grey-light;
+// }
 
 .book-card,
 .link-card {

@@ -36,7 +36,7 @@ Work in progress 🚧
 ## What Am I Listening To?
 
 
-<div class="lastFM">
+<div class="lastFM mb5">
 
   <h3>Recent Tracks</h3>
 

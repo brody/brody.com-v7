@@ -256,35 +256,15 @@ button {
 }
 
 .tags {
-  margin: 32px 0;
-
-  ul {
-    margin: 24px auto;
-    padding: 0 16px;
-
-    li {
-      display: inline-block;
-      padding: 0;
-      margin-right: 12px;
+  font-weight: 500;
 
       a {
-        border-radius: 50px;
-        padding: 8px 16px;
-        // border: 1px solid $grey-light;
-        border: 0;
-        background-color: $grey-light;
-        // color: $grey;
-        color: $white;
-        font-weight: 500;
+        color: $white!important;
 
         &:hover {
           background-color: $primary;
-          // border-color: $primary;
-          // color: $primary;
         }
       }
-    }
-  }
 }
 
 .next-post {
@@ -314,16 +294,18 @@ button {
 }
 
 #moon {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+  // position: fixed;
+  // bottom: 0;
+  // right: 0;
   cursor: pointer;
-  height: 56px;
-  width: 56px;
+  // height: 56px;
+  // width: 56px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
   z-index: 99999;
+  font-size: 18px;
+  line-height: 24px;
 }
 @-webkit-keyframes tada {
   from {
@@ -395,7 +377,7 @@ button {
   animation-name: tada;
 }
 
-.intro_title {
+#intro h1 {
   #wave {
     position: absolute;
     // transition: all 0.15s ease-out;
@@ -428,15 +410,15 @@ button {
 
 #work {
   a {
-    position: relative;
+    // position: relative;
     height: 350px;
-    display: flex;
+    // display: flex;
     cursor: not-allowed; //remove once case studies added
 
     &:hover {
       border: none;
 
-      .work-details h1:after {
+      h1:after {
         margin-left: 16px;
         opacity: 0.5;
       }
@@ -446,17 +428,16 @@ button {
       }
     }
 
-    .work-details {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 16px 8px;
-      @include breakpoint($ns) {
-        padding: 24px 16px;
-      }
+      // position: absolute;
+      // bottom: 0;
+      // left: 0;
+      // padding: 16px 8px;
+      // @include breakpoint($ns) {
+      //   padding: 24px 16px;
+      // }
 
       h1 {
-        color: $white;
+        // color: $white;
 
         &:after {
           content: "→";
@@ -466,14 +447,13 @@ button {
         }
       }
 
-      h3 {
-        color: rgba($white,.5);
-        font-size: 14px;
-        line-height: 24px;
-        text-transform: uppercase;
-        font-weight: 600;
-      }
-    }
+      // h3 {
+        // color: rgba($white,.5);
+        // font-size: 14px;
+        // line-height: 24px;
+        // text-transform: uppercase;
+        // font-weight: 600;
+      // }
 
     .work-logo {
       position: absolute;
@@ -625,7 +605,7 @@ button {
 }
 // LastFM /////////////////////////////////////
 .lastFM {
-  margin-bottom: 80px;
+  // margin-bottom: 80px;
 
     li {
       line-height: 1.3;

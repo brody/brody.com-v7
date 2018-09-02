@@ -109,11 +109,11 @@
   }
 
   time {
-    color: $grey-dark;
+    // color: $grey-dark;
   }
 
   #moon {
-    fill: $grey-dark;
+    // fill: $grey-dark;
   }
 
   .book-card,
@@ -218,7 +218,7 @@
     ul {
       li {
         a {
-          background-color: $grey-darker;
+          // background-color: $grey-darker;
           color: $white;
 
           &:hover {
@@ -228,20 +228,27 @@
       }
     }
   }
-  #journal {
-    a {
-      border: none;
-      &:hover {
-        border: none;
-      }
-    }
-  }
-  #work {
-    a {
-      border: none;
-      &:hover {
-        border: none;
-      }
-    }
-  }
+  // #journal {
+  //   a {
+  //     border: none;
+  //     &:hover {
+  //       border: none;
+  //     }
+  //   }
+  // }
+  // #work {
+  //   a {
+  //     border: none;
+  //     &:hover {
+  //       border: none;
+  //     }
+  //   }
+  // }
+
+
+
+
+
+
+
 }
