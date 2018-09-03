@@ -260,17 +260,23 @@ nav {
 
     #site-details,
     #social-links {
-      display: block;
+      // display: block;
     }
   }
 }
 @media screen and (orientation:landscape) and (min-device-width: 319px) and (max-device-width: 480px) {
   #menu {
-    width: 200px;
+    padding: 20px 20px 40px;
+    -webkit-overflow-scrolling: touch;
 
-    #site-details,
-    #social-links {
-      display: none;
-    }
   }
+
+  .dn-sh {
+    display: none;
+  }
+
+  .db-sh {
+    display: block;
+  }
+
 }

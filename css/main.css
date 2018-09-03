@@ -1206,17 +1206,16 @@ nav {
   @media screen and (min-width: 45em) {
     #menu {
       padding: 104px 32px 32px;
-      width: 300px; }
-      #menu #site-details,
-      #menu #social-links {
-        display: block; } }
+      width: 300px; } }
 
 @media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 480px) {
   #menu {
-    width: 200px; }
-    #menu #site-details,
-    #menu #social-links {
-      display: none; } }
+    padding: 20px 20px 40px;
+    -webkit-overflow-scrolling: touch; }
+  .dn-sh {
+    display: none; }
+  .db-sh {
+    display: block; } }
 
 .night {
   background-color: #252230;
