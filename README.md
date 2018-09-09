@@ -1,5 +1,5 @@
 # brody.com v7.0
-My personal website. 📝 Journal, 🛠 Projects, 🤓 About Me (coming soon)
+My personal website. 📝 Journal, 🛠 Recent Work, 🤓 About Me
 
 ### Tools
 - 🖼 Framework used is Tachyons

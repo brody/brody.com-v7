@@ -3,7 +3,6 @@
 }
 
 .post {
-  // padding: 0 0 40px;
 }
 
 blockquote,
@@ -103,9 +102,6 @@ twitterwidget {
     max-width: 650px;
   }
 }
-// p>img {
-//   margin: 0 -32px;
-// }
 
 iframe,
 object {
@@ -122,9 +118,7 @@ iframe {
     float: none;
     max-width: 650px;
   }
-  // @include breakpoint($sm) {
-  //   margin: 104px auto;
-  // }
+
 }
 
 .link-card {
@@ -176,8 +170,6 @@ iframe {
   }
 
   .book-details {
-    // float: left;
-    // padding: 10px 0;
   }
 
   p {
@@ -284,8 +276,6 @@ button {
     }
 
     h1 {
-      // margin-top: 16px;
-      // margin-bottom: 12px;
     }
 
     p {
@@ -296,7 +286,6 @@ button {
 
 #moon {
   cursor: pointer;
-  // display: flex;
   z-index: 99999;
   font-size: 18px;
   line-height: 24px;
@@ -374,7 +363,6 @@ button {
 #intro h1 {
   #wave {
     position: absolute;
-    // transition: all 0.15s ease-out;
     margin-left: 8px;
   }
 
@@ -404,9 +392,7 @@ button {
 
 #work {
   a {
-    // position: relative;
     height: 350px;
-    // display: flex;
     cursor: not-allowed; //remove once case studies added
 
     &:hover {
@@ -422,16 +408,7 @@ button {
       }
     }
 
-      // position: absolute;
-      // bottom: 0;
-      // left: 0;
-      // padding: 16px 8px;
-      // @include breakpoint($ns) {
-      //   padding: 24px 16px;
-      // }
-
       h1 {
-        // color: $white;
 
         &:after {
           content: "→";
@@ -440,14 +417,6 @@ button {
           transition: all 0.3s ease-out;
         }
       }
-
-      // h3 {
-        // color: rgba($white,.5);
-        // font-size: 14px;
-        // line-height: 24px;
-        // text-transform: uppercase;
-        // font-weight: 600;
-      // }
 
     .work-logo {
       position: absolute;
@@ -518,8 +487,6 @@ button {
   .gr_custom_container_1532863785 {
     /* customize your Goodreads widget container here*/
     border: none;
-    // border-radius: 10px;
-    // padding: 10px 5px 10px 5px;
     background-color: transparent;
   }
 
@@ -531,7 +498,6 @@ button {
     margin-bottom: 10px;
     overflow: auto;
     padding-bottom: 4px;
-    // border-bottom: 1px solid #eee;
   }
 
   .gr_custom_book_container_1524204944,
@@ -552,7 +518,6 @@ button {
   .gr_custom_tags_1524204944 {
     /* customize your tags here */
     font-size: 10px;
-    // color: gray;
   }
 
   .gr_custom_rating_1524204944 {
@@ -568,7 +533,6 @@ button {
 
     a {
       text-decoration: none;
-      // color: #333;
       border-bottom: 2px solid transparent;
 
       &:hover {
@@ -599,14 +563,10 @@ button {
 }
 // LastFM /////////////////////////////////////
 .lastFM {
-  // margin-bottom: 80px;
 
     li {
       line-height: 1.3;
-      // clear: both;
       margin-bottom: 16px;
-      // display: flex;
-      // flex-wrap: wrap;
       min-height: 88px;
     }
 
@@ -620,15 +580,12 @@ button {
         height: auto;
         margin: 0 16px 0 0;
         float: left;
-        // display: inline-block;
       }
 
       #lastFM-recent-tracks .track, #lastFM-top-artists .artist {
         font-weight: 600;
         font-size: 1.1em;
-        // margin-bottom: 4px;
         padding-top: 6px;
-        // display: inline-block;
         a {
           border-color: transparent;
 
@@ -640,14 +597,12 @@ button {
 
       .artist {
         font-size: 1.1em;
-        // display: inline-block;
       }
 
       #lastFM-recent-tracks .date, #lastFM-top-artists .play-count {
         font-size: 0.9em;
         margin-top: 8px;
         opacity: .9;
-        // display: inline-block;
       }
       .track--now-playing::after {
         content:url('/assets/images/track-nowplaying.gif');
@@ -656,10 +611,8 @@ button {
 
       .button {
         display: flex;
-        // justify-content: center;
         align-items: center;
         border-bottom: 0;
-        // height: 32px;
         border-radius: 100px;
         padding: 6px 16px 6px 12px;;
         fill: $white;
@@ -674,12 +627,9 @@ button {
         }
 
         svg {
-          // display: inline-block;
           margin-right: 8px;
         }
-        span {
-          // display: inline-block;
-        }
+
       }
       .button--spotify {
         background-color: #2EBD59;
@@ -689,5 +639,3 @@ button {
       }
 
 }
-
-#lastFM-recent-tracks {}

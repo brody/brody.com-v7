@@ -27,8 +27,9 @@
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.thumbnail | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 
-
   <link rel="stylesheet" href="{{ 'css/tachyons.min.css' | relative_url }}">
   <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 </head>

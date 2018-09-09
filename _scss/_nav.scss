@@ -188,31 +188,13 @@ nav {
   -o-transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
   transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
   padding: 80px 20px 24px;
-  // top: 0;
-  // bottom: 0;
-  // right: 0;
-  // background-color: $grey-lightest;
-  // border-left: 1px solid $grey-lighter;
-  // position: fixed;
   z-index: 98;
-  // box-shadow: 0 0 24px 0 rgba($grey,0.5);
-  #site-details {
-    // display: block;
-    // border-width: 0;
-
-    &:hover {
-      h1 {
-        // color: $primary;
-      }
-    }
-  }
 
   h1 {
     margin: 0;
   }
 
   h2 {
-    // color: $grey;
     font-weight: 400;
     margin: 0;
   }

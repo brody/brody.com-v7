@@ -973,8 +973,7 @@ a {
   a:hover {
     border-bottom: 2px solid #9058B0; }
 
-a,
-a:visited {
+a, a:visited {
   color: #252230; }
 
 blockquote {
