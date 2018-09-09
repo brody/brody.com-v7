@@ -20,6 +20,19 @@ $('#moon').on('click', function() {
 });
 
 
+$(document).keydown(function(e) {
+  var unicode = e.charCode ? e.charCode : e.keyCode;
+
+  if (unicode == 68 || unicode == 78) {
+    // toggle night mode
+    // 68: d
+    // 78: n
+    $('html').toggleClass('night');
+ }
+ 
+});
+
+
 // Menu Toggle ///////////////////////////////////////////
 
 $('.hamburger').click(function(event) {
