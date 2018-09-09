@@ -42,14 +42,15 @@ nav {
       fill: $grey-darker;
       transition: all 0.3s cubic-bezier(0.165, 0.63, 0.14, 0.82);
     }
+
     &:hover {
       border: 0;
+
       svg {
         fill: $primary;
       }
     }
   }
-
   // #btn-hamburger {
   //   .hamburger-bg {
   //     background-color: $grey;
@@ -82,7 +83,6 @@ a {
     border-bottom: 2px solid $primary;
   }
 }
-
 // h2.article_sub-title, h2.intro_sub-title {
 //   color: $grey;
 // }
@@ -101,11 +101,9 @@ mark {
   background-color: $yellow-pale;
   color: $grey-darkest;
 }
-
 // time {
 //   // color: $grey-light;
 // }
-
 // #moon {
 //   fill: $grey-light;
 // }
@@ -118,6 +116,7 @@ mark {
 
     &:hover {
       box-shadow: 0 8px 24px 0 rgba($grey,0.5);
+      transform: translateY(-2px);
     }
   }
 
@@ -268,9 +267,8 @@ mark {
 }
 
 #menu {
-  background-color: lighten($grey-lightest, 10%);
-  border-left: 1px solid $grey-lighter;
   box-shadow: 0 0 24px 0 rgba($black,0.12345);
+
   #site-details {
     &:hover {
       h1 {
@@ -278,14 +276,17 @@ mark {
       }
     }
   }
+
   h2 {
     color: $grey;
   }
+
   ul {
     li {
       a {
         color: $grey-dark;
         fill: $grey;
+
         &:hover {
           color: $primary;
           fill: $primary;

@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }} – {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="Brody MacLean is a Product Designer based in Sydney.">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,20 +13,20 @@
   <link rel="me" href="https://twitter.com/BrodyMaclean">
   <link rel="canonical" href="http://brody.com/">
 
-  <meta property="og:site_name" content="Brody Maclean. Product Designer." />
+  <meta property="og:site_name" content="Brody Maclean – Product Designer" />
   <meta property="og:url" content="http://brody.com/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Brody MacLean. Product Designer." />
-  <meta property="og:description" content="" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.thumbnail | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 
-  <meta property="og:image" content="" />
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="">
-
   <meta name="twitter:site" content="@BrodyMaclean">
   <meta name="twitter:creator" content="@BrodyMaclean">
-  <meta name="twitter:title" content="Brody MacLean. Product Designer.">
-  <meta name="twitter:description" content="">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.thumbnail | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+
 
   <link rel="stylesheet" href="{{ 'css/tachyons.min.css' | relative_url }}">
   <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">

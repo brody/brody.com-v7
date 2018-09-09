@@ -234,12 +234,7 @@ nav {
         border-width: 0;
         font-size: 18px;
         line-height: 24px;
-        // color: $grey-dark;
-        // fill: $grey;
-        &:hover {
-          // color: $primary;
-          // fill: $primary;
-        }
+
       }
     }
   }
@@ -257,11 +252,6 @@ nav {
   @include breakpoint($md) {
     padding: 104px 32px 32px;
     width: 300px;
-
-    #site-details,
-    #social-links {
-      // display: block;
-    }
   }
 }
 @media screen and (orientation:landscape) and (min-device-width: 319px) and (max-device-width: 480px) {

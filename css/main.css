@@ -520,7 +520,8 @@ button {
   .tags a {
     color: #FFF !important; }
     .tags a:hover {
-      background-color: #9058B0; }
+      background-color: #9058B0;
+      border: none; }
 
 .next-post {
   border-top: 1px solid #EBEBFF; }
@@ -538,8 +539,6 @@ button {
 
 #moon {
   cursor: pointer;
-  display: -ms-flexbox;
-  display: flex;
   z-index: 99999;
   font-size: 18px;
   line-height: 24px; }
@@ -992,7 +991,9 @@ mark {
   box-shadow: 0 2px 4px 0 rgba(144, 140, 163, 0.5); }
   .book-card a:hover,
   .link-card a:hover {
-    box-shadow: 0 8px 24px 0 rgba(144, 140, 163, 0.5); }
+    box-shadow: 0 8px 24px 0 rgba(144, 140, 163, 0.5);
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px); }
 
 .book-card p,
 .link-card p {
@@ -1076,8 +1077,6 @@ mark {
         color: #9058B0; }
 
 #menu {
-  background-color: white;
-  border-left: 1px solid #EBEBFF;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12345); }
   #menu #site-details:hover h1 {
     color: #9058B0; }

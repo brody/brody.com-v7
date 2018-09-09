@@ -263,6 +263,7 @@ button {
 
         &:hover {
           background-color: $primary;
+          border: none;
         }
       }
 }
@@ -294,15 +295,8 @@ button {
 }
 
 #moon {
-  // position: fixed;
-  // bottom: 0;
-  // right: 0;
   cursor: pointer;
-  // height: 56px;
-  // width: 56px;
-  display: flex;
-  // justify-content: center;
-  // align-items: center;
+  // display: flex;
   z-index: 99999;
   font-size: 18px;
   line-height: 24px;
