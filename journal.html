@@ -10,7 +10,7 @@ title: Journal
   {% for post in site.categories.journal %}
 
   <a href="{{ post.url }}" class="pv3 db bn">
-    <time datetime="{{ page.date | date: " %Y-%m-%d " }}">{{ post.date | date: "%-d %B %Y" }}</time>
+    <time datetime="{{ page.date | date: " %Y-%m-%d " }}" class="f3 grey-light night-grey-dark db mt0 mb2">{{ post.date | date: "%-d %B %Y" }}</time>
     <h1 class="mt0 mb2">{{ post.title }}</h1>
     <p class="mv0">{{ post.description }}</p>
   </a>

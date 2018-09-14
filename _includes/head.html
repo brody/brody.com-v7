@@ -32,4 +32,36 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+  <script type="text/javascript">
+
+    if(Cookies.get("_darkmode")=="Enabled"){
+      $('html').addClass('night');
+      console.log("Cookie dark is set on load");
+    }
+    else if(Cookies.get("_lightmode")=="Enabled"){
+      $('html').addClass('day');
+      console.log("Cookie light is set on load");
+    }
+    else {
+      $(function() {
+          // get hour of time
+          var hour = (new Date).getHours();
+          if (hour > 17) {  // 0:00 to 6:59
+              Cookies.remove('_lightmode');
+              Cookies.set('_darkmode', 'Enabled');
+          } else if (hour < 8) {  // 7:00 to 10:59
+              Cookies.remove('_lightmode');
+              Cookies.set('_darkmode', 'Enabled');
+          }
+          else {
+            Cookies.remove('_darkmode');
+            Cookies.set('_lightmode', 'Enabled');
+          }
+      });
+    }
+
+  </script>
+
 </head>

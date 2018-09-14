@@ -537,7 +537,7 @@ button {
     .next-post a p {
       margin: 0 auto 16px; }
 
-#moon {
+#nightMode {
   cursor: pointer;
   z-index: 99999;
   font-size: 18px;
