@@ -4,7 +4,7 @@
 // On initial page load, there is not yet a cookie
 // When the user clicks the button for the fist time, do this:
 $('#nightMode').click(function() {
-  var inThirtyMinutes = new Date(new Date().getTime() + 30 * 60 * 1000); //expires in 7.5mins
+  var inThirtyMinutes = new Date(new Date().getTime() + 30 * 60 * 1000);
 
   if($('html').hasClass("night")){
     // remove set darkmode cookie, add lightmode cookie
@@ -354,9 +354,20 @@ $(document).ready(function() {
                    var trackdate = "<div class='date track--now-playing'> Now Playing </div>";
                  }
                  else {
-                   var offset = new Date().getTimezoneOffset()/60*100;
-                   var trackdateuts = new Date(item.date['#text']).toISOString().slice(0, -1);
-                   var trackdate = "<div class='date timeago' title='" + trackdateuts + offset + "'></div>";
+                  //  var offset = new Date().getTimezoneOffset()/60*100;
+                  //  var offset = new Date().toUTCString();
+
+                  var strDateTime = new Date(item.date['#text']);
+                  var myDate = new Date(strDateTime + " GMT");
+                  console.log(myDate.toISOString());
+
+
+                  //  console.log(offset);
+                  //  var trackdateuts = new Date(item.date['#text']).toISOString().slice(0, -1);
+                  //  console.log(trackdateuts);
+                  //  var trackdate = "<div class='date timeago' title='" + trackdateuts + offset + "'></div>";
+                   var trackdate = "<div class='date timeago' title='" + myDate.toISOString() + "'></div>";
+
                  }
 
                  if (item.image[2]['#text']) {
