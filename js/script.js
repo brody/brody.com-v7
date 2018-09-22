@@ -358,9 +358,9 @@ $(document).ready(function() {
                   //  var offset = new Date().toUTCString();
 
                   var strDateTime = new Date(item.date['#text'] + " GMT");
-                  // console.log("strDateTime " + strDateTime);
-                  // var myDate = new Date(strDateTime);
-                  // console.log(myDate.toISOString());
+                  console.log("strDateTime " + strDateTime);
+                  var myDate = strDateTime.toISOString();
+                  console.log(myDate);
                   // console.log("myDate = " + myDate);
 
                   // var anothertest = $.timeago(myDate);
@@ -378,7 +378,7 @@ $(document).ready(function() {
                   //  var trackdateuts = new Date(item.date['#text']).toISOString().slice(0, -1);
                   //  console.log(trackdateuts);
                   //  var trackdate = "<div class='date timeago' title='" + trackdateuts + offset + "'></div>";
-                   var trackdate = "<div class='date timeago' title='" + strDateTime.toISOString() + "'></div>";
+                   var trackdate = "<div class='date timeago' title='" + myDate + "'></div>";
 
                  }
 
