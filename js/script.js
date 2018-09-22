@@ -357,16 +357,28 @@ $(document).ready(function() {
                   //  var offset = new Date().getTimezoneOffset()/60*100;
                   //  var offset = new Date().toUTCString();
 
-                  var strDateTime = new Date(item.date['#text']);
-                  var myDate = new Date(strDateTime + " GMT");
-                  console.log(myDate.toISOString());
+                  var strDateTime = new Date(item.date['#text'] + " GMT");
+                  // console.log("strDateTime " + strDateTime);
+                  // var myDate = new Date(strDateTime);
+                  // console.log(myDate.toISOString());
+                  // console.log("myDate = " + myDate);
+
+                  // var anothertest = $.timeago(myDate);
+                  // console.log(anothertest);
+
+
+                  // var d = new Date("22 Sep 2018, 02:04 GMT");
+                  // var n = d.toISOString();
+                  // console.log("n = " + n)
+
+
 
 
                   //  console.log(offset);
                   //  var trackdateuts = new Date(item.date['#text']).toISOString().slice(0, -1);
                   //  console.log(trackdateuts);
                   //  var trackdate = "<div class='date timeago' title='" + trackdateuts + offset + "'></div>";
-                   var trackdate = "<div class='date timeago' title='" + myDate.toISOString() + "'></div>";
+                   var trackdate = "<div class='date timeago' title='" + strDateTime.toISOString() + "'></div>";
 
                  }
 
