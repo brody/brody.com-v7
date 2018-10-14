@@ -6,7 +6,7 @@ sub-title:
 date: 2018-10-14 00:00:00 Australia/Sydney
 
 permalink: /full-stack-anxiety/
-thumbnail:
+thumbnail: /images/thumb_full-stack-anxiety.gif
 category: journal
 tags: Design
 
