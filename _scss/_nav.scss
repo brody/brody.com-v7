@@ -249,6 +249,15 @@ font-weight: 500;
 border: 1px solid rgba($grey-dark,.2);
 }
 
+
+@media screen and (max-width: 50em) {
+
+#menu ul li a:hover:before, #nightMode:hover:before {
+  display: none;
+}
+
+}
+
 @media screen and (orientation:landscape) and (min-device-width: 319px) and (max-device-width: 480px) {
   #menu {
     padding: 20px 20px 40px;
