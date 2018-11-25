@@ -257,6 +257,18 @@ mark {
         &:hover {
           color: $primary;
           fill: $primary;
+          position: relative;
+          &:before {
+            content: "";
+            height: 4px;
+            width: 4px;
+            border-radius: 2px;
+            background-color: $primary;
+            position: absolute;
+            left: -24px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
         }
       }
     }

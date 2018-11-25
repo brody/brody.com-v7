@@ -236,6 +236,19 @@ nav {
     width: 300px;
   }
 }
+
+.keyboard-shortcut {
+  background-color: rgba($grey-light,.2);
+  padding: 0 6px;
+  margin-left: 10px;
+  border-radius: 4px;
+  color: rgba($grey-dark,.8);
+  font-size: 14px;
+  line-height: 22px;
+font-weight: 500;
+border: 1px solid rgba($grey-dark,.2);
+}
+
 @media screen and (orientation:landscape) and (min-device-width: 319px) and (max-device-width: 480px) {
   #menu {
     padding: 20px 20px 40px;

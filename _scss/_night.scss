@@ -61,10 +61,12 @@
         .hamburger__inner {
           background-color: $grey-darkest;
 
-          &:after, &:before {
+          &:after,
+          &:before {
             background-color: $grey-darkest;
+          }
         }
-      }}
+      }
 
       &:active,
       &:hover {
@@ -181,9 +183,7 @@
   }
 
   #menu {
-    background-color: darken($grey-darkest, 5%);
-
-    // background-color: $grey-darkest;
+    background-color: darken($grey-darker, 8%);
     border-color: darken($grey-darkest, 8%);
     box-shadow: 0 0 24px 0 rgba($black,0.345);
 
@@ -206,8 +206,11 @@
           fill: $grey;
 
           &:hover {
-            color: $primary;
-            fill: $primary;
+            color: lighten($primary, 12%);
+            fill: lighten($primary, 12%);
+            &:before {
+              background-color: lighten($primary, 12%);
+            }
           }
         }
       }
@@ -218,7 +221,6 @@
     ul {
       li {
         a {
-          // background-color: $grey-darker;
           color: $white;
 
           &:hover {
@@ -228,27 +230,18 @@
       }
     }
   }
-  // #journal {
-  //   a {
-  //     border: none;
-  //     &:hover {
-  //       border: none;
-  //     }
-  //   }
-  // }
-  // #work {
-  //   a {
-  //     border: none;
-  //     &:hover {
-  //       border: none;
-  //     }
-  //   }
-  // }
 
+  .hover-primary:hover {
+    color: lighten($primary, 12%);
+    fill: lighten($primary, 12%);
+  }
 
-
-
-
-
-
+  .keyboard-shortcut {
+    background-color: rgba($grey-dark,.2);
+    color: rgba($grey-light,.8);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    border: 1px solid rgba($grey-light,.2);
+  }
 }

@@ -544,7 +544,19 @@ button {
   cursor: pointer;
   z-index: 99999;
   font-size: 18px;
-  line-height: 24px; }
+  line-height: 24px;
+  position: relative; }
+  #nightMode:hover:before {
+    content: "";
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+    background-color: #ac82c4;
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
 
 @-webkit-keyframes tada {
   from {
@@ -731,7 +743,8 @@ button {
   margin-bottom: 16px;
   min-height: 88px; }
 
-.lastFM #lastFM-recent-tracks, .lastFM #lastFM-top-artists {
+.lastFM #lastFM-recent-tracks,
+.lastFM #lastFM-top-artists {
   margin-bottom: 40px; }
 
 .lastFM img {
@@ -740,22 +753,26 @@ button {
   margin: 0 16px 0 0;
   float: left; }
 
-.lastFM #lastFM-recent-tracks .track, .lastFM #lastFM-top-artists .artist {
+.lastFM #lastFM-recent-tracks .track,
+.lastFM #lastFM-top-artists .artist {
   font-weight: 600;
   font-size: 1.1em;
   padding-top: 6px; }
-  .lastFM #lastFM-recent-tracks .track a, .lastFM #lastFM-top-artists .artist a {
+  .lastFM #lastFM-recent-tracks .track a,
+  .lastFM #lastFM-top-artists .artist a {
     border-color: transparent; }
-    .lastFM #lastFM-recent-tracks .track a:hover, .lastFM #lastFM-top-artists .artist a:hover {
+    .lastFM #lastFM-recent-tracks .track a:hover,
+    .lastFM #lastFM-top-artists .artist a:hover {
       border-color: #9058B0; }
 
 .lastFM .artist {
   font-size: 1.1em; }
 
-.lastFM #lastFM-recent-tracks .date, .lastFM #lastFM-top-artists .play-count {
+.lastFM #lastFM-recent-tracks .date,
+.lastFM #lastFM-top-artists .play-count {
   font-size: 0.9em;
   margin-top: 8px;
-  opacity: .9; }
+  opacity: 0.9; }
 
 .lastFM .track--now-playing::after {
   content: url("/assets/images/track-nowplaying.gif");
@@ -777,7 +794,7 @@ button {
   float: left;
   font-size: 15px; }
   .lastFM .button:hover {
-    opacity: .6; }
+    opacity: 0.6; }
   .lastFM .button svg {
     margin-right: 8px; }
 
@@ -1092,7 +1109,19 @@ mark {
     fill: #908CA3; }
     #menu ul li a:hover {
       color: #9058B0;
-      fill: #9058B0; }
+      fill: #9058B0;
+      position: relative; }
+      #menu ul li a:hover:before {
+        content: "";
+        height: 4px;
+        width: 4px;
+        border-radius: 2px;
+        background-color: #9058B0;
+        position: absolute;
+        left: -24px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
 
 nav {
   width: 100%;
@@ -1211,6 +1240,17 @@ nav {
     #menu {
       padding: 104px 32px 32px;
       width: 300px; } }
+
+.keyboard-shortcut {
+  background-color: rgba(206, 204, 217, 0.2);
+  padding: 0 6px;
+  margin-left: 10px;
+  border-radius: 4px;
+  color: rgba(106, 102, 125, 0.8);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  border: 1px solid rgba(106, 102, 125, 0.2); }
 
 @media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 480px) {
   #menu {
@@ -1351,7 +1391,7 @@ img.zoom-img {
         .night .next-post a:hover h1 {
           color: #9058B0; }
   .night #menu {
-    background-color: #191721;
+    background-color: #333040;
     border-color: #131118;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.345); }
     .night #menu #site-details:hover h1 {
@@ -1362,12 +1402,24 @@ img.zoom-img {
       color: #CECCD9;
       fill: #908CA3; }
       .night #menu ul li a:hover {
-        color: #9058B0;
-        fill: #9058B0; }
+        color: #ac82c4;
+        fill: #ac82c4; }
+        .night #menu ul li a:hover:before {
+          background-color: #ac82c4; }
   .night .tags ul li a {
     color: #FFF; }
     .night .tags ul li a:hover {
       background-color: #9058B0; }
+  .night .hover-primary:hover {
+    color: #ac82c4;
+    fill: #ac82c4; }
+  .night .keyboard-shortcut {
+    background-color: rgba(106, 102, 125, 0.2);
+    color: rgba(206, 204, 217, 0.8);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    border: 1px solid rgba(206, 204, 217, 0.2); }
 
 .highlight,
 pre.highlight {

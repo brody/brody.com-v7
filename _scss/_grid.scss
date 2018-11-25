@@ -2,8 +2,7 @@
   max-width: 600px;
 }
 
-.post {
-}
+.post {}
 
 blockquote,
 h1,
@@ -118,7 +117,6 @@ iframe {
     float: none;
     max-width: 650px;
   }
-
 }
 
 .link-card {
@@ -169,8 +167,7 @@ iframe {
     }
   }
 
-  .book-details {
-  }
+  .book-details {}
 
   p {
     margin: 0 0 6px;
@@ -250,14 +247,14 @@ button {
 .tags {
   font-weight: 500;
 
-      a {
-        color: $white!important;
+  a {
+    color: $white!important;
 
-        &:hover {
-          background-color: $primary;
-          border: none;
-        }
-      }
+    &:hover {
+      background-color: $primary;
+      border: none;
+    }
+  }
 }
 
 .next-post {
@@ -275,8 +272,7 @@ button {
       color: $grey;
     }
 
-    h1 {
-    }
+    h1 {}
 
     p {
       margin: 0 auto 16px;
@@ -289,7 +285,24 @@ button {
   z-index: 99999;
   font-size: 18px;
   line-height: 24px;
+  position: relative;
+
+  &:hover {
+    &:before {
+      content: "";
+      height: 4px;
+      width: 4px;
+      border-radius: 2px;
+      background-color: lighten($primary, 12%);
+
+      position: absolute;
+      left: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
+
 @-webkit-keyframes tada {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -407,15 +420,14 @@ button {
       }
     }
 
-      h1 {
-
-        &:after {
-          content: "→";
-          margin-left: 8px;
-          opacity: 0;
-          transition: all 0.3s ease-out;
-        }
+    h1 {
+      &:after {
+        content: "→";
+        margin-left: 8px;
+        opacity: 0;
+        transition: all 0.3s ease-out;
       }
+    }
 
     .work-logo {
       position: absolute;
@@ -467,6 +479,7 @@ button {
 }
 // about ////////////////////////////////////////////
 //Goodreads
+
 .goodreads {
   line-height: 1.3;
 
@@ -561,80 +574,85 @@ button {
   }
 }
 // LastFM /////////////////////////////////////
+
 .lastFM {
+  li {
+    line-height: 1.3;
+    margin-bottom: 16px;
+    min-height: 88px;
+  }
 
-    li {
-      line-height: 1.3;
-      margin-bottom: 16px;
-      min-height: 88px;
+  #lastFM-recent-tracks,
+  #lastFM-top-artists {
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: 88px;
+    height: auto;
+    margin: 0 16px 0 0;
+    float: left;
+  }
+
+  #lastFM-recent-tracks .track,
+  #lastFM-top-artists .artist {
+    font-weight: 600;
+    font-size: 1.1em;
+    padding-top: 6px;
+
+    a {
+      border-color: transparent;
+
+      &:hover {
+        border-color: $primary;
+      }
+    }
+  }
+
+  .artist {
+    font-size: 1.1em;
+  }
+
+  #lastFM-recent-tracks .date,
+  #lastFM-top-artists .play-count {
+    font-size: 0.9em;
+    margin-top: 8px;
+    opacity: 0.9;
+  }
+
+  .track--now-playing::after {
+    content: url("/assets/images/track-nowplaying.gif");
+    margin-left: 4px;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    border-bottom: 0;
+    border-radius: 100px;
+    padding: 6px 16px 6px 12px;
+    fill: $white;
+    color: $white;
+    font-weight: 500;
+    margin-right: 12px;
+    margin-bottom: 8px;
+    float: left;
+    font-size: 15px;
+
+    &:hover {
+      opacity: 0.6;
     }
 
-    #lastFM-recent-tracks, #lastFM-top-artists {
-      margin-bottom: 40px;
+    svg {
+      margin-right: 8px;
     }
+  }
 
+  .button--spotify {
+    background-color: #2EBD59;
+  }
 
-      img {
-        width: 88px;
-        height: auto;
-        margin: 0 16px 0 0;
-        float: left;
-      }
-
-      #lastFM-recent-tracks .track, #lastFM-top-artists .artist {
-        font-weight: 600;
-        font-size: 1.1em;
-        padding-top: 6px;
-        a {
-          border-color: transparent;
-
-          &:hover {
-            border-color: $primary;
-          }
-        }
-      }
-
-      .artist {
-        font-size: 1.1em;
-      }
-
-      #lastFM-recent-tracks .date, #lastFM-top-artists .play-count {
-        font-size: 0.9em;
-        margin-top: 8px;
-        opacity: .9;
-      }
-      .track--now-playing::after {
-        content:url('/assets/images/track-nowplaying.gif');
-        margin-left: 4px;
-      }
-
-      .button {
-        display: flex;
-        align-items: center;
-        border-bottom: 0;
-        border-radius: 100px;
-        padding: 6px 16px 6px 12px;;
-        fill: $white;
-        color: $white;
-        font-weight: 500;
-        margin-right: 12px;
-        margin-bottom: 8px;
-        float: left;
-        font-size: 15px;
-        &:hover {
-          opacity: .6;
-        }
-
-        svg {
-          margin-right: 8px;
-        }
-
-      }
-      .button--spotify {
-        background-color: #2EBD59;
-      }
-      .button--soundcloud {
-        background: linear-gradient(#f70,#f30);
-      }
-
+  .button--soundcloud {
+    background: linear-gradient(#f70,#f30);
+  }
 }

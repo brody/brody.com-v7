@@ -48,22 +48,48 @@ $('#nightMode').click(function() {
 
 // Night Mode Toggle //////////////////////////////////////
 
-// $('#moon').on('click', function() {
-//   $('html').toggleClass('night');
-// });
-//
-//
-// $(document).keydown(function(e) {
-//   var unicode = e.charCode ? e.charCode : e.keyCode;
-//
-//   if (unicode == 68 || unicode == 78) {
-//     // toggle night mode
-//     // 68: d
-//     // 78: n
-//     $('html').toggleClass('night');
-//  }
-//
-// });
+$('#moon').on('click', function() {
+  $('html').toggleClass('night');
+});
+
+
+$(document).keydown(function(e) {
+  var unicode = e.charCode ? e.charCode : e.keyCode;
+
+  if (unicode == 68 || unicode == 78) {
+    // toggle night mode
+    // 68: d
+    // 78: n
+    // $('html').toggleClass('night');
+
+    var inThirtyMinutes = new Date(new Date().getTime() + 30 * 60 * 1000);
+
+    if($('html').hasClass("night")){
+      // remove set darkmode cookie, add lightmode cookie
+      Cookies.remove('_darkmode');
+      Cookies.set('_lightmode', 'Enabled', { expires: inThirtyMinutes });
+      // remove darkmode class and add lightmode class to body
+      $('html').removeClass('night').addClass('day');
+      console.log("Setted Cookie dark");
+    }
+    else if($('html').hasClass("light")){
+      // remove set darkmode cookie, add lightmode cookie
+      Cookies.remove('_lightmode');
+      Cookies.set('_darkmode', 'Enabled', { expires: inThirtyMinutes });
+      // remove lightmode class and add darkmode class to body
+      $('html').removeClass('day').addClass('night');
+      console.log("Setted Cookie day");
+    }else{
+      // create a cookie for darkmode state
+      Cookies.set('_darkmode', 'Enabled', { expires: inThirtyMinutes });
+      // add class to body
+      $('html').addClass('night');
+      console.log("Toggled Cookie");
+    }
+
+ }
+
+});
 
 
 // Menu Toggle ///////////////////////////////////////////
