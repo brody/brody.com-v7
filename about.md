@@ -8,7 +8,7 @@ description: Sometimes all you need is a little text change to save your busines
 Short Version
 {: .grey.night-grey.f3}
 
-I'm a Senior Product Designer, currently working at [JobAdder](http://www.JobAdder.com){: target="_blank"} out of the HQ in Sydney, Australia.
+I am currently Head of Design at [JobAdder](http://www.JobAdder.com){: target="_blank"}, working out of the HQ in Sydney, Australia, designing useful tools for recruiters.
 
 With 10+ years experience designing across responsive web, iOS, Android & MacOS apps. UX, UI & problem solving is central to everything I do. Synthesising the needs and goals of users, product managers, marketing, developers and testers to ensure the best possible experience.
 
