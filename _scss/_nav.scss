@@ -131,14 +131,13 @@ nav {
       // align-items: center;
     }
 
-      &:active,
-      &:hover {
-        cursor: pointer;
+    &:active,
+    &:hover {
+      cursor: pointer;
 
-        .hamburger__bg {
-          background-color: $primary;
-        }
-
+      .hamburger__bg {
+        background-color: $primary;
+      }
     }
 
     &.is-open {
@@ -164,7 +163,7 @@ nav {
   @include breakpoint($md) {
     .hamburger,
     a#logo {
-      padding: 32px 40px 32px;
+      padding: 32px 40px;
     }
   }
   @include breakpoint($lg) {
@@ -216,7 +215,6 @@ nav {
         border-width: 0;
         font-size: 18px;
         line-height: 24px;
-
       }
     }
   }
@@ -245,24 +243,19 @@ nav {
   color: rgba($grey-dark,.8);
   font-size: 14px;
   line-height: 22px;
-font-weight: 500;
-border: 1px solid rgba($grey-dark,.2);
+  font-weight: 500;
+  border: 1px solid rgba($grey-dark,.2);
 }
-
-
 @media screen and (max-width: 50em) {
-
-#menu ul li a:hover:before, #nightMode:hover:before {
-  display: none;
+  #menu ul li a:hover:before,
+  #nightMode:hover:before {
+    display: none;
+  }
 }
-
-}
-
 @media screen and (orientation:landscape) and (min-device-width: 319px) and (max-device-width: 480px) {
   #menu {
     padding: 20px 20px 40px;
     -webkit-overflow-scrolling: touch;
-
   }
 
   .dn-sh {
@@ -272,5 +265,4 @@ border: 1px solid rgba($grey-dark,.2);
   .db-sh {
     display: block;
   }
-
 }

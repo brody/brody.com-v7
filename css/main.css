@@ -390,7 +390,7 @@ hr {
 iframe,
 img,
 object,
-twitterwidget {
+twitter-widget {
   display: block;
   position: relative;
   width: 100%;
@@ -401,7 +401,7 @@ twitterwidget {
     iframe,
     img,
     object,
-    twitterwidget {
+    twitter-widget {
       display: block;
       padding: 0;
       float: none;
@@ -1198,7 +1198,7 @@ nav {
   @media screen and (min-width: 45em) {
     nav .hamburger,
     nav a#logo {
-      padding: 32px 40px 32px; } }
+      padding: 32px 40px; } }
 
 #menu {
   width: 265px;
@@ -1253,7 +1253,8 @@ nav {
   border: 1px solid rgba(106, 102, 125, 0.2); }
 
 @media screen and (max-width: 50em) {
-  #menu ul li a:hover:before, #nightMode:hover:before {
+  #menu ul li a:hover:before,
+  #nightMode:hover:before {
     display: none; } }
 
 @media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 480px) {

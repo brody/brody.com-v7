@@ -25,7 +25,7 @@ book-rating:
 
 ---
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Something I wish I’d learned earlier in my career: The way companies run their recruiting process is a strong indicator for what it’s like to work there.</p>&mdash; Cap Watkins (@cap) <a href="https://twitter.com/cap/status/1024016820280479744?ref_src=twsrc%5Etfw">July 30, 2018</a></blockquote>
+<blockquote class="twitter-tweet center" data-lang="en"><p lang="en" dir="ltr">Something I wish I’d learned earlier in my career: The way companies run their recruiting process is a strong indicator for what it’s like to work there.</p>&mdash; Cap Watkins (@cap) <a href="https://twitter.com/cap/status/1024016820280479744?ref_src=twsrc%5Etfw">July 30, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">I used to excuse it with, “It’s probably different once you’re there full time.”<br><br>It’s not! It’s the same. Pay close attention to the signals and decide if the pros/cons are ones you’re good with.</p>&mdash; Cap Watkins (@cap) <a href="https://twitter.com/cap/status/1024019026144632832?ref_src=twsrc%5Etfw">July 30, 2018</a></blockquote>

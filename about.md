@@ -16,6 +16,9 @@ Part time emoji connoisseur. 🤔 🍻 ✈️ 🌴
 
 [Want the long version? 👇](#long-version)
 
+<!-- __ -->
+
+
 
 ---
 
@@ -80,23 +83,23 @@ Part time emoji connoisseur. 🤔 🍻 ✈️ 🌴
 Long Version
 {: .grey.night-grey.f3.pt5#long-version}
 
-Sydney born & bred. I got my start in design as 💩 kicker, printer, binder, customer service lackey…. and designer at Snap Printing. Although painful at times (damn paper cuts), this role taught me so much about design and getting to the heart of customer/user wants and needs.
+Sydney born & bred. I got my start in design as 💩 kicker, printer, binder, customer service lackey… and _designer_ at Snap Printing. Although painful at times (damn paper cuts), this role taught me so much about design and getting to the heart of customer/user wants and needs.
 
 From there doing advertisements, cover layouts and all kinds of marketing collateral for UBD & Gregory’s street directories (RIP 💀).
 
-Then over to Fairfax Media to working in the marketing team for BRW, AFR and all the business titles. At Fairfax Business Media is where I got my first taste of digital design, creating and coding flash banners, micro-sites and EDMs (the email kind not the music kind).
+Then over to Fairfax Media to work in the marketing team for BRW, AFR and all the business titles. At Fairfax Business Media is where I got my first taste of digital design, creating and coding flash banners, micro-sites and EDMs (the email kind not the music kind 🎧).
 
 By this time I had a taste for digital and there was no turning back. 😍
 
 I then moved over to Fairfax Regional Media to help overhaul the UI & UX of the 180+ regional news websites & also the bespoke CMS that powered them, and eventually the print layout of the newspapers also.
 
-It was around this time I scratch my itch feet (figuratively) and took 2 lengthy trips ✈️🌴. One around South East Asia and the other around South America, ticking the [death road](https://instagram.com/p/p04k0-J01w/){: target="_blank"}, [salt flats](https://instagram.com/p/qHDqk4p00v/){: target="_blank"}, [Machu Pichu](https://instagram.com/p/qpjTjPp05o/){: target="_blank"} & [attending a World Cup game](https://youtu.be/R4FjdYUngOU?t=1m34s){: target="_blank"} bucket list items. ✅
+It was around this time I scratched my itch feet (figuratively) and took 2 lengthy trips ✈️🌴. One around South East Asia and the other around South America, ticking the [death road](https://instagram.com/p/p04k0-J01w/){: target="_blank"}, [salt flats](https://instagram.com/p/qHDqk4p00v/){: target="_blank"}, [Machu Pichu](https://instagram.com/p/qpjTjPp05o/){: target="_blank"} & [attending a World Cup game](https://youtu.be/R4FjdYUngOU?t=1m34s){: target="_blank"} bucket list items. ✅
 
-I then joined [Hudl](https://www.hudl.com/){: target="_blank"}, a sports technology company, helping [lead the UX & UI redesign](https://www.instagram.com/p/BCopLR8J0wB/){: target="_blank"} of [Sportscode](https://www.hudl.com/elite/sportscode){: target="_blank"}, enabling teams to record, breaking down and analysis video, with a user base of all NBA (except one), most **EPL**, all **AFL**, 16 of the 20 **Rugby World Cup teams** and a *whole* lot more.
+I then joined [Hudl](https://www.hudl.com/){: target="_blank"}, a sports technology company, helping [lead the UX & UI redesign](https://www.instagram.com/p/BCopLR8J0wB/){: target="_blank"} of [Sportscode](https://www.hudl.com/elite/sportscode){: target="_blank"}, enabling teams to record, break down and analysis video, with a user base of all **NBA** (except one), most **EPL**, all **AFL**, 16 of the 20 **Rugby World Cup teams** and a *whole* lot more.
 
 While at Hudl I had the chance to conduct user interviews with the **Wallabies, Sydney Swans, Manly Sea Eagles,** a handful of US college teams and more. The user interviews were conducted throughout the design process, from extracting design flaws with the existing product, validating wireframes through to clickable prototypes in Invision and also watching them “code” games live.
 
-From there I got poached to work on Jenkins and other projects in the Cloudbees suite, trusted by the likes of **Netflix, Adobe, Microsoft & NASA** to enable continuous integration and continuous delivery. I am currently developing the design team, establishing UX best practices & design principles and turning a developer heavy company into a design led one.
+From there I moved on to work on [Jenkins](https://jenkins.io/){: target="_blank"} and other projects in the [Cloudbees](https://www.cloudbees.com/){: target="_blank"} suite, trusted by the likes of **Netflix, Adobe, Microsoft & NASA** to enable continuous integration and continuous delivery. During my time there I helped develop the design team, establish UX best practices & design principles and turning a developer heavy company into a design led one.
 
 
 
