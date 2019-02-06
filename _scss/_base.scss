@@ -162,6 +162,7 @@ body {
 .f-headline {
   font-size: 32px;
   line-height: 36px;
+  letter-spacing: -0.024em;
   @include breakpoint($md) {
     font-size: 40px;
     line-height: 46px;
@@ -172,6 +173,7 @@ body {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  letter-spacing: -0.026em;
   @include breakpoint($md) {
     font-size: 28px;
     line-height: 36px;
@@ -183,6 +185,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 

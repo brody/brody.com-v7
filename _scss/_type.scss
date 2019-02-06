@@ -1,3 +1,8 @@
+.sans-serif {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.023em;
+}
+
 // $monospace: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
 $monospace: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 
@@ -16,6 +21,10 @@ p {
   @include breakpoint($md) {
     font-size: 18px;
   }
+}
+
+b, strong {
+    font-weight: 600;
 }
 
 .lh-copy {
@@ -164,6 +173,7 @@ blockquote {
   font-size: 16px;
   line-height: 1.5;
   // margin: 0 0 0 -20px;
+  opacity: .75;
   cite {
     font-style: normal;
     margin-top: 16px;

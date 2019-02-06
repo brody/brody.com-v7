@@ -287,7 +287,8 @@ body {
 
 .f-headline {
   font-size: 32px;
-  line-height: 36px; }
+  line-height: 36px;
+  letter-spacing: -0.024em; }
   @media screen and (min-width: 45em) {
     .f-headline {
       font-size: 40px;
@@ -296,7 +297,8 @@ body {
 .f-subheadline {
   font-weight: 300;
   font-size: 24px;
-  line-height: 30px; }
+  line-height: 30px;
+  letter-spacing: -0.026em; }
   @media screen and (min-width: 45em) {
     .f-subheadline {
       font-size: 28px;
@@ -306,7 +308,8 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700; }
+  font-weight: 700;
+  letter-spacing: 0.02em; }
 
 .pv4-5 {
   padding-top: 1.5rem;
@@ -728,6 +731,7 @@ button {
   .goodreads .gr_custom_container_1524204944 .gr_custom_title_1532863785,
   .goodreads .gr_custom_container_1532863785 .gr_custom_title_1524204944,
   .goodreads .gr_custom_container_1532863785 .gr_custom_title_1532863785 {
+    letter-spacing: 0.01em;
     font-weight: 600;
     font-size: 1.1em;
     margin-bottom: 4px;
@@ -736,7 +740,8 @@ button {
   .goodreads .gr_custom_container_1524204944 .gr_custom_author_1532863785,
   .goodreads .gr_custom_container_1532863785 .gr_custom_author_1524204944,
   .goodreads .gr_custom_container_1532863785 .gr_custom_author_1532863785 {
-    font-size: 14px; }
+    font-size: 14px;
+    letter-spacing: -0.01em; }
 
 .lastFM li {
   line-height: 1.3;
@@ -804,6 +809,10 @@ button {
 .lastFM .button--soundcloud {
   background: linear-gradient(#f70, #f30); }
 
+.sans-serif {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.023em; }
+
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -817,6 +826,9 @@ p {
   @media screen and (min-width: 45em) {
     p {
       font-size: 18px; } }
+
+b, strong {
+  font-weight: 600; }
 
 .lh-copy {
   line-height: 1.6; }
@@ -902,7 +914,8 @@ blockquote {
   padding-left: 10px;
   padding-bottom: 0;
   font-size: 16px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  opacity: .75; }
   blockquote cite {
     font-style: normal;
     margin-top: 16px;
