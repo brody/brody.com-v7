@@ -1,8 +1,7 @@
 .sans-serif {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   letter-spacing: -0.023em;
 }
-
 // $monospace: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
 $monospace: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 
@@ -23,8 +22,9 @@ p {
   }
 }
 
-b, strong {
-    font-weight: 600;
+b,
+strong {
+  font-weight: 600;
 }
 
 .lh-copy {
@@ -100,6 +100,7 @@ li {
   @include breakpoint($md) {
     font-size: 17px;
   }
+
   ul {
     margin: 0;
     list-style: circle;
@@ -107,7 +108,8 @@ li {
   }
 }
 
-ol li p, ul li p {
+ol li p,
+ul li p {
   font-size: 16px;
   margin-bottom: 5px;
   margin-top: 15px;
@@ -122,7 +124,6 @@ ol li p, ul li p {
 ol ol {
   list-style-type: lower-alpha;
 }
-
 // h1.article_title,
 // h1.intro_title {
 //   font-size: 32px;
@@ -136,7 +137,6 @@ ol ol {
 //     // margin-bottom: 24px;
 //   }
 // }
-
 // #intro h2,
 // h2.intro_sub-title {
 //   font-weight: 300;
@@ -149,7 +149,6 @@ ol ol {
 //     line-height: 36px;
 //   }
 // }
-
 // h3.section-header {
 //   text-transform: uppercase;
 //   font-size: 14px;
@@ -173,7 +172,8 @@ blockquote {
   font-size: 16px;
   line-height: 1.5;
   // margin: 0 0 0 -20px;
-  opacity: .75;
+  opacity: 0.75;
+
   cite {
     font-style: normal;
     margin-top: 16px;
@@ -185,24 +185,23 @@ mark {
   margin: -.075em -.125em;
   padding: 0.075em 0.125em;
 }
-
 // time {
-  // max-width: 600px;
-  // margin: 0 auto;
-  // text-transform: uppercase;
-  // display: block;
-  // margin-top: 0;
-  // margin-bottom: 5px;
-  // font-weight: 700;
-  // font-size: 14px;
-  // transition-property: all;
-  // transition-duration: 0.5s;
+// max-width: 600px;
+// margin: 0 auto;
+// text-transform: uppercase;
+// display: block;
+// margin-top: 0;
+// margin-bottom: 5px;
+// font-weight: 700;
+// font-size: 14px;
+// transition-property: all;
+// transition-duration: 0.5s;
 // }
 
 .code,
 code.highlighter-rouge {
   font-family: $monospace;
-  padding: 0em 0.4em;
+  padding: 0 0.4em;
   background: #31343f;
   display: inline-block;
   color: #eddc96;
@@ -215,7 +214,6 @@ code.highlighter-rouge {
     padding: 16px;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
-
     // border-radius: 3px;
     @include breakpoint($ns) {
       border-radius: 3px;

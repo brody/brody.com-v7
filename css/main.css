@@ -810,7 +810,7 @@ button {
   background: linear-gradient(#f70, #f30); }
 
 .sans-serif {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   letter-spacing: -0.023em; }
 
 body {
@@ -827,7 +827,8 @@ p {
     p {
       font-size: 18px; } }
 
-b, strong {
+b,
+strong {
   font-weight: 600; }
 
 .lh-copy {
@@ -889,7 +890,8 @@ li {
     list-style: circle;
     padding-left: 32px; }
 
-ol li p, ul li p {
+ol li p,
+ul li p {
   font-size: 16px;
   margin-bottom: 5px;
   margin-top: 15px;
@@ -897,7 +899,8 @@ ol li p, ul li p {
   padding-right: 12px;
   padding-left: 4px; }
   @media screen and (min-width: 45em) {
-    ol li p, ul li p {
+    ol li p,
+    ul li p {
       font-size: 17px; } }
 
 ol ol {
@@ -915,7 +918,7 @@ blockquote {
   padding-bottom: 0;
   font-size: 16px;
   line-height: 1.5;
-  opacity: .75; }
+  opacity: 0.75; }
   blockquote cite {
     font-style: normal;
     margin-top: 16px;
@@ -928,7 +931,7 @@ mark {
 .code,
 code.highlighter-rouge {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  padding: 0em 0.4em;
+  padding: 0 0.4em;
   background: #31343f;
   display: inline-block;
   color: #eddc96;
