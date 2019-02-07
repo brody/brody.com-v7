@@ -4,12 +4,12 @@
 // On initial page load, there is not yet a cookie
 // When the user clicks the button for the fist time, do this:
 $('#nightMode').click(function() {
-  var inThirtyMinutes = new Date(new Date().getTime() + 30 * 60 * 1000);
+  // var inThirtyMinutes = new Date(new Date().getTime() + 30 * 60 * 1000);
 
   if($('html').hasClass("night")){
     // remove set darkmode cookie, add lightmode cookie
     Cookies.remove('_darkmode');
-    Cookies.set('_lightmode', 'Enabled', { expires: inThirtyMinutes });
+    // Cookies.set('_lightmode', 'Enabled', { expires: inThirtyMinutes });
     // remove darkmode class and add lightmode class to body
     $('html').removeClass('night').addClass('day');
     console.log("Setted Cookie dark");
@@ -17,15 +17,15 @@ $('#nightMode').click(function() {
   else if($('html').hasClass("light")){
     // remove set darkmode cookie, add lightmode cookie
     Cookies.remove('_lightmode');
-    Cookies.set('_darkmode', 'Enabled', { expires: inThirtyMinutes });
+    // Cookies.set('_darkmode', 'Enabled', { expires: inThirtyMinutes });
     // remove lightmode class and add darkmode class to body
     $('html').removeClass('day').addClass('night');
     console.log("Setted Cookie day");
   }else{
     // create a cookie for darkmode state
-    Cookies.set('_darkmode', 'Enabled', { expires: inThirtyMinutes });
+    // Cookies.set('_darkmode', 'Enabled', { expires: inThirtyMinutes });
     // add class to body
-    $('html').addClass('night');
+    $('html').removeClass('day').addClass('night');
     console.log("Toggled Cookie");
   }
 });
@@ -56,10 +56,12 @@ $('#moon').on('click', function() {
 $(document).keydown(function(e) {
   var unicode = e.charCode ? e.charCode : e.keyCode;
 
-  if (unicode == 68 || unicode == 78) {
+  if (unicode == 27 || unicode == 83) {
     // toggle night mode
     // 68: d
     // 78: n
+    // 83: s
+    // 27 : ESC
     // $('html').toggleClass('night');
 
     var inThirtyMinutes = new Date(new Date().getTime() + 30 * 60 * 1000);
@@ -83,7 +85,7 @@ $(document).keydown(function(e) {
       // create a cookie for darkmode state
       Cookies.set('_darkmode', 'Enabled', { expires: inThirtyMinutes });
       // add class to body
-      $('html').addClass('night');
+      $('html').removeClass('day').addClass('night');
       console.log("Toggled Cookie");
     }
 
