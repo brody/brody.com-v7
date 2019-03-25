@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!-- 
+
+
+ ******   *******     *******   *******   **    **      
+/*////** /**////**   **/////** /**////** //**  **       
+/*   /** /**   /**  **     //**/**    /** //****        
+/******  /*******  /**      /**/**    /**  //**    **********
+/*//// **/**///**  /**      /**/**    /**   /**   //////////
+/*    /**/**  //** //**     ** /**    **    /**         
+/******* /**   //** //*******  /*******     /**         
+///////  //     //   ///////   ///////      //         Hi! 👋       
+
+
+-->
+
+<html class="antialiased font-sans leading-normal relative">
+
+<!-- {% include head-index.html %} -->
+{% include header.html %}
+
+<body class="bg transition-background mt-0 mb-24 md:mt-24 md:mb-0 lg:mt-36">
+
+  {% include nav.html %}
+
+  {% include wip.html %}
+
+  <div class="post container text-02 max-w-xl mx-auto px-5 md:px-16 pt-12 md:pt-8">
+
+      <section class="post-header mb-8 md:mt-16 md:mb-16">
+
+          <time class="glitch text-04 block uppercase font-semibold mt-5 mb-8 lg:mb-12" data-text="{{ page.date | date: '%-d %B %Y' }}" datetime="{{ page.date | date: ' %Y-%m-%d ' }}">{{ page.date | date: "%-d %B %Y" }}</time>
+      
+          <h1 class="glitch text-2xl font-normal lg:text-4xl my-8 md:my-10" data-text="{{ page.title }}">
+              {{ page.title }}
+          </h1>
+
+          {% if page.sub-title != nil %}
+          <h2 class="text-xl text-03 font-normal lg:text-2xl -mt-4 mb-8 md:mb-10 md:-mt-5">{{ page.sub-title }}</h2>
+          {% endif %}
+      
+      </section>
+      
+      <section class="post-body text-02 text lg:text-xl mt-3 mb-24 md:mb-40">
+
+          {% include source.html %}
+
+          {{ content }}
+
+          {% include book.html %}
+
+          <!-- {% include tags.html %} -->
+
+          <!-- {% include nextpost.html %} -->
+      
+
+      </section>
+
+  </div>
+
+  {% include footer.html %}
+  {% include script-work.html %}
+  {% include analytics.html %}
+
+</body>
+
+</html>

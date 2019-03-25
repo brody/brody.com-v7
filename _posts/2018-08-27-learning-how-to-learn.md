@@ -20,7 +20,7 @@ book-title: A Mind For Numbers
 book-author: Barbara Oakley
 book-url: https://www.amazon.com/Mind-Numbers-Science-Flunked-Algebra-ebook/dp/B00G3L19ZU
 book-url-label: amazon.com
-book-cover: /images/book/a-mind-for-numbers.jpg
+book-cover: /image/book/a-mind-for-numbers.jpg
 book-rating:
 
 ---
