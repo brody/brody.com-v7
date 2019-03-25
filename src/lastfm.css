@@ -1,0 +1,93 @@
+  #lastfm {
+   & li {
+      line-height: 1.3;
+      margin-bottom: 24px;
+      min-height: 130px;
+    }
+  
+   & #lastFM-recent-tracks,
+   & #lastFM-top-artists {
+      margin-bottom: 40px;
+    }
+  
+   & img {
+      width: 110px;
+      height: auto;
+      margin: 0 24px 0 0;
+      float: left;
+    }
+  
+    & #lastFM-recent-tracks .track,
+    & #lastFM-top-artists .artist {
+      font-weight: 600;
+      font-size: 1em;
+      padding-top: 4px;
+
+     & a {
+        box-shadow: none;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+  
+      }
+    }
+  
+   & .artist {
+      font-size: 1em;
+    }
+  
+    #lastFM-recent-tracks .date,
+    #lastFM-top-artists .play-count {
+      font-size: 0.8em;
+      margin-top: 10px;
+      margin-bottom: 4px;
+      opacity: 0.8;
+    }
+  
+    .track--now-playing::after {
+      content: url("/image/lastfm/track-nowplaying.gif");
+      margin-left: 4px;
+    }
+  
+    .button {
+      display: flex;
+      align-items: center;
+      border-bottom: 0;
+      border-radius: 4px;
+      padding: 8px 18px 8px 14px;
+      font-weight: 500;
+      margin-right: 12px;
+      margin-bottom: 16px;
+      float: left;
+      font-size: 17px;
+      border: 1px solid var(--colorForeground04);
+      -webkit-transition: border .234s;
+      transition: border .234s;
+    
+  
+      &:hover {
+        /* opacity: 0.8; */
+        border-color: var(--colorPrimary02);
+      }
+  
+      svg {
+        margin-right: 12px;
+      }
+    }
+  
+    .button--spotify {
+      /* background-color: #2EBD59; */
+      svg {
+        fill: #2EBD59;
+      }
+    }
+  
+   .button--soundcloud {
+      /* background: linear-gradient(#f70,#f30); */
+      svg {
+        fill: #f30;
+      }
+    }
+  }
+  

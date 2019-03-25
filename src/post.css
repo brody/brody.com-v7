@@ -1,0 +1,300 @@
+.post-body {
+    & p {
+        @apply text-lg mt-4 mb-5 max-w-md
+    }
+    & h1 {
+        @apply text-2xl font-normal mt-12 mb-6 max-w-md
+    }
+    & h2 {
+        @apply text-xl text-03 font-normal mt-8 mb-4 max-w-md
+    }
+    & h3 {
+        @apply text-04 block uppercase font-semibold text-base mt-8 mb-2 max-w-md
+    }
+    & blockquote {
+        @apply border-l-4 pl-4 text-03 italic my-6;
+        border-color: var(--colorPrimary01);
+        & ol, & ul {
+            @apply pl-6
+        }
+    }
+    & iframe {
+        @apply w-screen -mx-5 max-w-md;
+    }
+    & twitter-widget {
+        @apply my-6 !important;
+    }
+    & ol, & ul {
+        @apply pl-8 text-base max-w-md;
+        counter-reset: section;
+
+         /* & ul li {
+            @apply list-reset relative;
+            &::before {
+                @apply text-primary-01;
+                content: "\25AA";       
+                font-size: 1em; 
+            }    
+        }
+        & ol li {
+            @apply list-reset;
+            &::before {
+                @apply text-primary-01 absolute text-lg ;
+                counter-increment: section;            
+                content: counters(section, ".") " ";  
+                display: inline-block; 
+                margin-left: -1.75em;
+                margin-right: 0.5em; 
+                text-align: right; 
+                direction: rtl  
+            }
+        }  */
+
+    }
+    & li {
+        @apply mt-4 mb-4 relative;
+        /* counter-increment: li; */
+    }
+    /* & ul li {
+        @apply list-reset;
+        &::before {
+            @apply text-primary-01 absolute;
+            content: "\25AA";       
+            font-size: 1em; 
+        }    
+    }
+    /* & ol li {
+        @apply list-reset;
+        &::before {
+            @apply text-primary-01 absolute text-lg ;
+            counter-increment: section;            
+            content: counters(section, ".") " ";  
+            display: inline-block; 
+            margin-left: -1.5em;
+            margin-right: 0.5em; 
+            text-align: right; 
+            direction: rtl  
+        }
+    } */
+
+    & hr {
+        @apply opacity-25 border-b my-12 w-1/3;
+        border-color: var(--colorForeground01);
+    }
+    & .link-card, .book-card {
+        & a {
+            border: 1px solid var(--colorForeground04);
+            -webkit-transition: border .234s;
+            transition: border .234s;
+            background-color: color-mod(yellow blend(red 50%));
+        
+            &:hover {
+                border-color: var(--colorPrimary02);
+            }
+        
+            & svg {
+                /* margin-right: 12px; */
+            }
+            & img {
+                width: 80px;
+            }
+        }
+    }
+    & .rating {
+        /* @apply my-1 hidden; */
+        ul {
+            @apply pl-0 flex flex-wrap;
+            li {
+                @apply my-0 mr-1;
+                .star-base {
+                    fill: var(--colorForeground04);
+                }
+            }
+        }
+        
+        &.rating--5 {
+            display: flex;
+        
+            li:nth-child(1) path.star-half {
+            fill: var(--colorPrimary01);
+            }
+        }
+        
+        &.rating-1 {
+            display: flex;
+        
+            li:nth-child(1) path.star-base {
+            fill: var(--colorPrimary01);
+            }
+        }
+        
+        &.rating-1-5 {
+            display: flex;
+        
+            li:nth-child(1) path.star-base {
+            fill: var(--colorPrimary01);
+            }
+        
+            li:nth-child(2) path.star-half {
+            fill: var(--colorPrimary01);
+            }
+        }
+        
+        &.rating-2 {
+            display: flex;
+        
+            li:nth-child(-n+2) path.star-base {
+            fill: var(--colorPrimary01);
+            }
+        }
+        
+        &.rating-2-5 {
+            display: flex;
+        
+            li:nth-child(-n+2) path.star-base {
+            fill: var(--colorPrimary01);
+            }
+        
+            li:nth-child(3) path.star-half {
+            fill: var(--colorPrimary01);
+            }
+        }
+        
+        &.rating-3 {
+            display: flex;
+        
+            li:nth-child(-n+3) path.star-base {
+            fill: var(--colorPrimary01);
+            }
+        }
+        
+        &.rating-3-5 {
+            display: flex;
+        
+            li:nth-child(-n+3) path.star-base {
+            fill: var(--colorPrimary01);
+            }
+        
+            li:nth-child(4) path.star-half {
+            fill: var(--colorPrimary01);
+            }
+        }
+        
+        &.rating-4 {
+            display: flex;
+        
+            li:nth-child(-n+4) path.star-base {
+            fill: var(--colorPrimary01);
+            }
+        }
+        
+        &.rating-4-5 {
+            display: flex;
+        
+            li:nth-child(-n+4) path.star-base {
+            fill: var(--colorPrimary01);
+            }
+        
+            li:nth-child(5) path.star-half {
+            fill: var(--colorPrimary01);
+            }
+        }
+        
+        &.rating-5 {
+            display: flex;
+        
+            li:nth-child(-n+5) path.star-base {
+            fill: var(--colorPrimary01);
+            }
+        }
+        }
+
+}
+
+@screen md {
+
+    .post-body {
+
+        & p {
+        }
+        & h1 {
+        }
+        & h2 {
+            @apply mt-12 mb-8
+        }
+        & h3 {
+            @apply mt-4 mb-8
+        }
+        & blockquote {
+            @apply -ml-6 pl-6 my-8;
+            & p {
+                @apply text-xl max-w-full
+            }
+            & ol, & ul {} 
+        }
+        & iframe {
+            @apply w-full mx-0 my-4;
+        }
+        & twitter-widget {
+            @apply my-8 !important;
+        }
+        & ol, & ul {
+        }
+        & hr {
+            @apply my-16;
+        }
+        & .link-card, & .book-card {
+            a {
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+}
+
+@screen lg {
+
+    .post-body {
+        & p {
+            @apply text-xl mt-6 mb-8;
+        }
+        & h1 {
+            @apply text-3xl mt-16 mb-10;
+        }
+        & h2 {
+            @apply text-2xl;
+        }
+        & h3 {
+            @apply mb-12;
+        }
+        & blockquote {
+            @apply -ml-8 pl-8 my-12;
+            & p {
+                @apply text-2xl
+            }
+        }
+        & iframe {
+        }
+        & twitter-widget {
+        }
+        & ol, & ul {
+            @apply text-lg pl-10
+        }
+        & li {
+            @apply mt-6 mb-6
+        }
+        & ul li {
+            &::before {
+                left: -24px;
+            }    
+        }
+
+        & hr {
+            @apply my-24;
+        }
+
+    }
+
+}
