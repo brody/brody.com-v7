@@ -1,20 +1,28 @@
 ---
 layout: default
 title: Journal
+category: journal
 ---
 
-<section id="journal" class="mw600 center lh-copy mb5 mb6-ns">
+{% include wip.html %}
 
-  <h1 class="intro_title mb4">Journal</h1>
-
-  {% for post in site.categories.journal %}
-
-  <a href="{{ post.url }}" class="pv3 db bn">
-    <time datetime="{{ page.date | date: " %Y-%m-%d " }}" class="f3 grey-light night-grey-dark db mt0 mb2">{{ post.date | date: "%-d %B %Y" }}</time>
-    <h1 class="mt0 mb2">{{ post.title }}</h1>
-    <p class="mv0">{{ post.description }}</p>
-  </a>
-
-  {% endfor %}
-
-</section>
+<div class="container text-02 max-w-xl mx-auto px-5 md:px-16 pt-12 md:pt-8">
+  
+    <section id="journal" class="mb-24 md:mt-16 md:mb-40">
+  
+      <h4 class="text-04 uppercase font-semibold mt-5 mb-8 lg:mb-12 glitch" data-title="Journal">Journal</h4>
+  
+      {% for post in site.categories.journal %}
+  
+      <div class="journal-item max-w-md my-8 md:my-10">
+          <a href="{{ post.url }}" class="text-2xl lg:text-3xl my-8 glitch" data-title="{{ post.title }}">{{ post.title }}</a>
+          <time class="text-04 block uppercase font-semibold mt-3 mb-3"datetime="{{ post.date | date: " %Y-%m-%d " }}">{{ post.date | date: "%-d %B %Y" }}</time>
+          <p class="text-02 text-lg lg:text-xl mt-3 mb-8">{{ post.description }}</p>
+      </div>
+    
+      {% endfor %}
+  
+    </section>
+  
+  
+  </div>

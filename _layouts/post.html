@@ -1,89 +1,68 @@
 <!DOCTYPE html>
-<html lang="en-GB" class="bg-grey-lightest grey-darker night">
 
-{% include head.html %}
+<!-- 
 
-<body class="sans-serif">
 
-  {% include header.html %}
+ ******   *******     *******   *******   **    **      
+/*////** /**////**   **/////** /**////** //**  **       
+/*   /** /**   /**  **     //**/**    /** //****        
+/******  /*******  /**      /**/**    /**  //**    **********
+/*//// **/**///**  /**      /**/**    /**   /**   //////////
+/*    /**/**  //** //**     ** /**    **    /**         
+/******* /**   //** //*******  /*******     /**         
+///////  //     //   ///////   ///////      //         Hi! 👋       
 
-  <section class="container post lh-copy">
 
-    <time class="f3 grey-light night-grey-dark db mt0 mb2 mw600 center" datetime="{{ page.date | date: " %Y-%m-%d " }}">{{ page.date | date: "%-d %B %Y" }}</time>
+-->
 
-    <h1 class="f-headline mv3">
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </h1>
+<html class="antialiased font-sans leading-normal relative">
 
-    {% if page.sub-title != nil %}
-    <h2 class="f-subheadline mt3 mb4 grey night-grey">{{ page.sub-title }}</h2>
-    {% endif %}
+<!-- {% include head-index.html %} -->
+{% include header.html %}
 
-    {% if page.source-url != nil %}
-    <div class="link-card">
-      <a href="{{ page.source-url }}" class="block rounded card p2 active-hover mv3" target="_blank">
-        <p class=>Source:</p>
-        <h2>{{ page.source-title }}</h2>
-        <button class="ic_external">
-          <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m13.8786797 8h-6.3786797c-.82842712 0-1.5-.67157288-1.5-1.5s.67157288-1.5 1.5-1.5h10c.8284271 0 1.5.67157288 1.5 1.5v10c0 .8284271-.6715729 1.5-1.5 1.5s-1.5-.6715729-1.5-1.5v-6.3786797l-8.95020426 8.9502043c-.58578644.5857864-1.53553391.5857864-2.12132035 0-.58578643-.5857864-.58578643-1.5355339 0-2.1213203z"/></svg>
-          <span class="label">{{ page.source-url-label }}</span>
-        </button>
-      </a>
-    </div>
-    {% endif %}
+<body class="bg transition-background mt-0 mb-24 md:mt-24 md:mb-0 lg:mt-36">
 
-    {{ content }}
+  {% include draw.html %}
+  {% include nav.html %}
 
-    {% if page.book-title != nil %}
-    <div class="book-card">
-      <a href="{{ page.book-url }}" class="block rounded card p2 active-hover mv3" target="_blank">
-            <img src="{{ page.book-cover }}" alt="{{ page.book-title }}">
-            <div class="book-details">
-              <h2>{{ page.book-title }}</h2>
-              <p class=>{{ page.book-author }}</p>
-              <div class="rating rating-{{ page.book-rating }}">
-                <ul>
-                  <li>
-                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" transform=""><path class="star-base" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004 2.4696 5.004 5.5216.8024-3.996 3.8944.944 5.4992z"/><path class="star-half" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004z"/></g></svg>
-                  </li>
-                  <li>
-                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" transform=""><path class="star-base" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004 2.4696 5.004 5.5216.8024-3.996 3.8944.944 5.4992z"/><path class="star-half" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004z"/></g></svg>
-                  </li>
-                  <li>
-                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" transform=""><path class="star-base" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004 2.4696 5.004 5.5216.8024-3.996 3.8944.944 5.4992z"/><path class="star-half" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004z"/></g></svg>
-                  </li>
-                  <li>
-                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" transform=""><path class="star-base" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004 2.4696 5.004 5.5216.8024-3.996 3.8944.944 5.4992z"/><path class="star-half" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004z"/></g></svg>
-                  </li>
-                  <li>
-                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" transform=""><path class="star-base" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004 2.4696 5.004 5.5216.8024-3.996 3.8944.944 5.4992z"/><path class="star-half" d="m8 13.1032-4.9384 2.596.9432-5.4992-3.9968-3.8944 5.5216-.8024 2.4704-5.004z"/></g></svg>
-                  </li>
-                </ul>
-              </div>
-              <button class="ic_external">
-                <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m13.8786797 8h-6.3786797c-.82842712 0-1.5-.67157288-1.5-1.5s.67157288-1.5 1.5-1.5h10c.8284271 0 1.5.67157288 1.5 1.5v10c0 .8284271-.6715729 1.5-1.5 1.5s-1.5-.6715729-1.5-1.5v-6.3786797l-8.95020426 8.9502043c-.58578644.5857864-1.53553391.5857864-2.12132035 0-.58578643-.5857864-.58578643-1.5355339 0-2.1213203z"/></svg>
-                <span class="label">{{ page.book-url-label }}</span>
-              </button>
-              </div>
-            </a>
-    </div>
-    {% endif %}
+  {% include wip.html %}
 
-    {% if page.tags != nil %}
-    <div class="tags mv4">
+  <div class="post container text-02 max-w-xl mx-auto px-5 md:px-16 pt-12 md:pt-8">
 
-      <ul class="list ph3">
-        {% for tag in page.tags %}
-        <li class="dib pa0 mr1"><a href="" class="br5 bn ph3 pv2 white night-white bg-grey-light night-bg-grey-darker">{{ tag }}</a></li>
-        {% endfor %}
-      </ul>
+      <section class="post-header mb-8 md:mt-16 md:mb-16">
 
-    </div>
-    {% endif %}
+          <time class="glitch text-04 block uppercase font-semibold mt-5 mb-8 lg:mb-12" data-text="{{ page.date | date: '%-d %B %Y' }}" datetime="{{ page.date | date: ' %Y-%m-%d ' }}">{{ page.date | date: "%-d %B %Y" }}</time>
+      
+          <h1 class="glitch text-2xl font-normal lg:text-4xl my-8 md:my-10" data-text="{{ page.title }}">
+              {{ page.title }}
+          </h1>
 
-    {% include nextpost.html %}
-    {% include script.html %}
-    {% include ga.html %}
+          {% if page.sub-title != nil %}
+          <h2 class="text-xl text-03 font-normal lg:text-2xl -mt-4 mb-8 md:mb-10 md:-mt-5">{{ page.sub-title }}</h2>
+          {% endif %}
+      
+      </section>
+      
+      <section class="post-body text-02 text lg:text-xl mt-3 mb-24 md:mb-40">
+
+          {% include source.html %}
+
+          {{ content }}
+
+          {% include book.html %}
+
+          <!-- {% include tags.html %} -->
+
+          <!-- {% include nextpost.html %} -->
+      
+
+      </section>
+
+  </div>
+
+  {% include footer.html %}
+  {% include script.html %}
+  {% include analytics.html %}
 
 </body>
 

@@ -1,0 +1,348 @@
+@import "lastfm.css";
+@import "goodreads.css";
+@import "glitch.css";
+@import "post.css";
+@import url('https://rsms.me/inter/inter.css');
+ 
+#draw, #wip {
+  /* display: none; */
+}
+
+
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+@tailwind preflight;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+::selection {
+  background-color: var(--colorPrimary02);
+  color: white;
+}
+
+.day {
+  --colorBackground: #FFF;
+  /* --colorBackground: #F7F7F7; */
+  --colorBackgroundPrimary: rgb(81%, 33%, 45%);
+  --colorBackgroundPrimary02: #D399A8;
+  --colorForeground01: #080808;
+  --colorForeground02: #3B3B3B;
+  --colorForeground03: #6E6E6E;
+  --colorForeground04: #A1A1A1;
+  --colorPrimary01: #ce5374;
+  --colorPrimary02: #9F2D4C;
+  --colorPrimary03: #E9CCD4;
+  --colorMobileBar: #121212;
+  --colorMobileText: #DDD;
+}
+
+.night {
+  --colorBackground: #080808;
+  --colorBackgroundPrimary: rgb(81%, 33%, 45%);
+  --colorBackgroundPrimary02: #9F2D4C;
+  --colorForeground01: #F7F7F7;
+  --colorForeground02: #C4C4C4;
+  --colorForeground03: #919191;
+  --colorForeground04: #5E5E5E;
+  --colorPrimary01: #ce5374;
+  --colorPrimary02: #E189A1;
+  --colorPrimary03: #5E3B44;
+  --colorMobileBar: #121212;
+  --colorMobileText: #DDD;
+}
+
+.konami {
+  --colorBackground: #0A091E;
+  --colorBackgroundPrimary: #34E5E9;
+  --colorBackgroundPrimary02: #00989C;
+  --colorForeground01: #FFF;
+  --colorForeground02: #FFCCF6;
+  --colorForeground03: #FF80E9;
+  --colorForeground04: #A42294;
+  --colorPrimary01: #34E5E9;
+  --colorPrimary02: #00989C;
+  --colorPrimary03: #064250;
+  --colorMobileBar: #121212;
+  --colorMobileText: #DDD;
+}
+
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
+
+
+ @responsive {
+  .order-0 {
+    order: 0;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+
+  .order-3 {
+    order: 3;
+  }
+
+  .order-4 {
+    order: 4;
+  }
+
+  .order-5 {
+    order: 5;
+  }
+
+  .safe-area-bottom-inset {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Theme */
+  .bg {
+    background-color: var(--colorBackground);
+  }
+  .bg-primary {
+    background-color: var(--colorBackgroundPrimary);
+  }
+
+  .text-01 {
+    color: var(--colorForeground01);
+  }
+
+  .text-02 {
+    color: var(--colorForeground02);
+  }
+
+  .text-03 {
+    color: var(--colorForeground03);
+  }
+
+  .text-04 {
+    color: var(--colorForeground04);
+  }
+
+  .text-primary-01 {
+    color: var(--colorPrimary01);
+  }
+
+  .text-primary-02 {
+    color: var(--colorPrimary02);
+  }
+
+  .hover\:text-primary-01:hover {
+    color: var(--colorPrimary01);
+  }
+
+  .hover\:text-primary-02:hover {
+    color: var(--colorPrimary02);
+  }
+
+  .bg-mobile-bar {
+    background-color: var(--colorMobileBar);
+  }
+
+  .text-mobile-bar {
+    color: var(--colorMobileText);
+  }
+
+  .transition-none {
+    transition: none;
+  }
+
+  .transition-background {
+    transition-property: background;
+    transition-duration: .345s;
+    transition-timing-function: linear;
+  }
+
+}
+
+#sandwich span {
+  width: 24px;
+  height: 3px;
+  background-color: var(--colorMobileText);
+  position: absolute;
+  transition: all .234s cubic-bezier(0.52, 0.16, 0.24, 1);
+}
+
+#sandwich #bread-top {
+  top: 6px;
+}
+
+#sandwich #bread-bottom {
+  top: 15px;
+}
+
+.nav-open #sandwich #bread-top {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+.nav-open #sandwich #bread-bottom {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+section a, .post-body p a {
+  color: var(--colorForeground01);
+  box-shadow: inset 0 -2px 0 var(--colorForeground04);
+  /* margin: -.025em; */
+  /* padding: .025em; */
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: color .234s, box-shadow .234s;
+  transition: color .234s, box-shadow .234s;
+  /* text-decoration-style: dotted;
+  margin-bottom: -1px; */
+}
+
+section a:hover, .post-body a:hover {
+  color: var(--colorPrimary01);
+}
+
+mark {
+  background-color: var(--colorPrimary01);
+  margin: -.05em;
+  padding: .05em;
+  color: white;
+}
+
+#work a h1::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid var(--colorMobileText);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: .5;
+}
+#work a:hover h1::after {
+  width: 100%;
+}
+
+
+#logo #name {
+  width: 60px;
+  -webkit-transition: width .2s .4s;
+  transition: width .2s .4s;
+}
+
+#logo.collapse #name {
+  width: 11.7px;
+}
+
+
+#draw {
+  cursor: -webkit-image-set(url("/image/cursor/pencil.png") 1x, url("/image/cursor/pencil@2x.png") 2x) 5 22, url("/image/cursor/pencil.cur"), crosshair;
+  cursor: image-set(url("/image/cursor/pencil.png") 1x, url("/image/cursor/pencil@2x.png") 2x) 5 22, url("/image/cursor/pencil.cur"), crosshair;
+  cursor: url("/image/cursor/pencil.png") 5 22, url("/image/cursor/pencil.cur"), crosshair;
+}
+
+
+ /* Zoom */
+
+img[data-action="zoom"] {
+  cursor: pointer;
+  cursor: zoom-in;
+}
+
+.zoom-img,
+.zoom-img-wrap {
+  position: relative;
+  z-index: 666;
+  transition: all 300ms; }
+
+img.zoom-img {
+  cursor: pointer;
+  cursor: zoom-out; }
+
+.zoom-overlay {
+  z-index: 400;
+  background: var(--colorBackground);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 300ms; }
+
+.zoom-overlay-open .zoom-overlay {
+  opacity: .9; }
+
+.zoom-overlay-open,
+.zoom-overlay-transitioning {
+  cursor: default; }

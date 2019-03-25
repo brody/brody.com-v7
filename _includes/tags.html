@@ -1,0 +1,11 @@
+{% if page.tags != nil %}
+<div class="tags mv4">
+
+  <ul class="list ph3">
+    {% for tag in page.tags %}
+    <li class="dib pa0 mr1"><a href="" class="br5 bn ph3 pv2 white night-white bg-grey-light night-bg-grey-darker">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endif %}
