@@ -1,0 +1,63 @@
+<header id="nav" class="text-lg uppercase fixed flex-wrap pin-b pin-l pin-r md:pin-none md:pin-t md:pin-l md:pin-r bg-mobile-bar md:bg-transparent safe-area-bottom-inset z-50 md:px-6 md:py-4 lg:px-12 lg:py-10 pointer-events-none">
+
+  <div class="flex flex-wrap justify-between pointer-events-auto">
+
+      {% if page.url == '/' %}
+
+      <div id="logo" class="order-2 h-16 px6 w-1/2 md:w-48">
+        <div class="flex no-underline text-grey-light md:text-02 md:hover:text-primary-02 px-6 items-center h-full">
+          <span id="name" class="overflow-hidden">Brody</span><span id="dash" class="ml-1">—</span>
+        </div>
+      </div>
+      
+      {% else %}
+      
+      <div id="backlink" class="order-2 h-16 px6 w-1/2 md:w-48">
+        <a href="/" class="flex no-underline text-grey-light md:text-02 md:hover:text-primary-02 px-6 items-center h-full">
+          <svg class="h-4 w-4 mr-2 inline-block text-primary-01 fill-current" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.414 8.657l3.95 3.95A1 1 0 0 1 6.95 14.02L1.293 8.364a.997.997 0 0 1 0-1.414L6.95 1.293a1 1 0 1 1 1.414 1.414l-3.95 3.95H14a1 1 0 0 1 0 2H4.414z" />
+          </svg>
+          Home
+        </a>
+      </div>
+
+      {% endif %}
+
+
+
+    <div id="menu" class="flex-wrap w-screen md:w-auto lg:max-w-md order-0 md:order-2 mx-auto mt-3 md:my-auto md:flex md:flex-grow hidden">
+      <a href="/journal" class="{% if page.category == 'journal' %}text-primary-01 md:text-primary-01{% endif %} flex flex-grow w-full md:w-auto h-16 no-underline text-grey-light md:text-02 md:hover:text-primary-02 items-center justify-center">Journal</a>
+      <a href="/#work" class="flex flex-grow w-full md:w-auto h-16 no-underline text-grey-light md:text-02 md:hover:text-primary-02 items-center justify-center {% if page.category == 'work' %}text-primary-01 md:text-primary-01{% endif %}">Work</a>
+      <a href="/about" class="flex flex-grow w-full md:w-auto h-16 no-underline text-grey-light md:text-02 md:hover:text-primary-02 items-center justify-center {% if page.url == '/about/' %}text-primary-01 md:text-primary-01{% endif %}">About</a>
+    </div>
+
+    <div id="theme-toggle" class="order-1 md:order-3 w-full md:w-48 md:flex mb-3 md:mb-0 hidden">
+
+      <div class="flex w-full md:w-48 h-16 items-center justify-center md:justify-end md:px-3">
+
+        <div id="toggle-night" class="flex px-5 md:px-4 py-6 text-grey-light md:text-02 md:hover:text-primary-01 cursor-pointer">
+          <svg class="h-4 w-4 inline-block fill-current" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.802.268A8.069 8.069 0 0 0 8.014 6.4c0 3.706 2.455 6.822 5.786 7.732A7.644 7.644 0 0 1 8.794 16C4.49 16 1 12.418 1 8s3.49-8 7.794-8a7.64 7.64 0 0 1 2.008.268z" />
+          </svg>
+        </div>
+
+        <div id="toggle-day" class="flex px-5 md:px-4 py-6 text-grey-light md:text-02 md:hover:text-primary-01 cursor-pointer">
+          <svg class="h-4 w-4 inline-block fill-current" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 0a.8.8 0 0 1 .8.8v1.6a.8.8 0 0 1-1.6 0V.8A.8.8 0 0 1 8 0zm0 12.8a.8.8 0 0 1 .8.8v1.6a.8.8 0 1 1-1.6 0v-1.6a.8.8 0 0 1 .8-.8zM.8 7.2h1.6a.8.8 0 0 1 0 1.6H.8a.8.8 0 1 1 0-1.6zm13 0h1.4a.8.8 0 1 1 0 1.6h-1.4a.8.8 0 1 1 0-1.6zm-.143-4.857a.8.8 0 0 1 0 1.131l-1.131 1.132a.8.8 0 1 1-1.132-1.132l1.132-1.13a.8.8 0 0 1 1.13 0zm-9.051 9.051a.8.8 0 0 1 0 1.132l-1.132 1.13a.8.8 0 1 1-1.13-1.13l1.13-1.132a.8.8 0 0 1 1.132 0zm-1.132-9.05l1.132 1.13a.8.8 0 0 1-1.132 1.132l-1.13-1.132a.8.8 0 0 1 1.13-1.13zm9.052 9.05l1.13 1.132a.8.8 0 0 1-1.13 1.13l-1.132-1.13a.8.8 0 1 1 1.132-1.132z" />
+          </svg>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="sandwich" class="flex order-3 md:order-1 items-center h-16 px-6 text-grey-light md:hidden cursor-pointer">
+      <div class="w-6 h-6 block fill-current relative">
+        <span id="bread-top" class="bg"></span>
+        <span id="bread-bottom"></span>
+      </div>
+    </div>
+
+  </div>
+
+</header>
