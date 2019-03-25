@@ -1,0 +1,70 @@
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} – {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="Brody MacLean is a Product Designer based in Sydney.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="/assets/images/favicon.ico" sizes="32x32" type="img/png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/apple-touch-icon-152x152.png">
+
+  <link rel="me" href="https://twitter.com/BrodyMacLean">
+  <link rel="canonical" href="http://brody.com/">
+
+  <meta property="article:author" content="Brody MacLean" />
+
+  <meta property="og:site_name" content="Brody MacLean – Product Designer" />
+  <meta property="og:url" content="http://brody.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.thumbnail | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@BrodyMaclean">
+  <meta name="twitter:creator" content="@BrodyMaclean">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.thumbnail | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ 'css/tachyons.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ 'fonts/inter.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+  <script type="text/javascript">
+
+    if(Cookies.get("_darkmode")=="Enabled"){
+      $('html').addClass('night');
+      console.log("Cookie dark is set on load");
+    }
+    else if(Cookies.get("_lightmode")=="Enabled"){
+      $('html').addClass('day');
+      console.log("Cookie light is set on load");
+    }
+    else {
+      $(function() {
+          // get hour of time
+          var hour = (new Date).getHours();
+          if (hour > 17) {  // 0:00 to 6:59
+              Cookies.remove('_lightmode');
+              Cookies.set('_darkmode', 'Enabled');
+          } else if (hour < 8) {  // 7:00 to 10:59
+              Cookies.remove('_lightmode');
+              Cookies.set('_darkmode', 'Enabled');
+          }
+          else {
+            Cookies.remove('_darkmode');
+            Cookies.set('_lightmode', 'Enabled');
+          }
+      });
+    }
+
+  </script>
+
+</head>

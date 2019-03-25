@@ -1,10 +1,10 @@
-# Brody.com v8β
+# brody.com v7.0
+My personal website. 📝 Journal, 🛠 Recent Work, 🤓 About Me
 
-### Powered by...
-* Site Generator — [Jekyll](http://jekyllrb.com)
-* Hosted — [Github Pages](https://pages.github.com)
-* CSS Framework — [Tailwind CSS](https://tailwindcss.com)
-* Code Editor — [Visual Studio Code](https://code.visualstudio.com/)
-* Writing — [Atom](http://atom.io)
-* Typography — [Inter](https://rsms.me/inter/)
-* Coffee  ☕
+### Tools
+- 🖼 Framework used is Tachyons
+- 🔨 Built with Jekyll
+  - 🎩 Hat tip to jekyll-gulp-sass-browser-sync
+- ✍️ Written in Atom
+- 📄 Hosted on GitHub Pages
+- 🤓 HTML (Liquid), SCSS, Javascript, Markdown
