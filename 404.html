@@ -1,41 +1,21 @@
 ---
-layout: 404
+layout: default
 permalink: /404.html
 ---
 
-<script>
-  function getRandomImage() {
-    var images = [
-      "/image/404/1.gif",
-      "/image/404/2.gif",
-      "/image/404/3.gif",
-      "/image/404/4.gif",
-      "/image/404/5.gif",
-      "/image/404/6.gif",
-      "/image/404/7.gif",
-      "/image/404/8.gif",
-      "/image/404/9.gif",
-      "/image/404/10.gif",
-      "/image/404/11.gif",
-      "/image/404/12.gif",
-      "/image/404/13.gif",
-      "/image/404/14.gif",
-      "/image/404/15.gif",
-      "/image/404/16.gif",
-      "/image/404/17.gif"
-    ];
-    return images[Math.floor(Math.random() * 17)];
+<style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
   }
+</style>
 
-  $(document).ready(function () {
-    $("#404gif").attr('src', getRandomImage());
-  });
-</script>
+<div class="container">
+  <h1 style="margin: 30px 0; font-size: 4em; line-height: 1; letter-spacing: -1px;">
+    404 🙈
+  </h1>
 
-<section class="containter h-screen w-screen flex items-center justify-center text-center px-4 -mt-4 md:-mt-8">
-  <div class="text-02 max-w-sm w-full">
-    <img class="w-full" id="404gif" src="" alt="404">
-    <h2 class="text-2xl lg:text-3xl my-3 glitch" data-text="Oh no!">Oh no, page not found!</h2>
-    <div class="text-02 text-lg lg:text-xl mt-3 mb-8">It's probably best to just head <a class="" href="/">home</a>.</div>
-  </div>
-</section>
+  <h1>Page not found</h1>
+  <p>The requested page could not be found.</p>
+</div>

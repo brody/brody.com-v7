@@ -1,0 +1,215 @@
+* {
+  // transition: all 0.3s cubic-bezier(0.165, 0.63, 0.14, 0.82);
+}
+
+body {
+  padding: 80px 0 0;
+  @include breakpoint($sm) {}
+  @include breakpoint($md) {
+    padding: 104px 0 0;
+  }
+  @include breakpoint($lg) {
+    padding: 128px 0 0;
+  }
+}
+
+// Text Colors
+
+.black {          color: $black  }
+.white {          color: $white  }
+
+.grey-lightest {  color: $grey-lightest  }
+.grey-lighter {   color: $grey-lighter  }
+.grey-light {     color: $grey-light  }
+.grey {           color: $grey  }
+.grey-dark {      color: $grey-dark  }
+.grey-darker {    color: $grey-darker  }
+.grey-darkest {   color: $grey-darkest  }
+
+.primary {        color: $primary  }
+.primary-pale {   color: $primary-pale  }
+.primary-shade {  color: $primary-shade  }
+
+.yellow {        color: $yellow  }
+.yellow-pale {   color: $yellow-pale  }
+.yellow-shade {  color: $yellow-shade  }
+
+.night {
+
+  .night-black {          color: $black  }
+  .night-white {          color: $white  }
+  .night-white-50 {       color: rgba($white,.5)  }
+
+  .night-grey-lightest {  color: $grey-lightest  }
+  .night-grey-lighter {   color: $grey-lighter  }
+  .night-grey-light {     color: $grey-light  }
+  .night-grey {           color: $grey  }
+  .night-grey-dark {      color: $grey-dark  }
+  .night-grey-darker {    color: $grey-darker  }
+  .night-grey-darkest {   color: $grey-darkest  }
+
+  .night-primary {        color: $primary  }
+  .night-primary-pale {   color: $primary-pale  }
+  .night-primary-shade {  color: $primary-shade  }
+
+  .night-yellow {        color: $yellow  }
+  .night-yellow-pale {   color: $yellow-pale  }
+  .night-yellow-shade {  color: $yellow-shade  }
+
+}
+
+
+// Background Colors
+
+.bg-black {          background-color: $black  }
+.bg-white {          background-color: $white  }
+
+.bg-grey-lightest {  background-color: $grey-lightest  }
+.bg-grey-lighter {   background-color: $grey-lighter  }
+.bg-grey-light {     background-color: $grey-light  }
+.bg-grey {           background-color: $grey  }
+.bg-grey-dark {      background-color: $grey-dark  }
+.bg-grey-darker {    background-color: $grey-darker  }
+.bg-grey-darkest {   background-color: $grey-darkest  }
+
+.bg-primary {        background-color: $primary  }
+.bg-primary-pale {   background-color: $primary-pale  }
+.bg-primary-shade {  background-color: $primary-shade  }
+
+.bg-yellow {         background-color: $yellow  }
+.bg-yellow-pale {    background-color: $yellow-pale  }
+.bg-yellow-shade {   background-color: $yellow-shade  }
+
+.night {
+
+  .night-bg-black {          background-color: $black  }
+  .night-bg-white {          background-color: $white  }
+
+  .night-bg-grey-lightest {  background-color: $grey-lightest  }
+  .night-bg-grey-lighter {   background-color: $grey-lighter  }
+  .night-bg-grey-light {     background-color: $grey-light  }
+  .night-bg-grey {           background-color: $grey  }
+  .night-bg-grey-dark {      background-color: $grey-dark  }
+  .night-bg-grey-darker {    background-color: $grey-darker  }
+  .night-bg-grey-darkest {   background-color: $grey-darkest  }
+
+  .night-bg-primary {        background-color: $primary  }
+  .night-bg-primary-pale {   background-color: $primary-pale  }
+  .night-bg-primary-shade {  background-color: $primary-shade  }
+
+  .night-bg-yellow {         background-color: $yellow  }
+  .night-bg-yellow-pale {    background-color: $yellow-pale  }
+  .night-bg-yellow-shade {   background-color: $yellow-shade  }
+
+}
+
+
+// Fill Colors
+
+.fill-black {          fill: $black  }
+.fill-white {          fill: $white  }
+
+.fill-grey-lightest {  fill: $grey-lightest  }
+.fill-grey-lighter {   fill: $grey-lighter  }
+.fill-grey-light {     fill: $grey-light  }
+.fill-grey {           fill: $grey  }
+.fill-grey-dark {      fill: $grey-dark  }
+.fill-grey-darker {    fill: $grey-darker  }
+.fill-grey-darkest {   fill: $grey-darkest  }
+
+.fill-primary {        fill: $primary  }
+.fill-primary-pale {   fill: $primary-pale  }
+.fill-primary-shade {  fill: $primary-shade  }
+
+.fill-yellow {         fill: $yellow  }
+.fill-yellow-pale {    fill: $yellow-pale  }
+.fill-yellow-shade {   fill: $yellow-shade  }
+
+.night {
+
+  .night-fill-black {          fill: $black  }
+  .night-fill-white {          fill: $white  }
+
+  .night-fill-grey-lightest {  fill: $grey-lightest  }
+  .night-fill-grey-lighter {   fill: $grey-lighter  }
+  .night-fill-grey-light {     fill: $grey-light  }
+  .night-fill-grey {           fill: $grey  }
+  .night-fill-grey-dark {      fill: $grey-dark  }
+  .night-fill-grey-darker {    fill: $grey-darker  }
+  .night-fill-grey-darkest {   fill: $grey-darkest  }
+
+  .night-fill-primary {        fill: $primary  }
+  .night-fill-primary-pale {   fill: $primary-pale  }
+  .night-fill-primary-shade {  fill: $primary-shade  }
+
+  .night-fill-yellow {         fill: $yellow  }
+  .night-fill-yellow-pale {    fill: $yellow-pale  }
+  .night-fill-yellow-shade {   fill: $yellow-shade  }
+
+}
+
+
+// Hover
+
+.hover-primary:hover {
+    color: #9058B0;
+    fill: #9058B0;
+}
+
+
+// Typography
+
+.f-headline {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.024em;
+  @include breakpoint($md) {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+
+.f-subheadline {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.026em;
+  @include breakpoint($md) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.f3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+
+// Spacing
+
+.pv4-5 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 30em) {
+  .pv4-5-ns {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+
+// Borders
+
+.br5 {
+  border-radius: 50px;
+}
+
+.not-allowed {
+cursor: not-allowed;
+}

@@ -1,0 +1,660 @@
+.mw600 {
+  max-width: 600px;
+}
+
+.post {}
+
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+table,
+ul {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 24px auto;
+  max-width: 600px;
+}
+
+time {
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  a {
+    border: 0;
+    text-decoration: none;
+    color: $grey-darkest;
+
+    &:hover {
+      color: $primary;
+      border: 0;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 2px solid $grey-light;
+
+  &:hover {
+    border-bottom: 2px solid $primary;
+  }
+}
+
+p.image-wrap {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 650px;
+
+  &.full-width {
+    max-width: 100%;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+ul {
+  list-style-type: disc;
+  padding-right: 0;
+}
+
+ol,
+ul {
+  padding-left: 32px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $grey-light;
+  max-width: 200px;
+  margin: 48px auto;
+}
+
+iframe,
+img,
+object,
+twitter-widget {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  max-width: auto;
+  margin: 24px auto;
+  @include breakpoint($sm) {
+    display: block;
+    padding: 0;
+    float: none;
+    margin: 32px auto;
+    max-width: 650px;
+  }
+}
+
+iframe,
+object {
+  min-height: 0;
+  min-width: 0;
+}
+
+iframe {
+  width: 100%;
+  max-width: none;
+  @include breakpoint($sm) {
+    display: block;
+    padding: 0;
+    float: none;
+    max-width: 650px;
+  }
+}
+
+.link-card {
+  max-width: 600px;
+  padding: 0 12px;
+  margin: 32px auto;
+
+  a {
+    display: block;
+    padding: 20px 28px 24px;
+    border-radius: 2px;
+    border: 0;
+
+    &:hover {
+      border: 0;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    margin: 0 0 12px;
+    padding: 0;
+    line-height: 1.3;
+  }
+}
+
+.book-card {
+  max-width: 600px;
+  padding: 0 12px;
+  margin: 32px auto;
+
+  a {
+    display: inline-block;
+    width: 100%;
+    background-color: $white;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba($grey,0.5);
+    border-radius: 2px;
+    border: 0;
+
+    &:hover {
+      box-shadow: 0 8px 24px 0 rgba($grey,0.5);
+      border: 0;
+    }
+  }
+
+  .book-details {}
+
+  p {
+    margin: 0 0 6px;
+    padding: 0;
+    color: $grey;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  img {
+    height: 130px;
+    width: auto;
+    display: inline-block;
+    float: left;
+    margin: 0 24px 0 0;
+  }
+}
+
+.rating {
+  margin-bottom: 12px;
+  display: none;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      float: left;
+      padding: 0;
+      margin: 0 4px 0 0;
+
+      svg {
+        display: block;
+      }
+    }
+  }
+}
+
+button {
+  background-color: $primary;
+  border-radius: 4px;
+  height: 32px;
+  font-weight: 500;
+  color: $white;
+  border: 0;
+  fill: $grey-lighter;
+  padding: 4px 10px 4px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    margin-right: 6px;
+  }
+
+  .label {
+    transform: translateY(-1px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.tags {
+  font-weight: 500;
+
+  a {
+    color: $white!important;
+
+    &:hover {
+      background-color: $primary;
+      border: none;
+    }
+  }
+}
+
+.next-post {
+  border-top: 1px solid $grey-lighter;
+
+  a {
+    padding: 56px 0 64px;
+    display: block;
+    border: 0;
+
+    h3 {
+      box-sizing: border-box;
+      padding-left: 16px;
+      padding-right: 16px;
+      color: $grey;
+    }
+
+    h1 {}
+
+    p {
+      margin: 0 auto 16px;
+    }
+  }
+}
+
+#nightMode {
+  cursor: pointer;
+  z-index: 99999;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+
+  &:hover {
+    &:before {
+      content: "";
+      height: 4px;
+      width: 4px;
+      border-radius: 2px;
+      background-color: lighten($primary, 12%);
+
+      position: absolute;
+      left: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+#intro h1 {
+  #wave {
+    position: absolute;
+    margin-left: 8px;
+  }
+
+  &:hover {
+    #wave {
+      -webkit-animation-name: tada;
+      animation-name: tada;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+#journal {
+  a {
+    &:hover {
+      border: none;
+
+      h1 {
+        color: $primary;
+      }
+    }
+  }
+}
+
+#work {
+  a {
+    height: 350px;
+
+    &:hover {
+      border: none;
+
+      h1:after {
+        margin-left: 16px;
+        opacity: 0.5;
+      }
+
+      .work-logo {
+        opacity: 0.5;
+      }
+    }
+
+    h1 {
+      &:after {
+        content: "→";
+        margin-left: 8px;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+    }
+
+    .work-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-65%) translateX(-50%);
+      transition: opacity 0.4s ease-out;
+      fill: $white;
+      @include breakpoint($ns) {
+        transform: translateY(-60%) translateX(-50%);
+      }
+    }
+
+    &#jobadder {
+      background-color: #1971C2;
+
+      .work-logo {
+        height: 140px;
+      }
+    }
+
+    &#vivid {
+      background-image: linear-gradient(-135deg, #24204A 0%, #17142F 100%);
+
+      .work-logo {
+        height: 64px;
+      }
+    }
+
+    &#hudl {
+      background-color: #FF6300;
+      overflow: hidden;
+
+      .work-logo {
+        height: 120px;
+      }
+    }
+
+    &#sweep {
+      background-image: -webkit-linear-gradient(top left, #5968EB 0%, #2C389E 100%);
+      background-image: -o-linear-gradient(top left, #5968EB 0%, #2C389E 100%);
+      background-image: linear-gradient(to bottom right, #5968EB 0%, #2C389E 100%);
+
+      .work-logo {
+        height: 70px;
+      }
+    }
+  }
+}
+// about ////////////////////////////////////////////
+//Goodreads
+
+.goodreads {
+  line-height: 1.3;
+
+  img {
+    margin: 0;
+  }
+
+  a {
+    border: 0;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  .gr_custom_container_1524204944,
+  .gr_custom_container_1532863785 {
+    /* customize your Goodreads widget container here*/
+    border: none;
+    background-color: transparent;
+  }
+
+  .gr_custom_each_container_1524204944,
+  .gr_custom_each_container_1532863785 {
+    /* customize each individual book container here */
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding-bottom: 4px;
+  }
+
+  .gr_custom_book_container_1524204944,
+  .gr_custom_book_container_1532863785 {
+    /* customize your book covers here */
+    overflow: hidden;
+    height: 60px;
+    float: left;
+    margin-right: 4px;
+    width: 39px;
+  }
+
+  .gr_custom_author_1524204944 {
+    /* customize your author names here */
+    font-size: 10px;
+  }
+
+  .gr_custom_tags_1524204944 {
+    /* customize your tags here */
+    font-size: 10px;
+  }
+
+  .gr_custom_rating_1524204944 {
+    /* customize your rating stars here */
+    float: right;
+  }
+
+  .gr_custom_container_1524204944,
+  .gr_custom_container_1532863785 {
+    center {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        border-bottom: 2px solid $primary;
+      }
+    }
+
+    .gr_custom_book_container_1524204944,
+    .gr_custom_book_container_1532863785 {
+      width: 56px;
+      height: auto;
+      margin-right: 16px;
+    }
+
+    .gr_custom_title_1524204944,
+    .gr_custom_title_1532863785 {
+      letter-spacing: 0.01em;
+      font-weight: 600;
+      font-size: 1.1em;
+      margin-bottom: 4px;
+      margin-top: 4px;
+    }
+
+    .gr_custom_author_1524204944,
+    .gr_custom_author_1532863785 {
+      font-size: 14px;
+      letter-spacing: -0.01em;
+    }
+  }
+}
+// LastFM /////////////////////////////////////
+
+.lastFM {
+  li {
+    line-height: 1.3;
+    margin-bottom: 16px;
+    min-height: 88px;
+  }
+
+  #lastFM-recent-tracks,
+  #lastFM-top-artists {
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: 88px;
+    height: auto;
+    margin: 0 16px 0 0;
+    float: left;
+  }
+
+  #lastFM-recent-tracks .track,
+  #lastFM-top-artists .artist {
+    font-weight: 600;
+    font-size: 1.1em;
+    padding-top: 6px;
+
+    a {
+      border-color: transparent;
+
+      &:hover {
+        border-color: $primary;
+      }
+    }
+  }
+
+  .artist {
+    font-size: 1.1em;
+  }
+
+  #lastFM-recent-tracks .date,
+  #lastFM-top-artists .play-count {
+    font-size: 0.9em;
+    margin-top: 8px;
+    opacity: 0.9;
+  }
+
+  .track--now-playing::after {
+    content: url("/assets/images/track-nowplaying.gif");
+    margin-left: 4px;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    border-bottom: 0;
+    border-radius: 100px;
+    padding: 6px 16px 6px 12px;
+    fill: $white;
+    color: $white;
+    font-weight: 500;
+    margin-right: 12px;
+    margin-bottom: 8px;
+    float: left;
+    font-size: 15px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+
+  .button--spotify {
+    background-color: #2EBD59;
+  }
+
+  .button--soundcloud {
+    background: linear-gradient(#f70,#f30);
+  }
+}

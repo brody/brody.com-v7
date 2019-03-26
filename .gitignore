@@ -1,6 +1,5 @@
-_site
-.DS_Store
+_site/
+.sass-cache/
 .jekyll-metadata
-assets/css
-Gemfile.lock
-node_modules
+.DS_Store
+ErrorDocument 404 /404.html
