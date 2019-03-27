@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-
-title: Brody MacLean – Product Designer
-name: Brody MacLean
-email: hello@brody.com
-thumbnail: /image/og/open-graph.png
-description: Senior Product Designer from Sydney, Australia.
-=======
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -27,7 +19,6 @@ email: hello@brody.com
 thumbnail: /assets/images/open-graph.png
 description: >- # this means to ignore newlines until "baseurl:"
   Brody MacLean is a Product Designer based in Sydney, Australia.
->>>>>>> parent of a9154c4e... v8 init fix
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://brody.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: brodymaclean
@@ -46,19 +37,6 @@ sass:
     sass_dir: _scss
     style: :compressed
 
-<<<<<<< HEAD
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - gulpfile.babel.js
-  - LICENSE.md
-  - node_modules
-  - package.json
-  - package-lock.json
-  - README.md
-  - src
-  - tailwind.config.js
-=======
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
@@ -73,4 +51,3 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
->>>>>>> parent of a9154c4e... v8 init fix
